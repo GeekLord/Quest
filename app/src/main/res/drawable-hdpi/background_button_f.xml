@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffccccdd" />
+            <padding android:left="10.0dip" android:top="10.0dip" android:right="10.0dip" android:bottom="10.0dip" />
+            <corners android:radius="20.0dip" />
+            <stroke android:width="2.0dip" android:color="#ffcccccc" />
+        </shape>
+    </item>
+    <item>
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@*android:color/transparent" />
+                </shape>
+            </item>
+            <item android:left="-1.0dip" android:top="0.0dip" android:right="-1.0dip" android:bottom="-1.0dip">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2.0dip" android:color="#ffcccccc" />
+                    <solid android:color="@color/quest" />
+                    <corners android:radius="20.0dip" />
+                </shape>
+            </item>
+            <item android:left="-1.0dip" android:top="-1.0dip" android:right="-1.0dip" android:bottom="0.0dip">
+                <shape android:shape="rectangle">
+                    <stroke android:width="2.0dip" android:color="@color/silver" />
+                    <solid android:color="#00000000" />
+                    <corners android:radius="20.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
