@@ -54,7 +54,7 @@ public class O11 extends Fragment {
                     Answers.setO31c("B");
                     return;
             }
-            Answers.setO31d("B");
+
         }
     };
     TextView lbl;
