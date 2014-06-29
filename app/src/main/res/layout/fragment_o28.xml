@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO121"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="12.1) What is your evaluation of the accuracy of respondent's answer?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgO121a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Excellent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO121b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO121c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fair"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO121d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not so good"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO121e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Very bad"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO28b"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="12.2) What is your evaluation of the seriousness and attentiveness of the respondent?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgO122a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Excellent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO122b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO122c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fair"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO122d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not so good"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO122e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Very bad"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO28c"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Time at the end of the interview. Click below to select"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/O12_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_card"
+                android:text="12:00"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_xlarge" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

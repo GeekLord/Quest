@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10.0dip">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5.0dip">
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lblO1d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.2) Study ID"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtT02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lblO1e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.3) Respondent name"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtT03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lblO1f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.4) Village name"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtT04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lblO1g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5) Sublocation name"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtT05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lblO3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.6) Full name of interviewer"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtT06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lblO3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.7) Interviewer ID"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtT07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card">
+
+            <TextView
+                android:id="@+id/lblO3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of interview"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/txtT_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="click to select date"
+                android:inputType="date"
+                android:text="DD/MM/YY"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_xlarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card">
+
+            <TextView
+                android:id="@+id/lblO3e"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:text="Time at the start of interview"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/txtT_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="click to select time"
+                android:inputType="time"
+                android:text="HH:MM"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_xlarge" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sbvO40d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SECTION 4: EXPECTATIONS"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <TextView
+                android:id="@+id/lblO31a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[The following example will help the respondent to understand the concept of probability and how to answer during the survey using the touch-screen tablet: The interviewer reads out the text and then shows the figures on the tablet; the interviewer lets  the respondent play with the screen to get a sense of the probability]     "
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I would like to ask you about the chance or likelihood that certain events are going to happen. As you know, there are many events in our lives that are uncertain. For example, we can guess about the chance it will rain tomorrow, but cannot say for sure it will rain on any given day. Also, the chance it might rain will also depend on the season. For example, in this rainy season (April – June), you might expect that there is a high chance that it will rain tomorrow. But there is no guarantee that it will rain for sure.    \n\nOn the other hand, if I had asked you this question about a day in the dry season (January – March), you might have expected that the chance of rain is very low. But again, completely unexpected rains can arrive even in March!   \n\nUsing this screen, you can express how certain you think these uncertain events might occur (like whether it will rain tomorrow). When the ball is in the middle of the line, it shows you think it is equally likely that it will rain or not rain. As you move the ball towards the RAIN, you indicate that you are more and more certain it will rain. If you slide it all the way to the right, you are 100% absolutely certain it will rain.        "
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rain1" />
+
+            <TextView
+                android:id="@+id/srvO41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Example of equal likelihood of rain and no rain)  .. we might want to use the term “HAMSINI HAMSINI” to indicate uncertainty."
+                android:textSize="@dimen/text_size_small" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rain2" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Example of 7 out of 10 chance of rain tomorrow)"
+                android:textSize="@dimen/text_size_small" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rain3" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Note that in this last example, the ball is not all the way at the end, indicating a very high likelihood it could rain, but there is a small chance it might not rain. This is an example of a 99% chance. \n\n[To test whether the respondent had understood the concept of probability, please ask the following questions] " />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

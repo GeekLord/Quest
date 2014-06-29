@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblT93"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.3a) How many of the following livestock does your household have? \nCows ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT93a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT93aa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Don't know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/rdgT93ab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:ems="10"
+                        android:hint="No of cows"
+                        android:inputType="number">
+
+                        <requestFocus />
+                    </EditText>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3b"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="b) Sheep ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT93b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT93ba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Don't know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/rdgT93bb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:ems="10"
+                        android:hint="No of sheep"
+                        android:inputType="number" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3d"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="c) Goat ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT93c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT93ca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Don't know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/rdgT93cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:ems="10"
+                        android:hint="No of goats"
+                        android:inputType="number" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3h"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.4)  What kind of toilet does your household have?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT94"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT94a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Flush or pour flush toilet"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIP / Ventilated improved pit latrine"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pit latrine with slab"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pit latrine without slab"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Composting toilet"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bucket toilet"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No facility / bush / field"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT94h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other(please specify)"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

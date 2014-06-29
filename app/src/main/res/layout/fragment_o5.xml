@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.11) What is your primary occupation ?"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/lblO31a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[In the case the child is ill, please collect this information for the parent/guardian of the child]" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip">
+
+                    <TextView
+                        android:id="@+id/lblO3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agriculture"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Farming / Livestock keeping"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fishing"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mining"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <TextView
+                        android:id="@+id/lblO3c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paid employee"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Government or Parastatal"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Private"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <TextView
+                        android:id="@+id/lblO3d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Self employed(Not in agriculture / livestock)"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="With employees"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Without employees (motocycle, byclycle, taxi riders)"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unpaid family helper in a business"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <TextView
+                        android:id="@+id/lblO3e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not working"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="And available for work (casual workiers as sugar farms)"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111j"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="And not available for work"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Housemaker / Housemaid"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unable to work/ sick /disabled"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO111n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgO111o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:textSize="@dimen/text_size_large"
+                android:visibility="invisible">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

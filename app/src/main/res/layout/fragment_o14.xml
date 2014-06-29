@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO41"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.1) How likely is that the illness that you /child have today is malaria ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO41a"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO41b"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO41"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14b"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.2) As you know, fever can be a symptom of many different illnesses, including malaria. How likely is it that a person living in Bungoma who currently has fever actually has malaria ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO42a"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO42b"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO42"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14c"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.3) As you know, fever can be a symptom of many different illnesses, including malaria. How likely is it that a person living in your village who currently has fever actually has malaria ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO43a"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO43b"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO43"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14d"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.4a) If a healthy person in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 2 days ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO44aa"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO44ab"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO44a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO44a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14e"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.4b) if a healthy person in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 5 days ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout05"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO44ba"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO44bb"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO44b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO44b"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14f"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.4c) if a healthy person in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 2 weeks ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout06"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO44ca"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO44cb"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO44c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO44c"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14g"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="4.5) How likely is that you get malaria in one of the following season ? \n(a) Rainy"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout07"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO45aa"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO45ab"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO45a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO45a"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO14h"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="(b) Dry"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout08"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/imgO45ba"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="left|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_gravity="right"
+                    android:layout_weight="1.0"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgO45bb"
+                        android:layout_width="100.0dip"
+                        android:layout_height="100.0dip"
+                        android:layout_gravity="right|center"
+                        android:src="@drawable/ic_red_cont" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/srvO45b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="TextView" />
+
+                <SeekBar
+                    android:id="@+id/sbO45b"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:progress="50" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

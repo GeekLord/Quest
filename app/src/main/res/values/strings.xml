@@ -5,5 +5,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_dashboard">Main Menu</string>
+    <string name="title_activity_parent_one">BASELINE QUESTIONNAIRE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_parent_two">ParentTwo</string>
 
 </resources>

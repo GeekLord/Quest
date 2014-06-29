@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblT95"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.5) What type of fuel does your household mainly use for cooking?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT95"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT95a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Liquefied petroleum gas"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paraffin /Kerosene"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charcoal"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Firewood, dung or crop residues"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dung"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Biogas"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crop residue"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT95h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgT95i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3c"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.6) What is the main material of the floor in your house?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT96"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT96a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Earthen"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT96b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cement"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT96c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Floor tiles"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT96d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wood planks"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT96e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polished wood"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT96f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgT96g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3d"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.7) What is the main material of the walls in your house?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT97"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT97a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Stone"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT97b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brick"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT97c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timber"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT97d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Iron Sheet"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT97e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mud"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT97f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wood"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT97g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgT97h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3e"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.8) What is the main material of the roof of your house?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT98a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Iron sheets"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT98b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roof tiles"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT98c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grass thatched"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT98d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wood"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT98e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgT98f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO3e"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="9.9) How many acres/ hectares /feet of land for farming does you household own ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgT99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <RadioButton
+                        android:id="@+id/rdgT99a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="None"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT99b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acres"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT99c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hectares"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT99d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feet"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgT99e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont know"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

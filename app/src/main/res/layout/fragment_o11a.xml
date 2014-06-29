@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sbvO40d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SECTION 3 : PREFERENCES \n\nGAME 1: TIME PREFERENCES "
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <TextView
+                android:id="@+id/lblO31a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suppose you win a prize from a scratch card. You can choose between two options to receive the prize: OPTION A: Receive an amount of money 1 week from today OR OPTION B: Receive a different amount 4 weeks from today.\nWould you choose to receive (Option A) or to receive (Option B)? I will show you a list of options to pick from.  Please touch the button for the option you prefer on the screen.  (Interviewer reads out the options (receive X in 1 week v/s Y in 4 week) as the respondent is shown the screen.     \n\n\nGAME INSTRUCTIONS:  \n1) WHEN RESPONDENT SWITCHES FROM OPTION A TO OPTION B, ASK HIM ONE MORE QUESTION:   - IF HE SAYS AGAIN OPTION B, GO TO Q3.2                         \n-IF HE SAYS OPTION A, MAKE SURE THE RESPONDENT HAS UNDERSTOOD THE GAME CORRECTLY. \n2) IF THE RESPONDENT CHOOSE ALWAYS OPTION A, GO TO  Q3.2     "
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

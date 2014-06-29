@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.7) Which are common symptoms of malaria ?"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_weight="1.0"
+                    android:text="[Mark all that apply]" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <CheckBox
+                        android:id="@+id/rdgO67a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Fever"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nausea"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Headache"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Body aches"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vomiting"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shivering"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anaemia"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diarrohea"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO67j"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgO67k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.8) Which medicines can you use against malaria ?"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_weight="1.0"
+                    android:text="[Mark all that apply]" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <CheckBox
+                        android:id="@+id/rdgO68a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Chloroquine"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO68b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quinine"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO68c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AL /CoArtem /Artefan"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO68d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SP /Fansidar"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO68e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO68f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="others"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgO68g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.9) Which prevention methods can you use ?"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_weight="1.0"
+                    android:text="[Mark all that apply]" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <CheckBox
+                        android:id="@+id/rdgO69a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Use of smoke to drive away mosquitoes"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mosquito mat, coils, liquid vaporizer"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mosquito spray"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cleaning house"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prevent water stagnation"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Covering containers"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Changing water in storage tanks"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO69i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgO69j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5.0dip">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip">
+
+            <TextView
+                android:id="@+id/lblO31"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="3.1) Which one o these options would you prefer ?"
+                android:textSize="@dimen/text_size_large" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/background_card"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/O12_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="a)"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btbO31aa"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1000"
+                android:padding="10.0dip"
+                android:text="In 1 WEEK\n1000 Shillings" />
+
+            <Button
+                android:id="@+id/btbO31ab"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1000"
+                android:padding="10.0dip"
+                android:text="In 4 WEEKS\n1000 Shillings" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/background_card"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="b)"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btbO31ba"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1000"
+                android:padding="10.0dip"
+                android:text="In 1 WEEK\n1000 Shillings" />
+
+            <Button
+                android:id="@+id/btbO31bb"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1050"
+                android:padding="10.0dip"
+                android:text="In 4 WEEKS\n1050 Shillings" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/background_card"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="c)"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btbO31ca"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1000"
+                android:padding="10.0dip"
+                android:text="In 1 WEEK\n1000 Shillings" />
+
+            <Button
+                android:id="@+id/btbO31cb"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1500"
+                android:padding="10.0dip"
+                android:text="In 4 WEEKS\n1500 Shillings" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/background_card"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="d)"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btbO31da"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_1000"
+                android:padding="10.0dip"
+                android:text="In 1 WEEK\n1000 Shillings" />
+
+            <Button
+                android:id="@+id/btbO31db"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/background_button"
+                android:drawableBottom="@drawable/icon_2000"
+                android:padding="10.0dip"
+                android:text="In 4 WEEKS\n2000 Shillings" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

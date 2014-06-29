@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="SECTION 6: PREVENTION AND AWARENESS"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/lblO61a"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.1) What methods do you currently use to keep mosquitoes away ?"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:text="[Mark all that apply]" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <CheckBox
+                        android:id="@+id/rdgO61a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doom"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mosquito coil"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burn cow dung"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burn aromatic leaves"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burn damp grass"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mosquito nets"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electric fan"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No prevention"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refused"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61j"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO61k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgO61l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3.0dip"
+                android:background="@drawable/background_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO23b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.2) How many treated mosquito nets are in your household in total? "
+                    android:textSize="@dimen/text_size_large" />
+
+                <EditText
+                    android:id="@+id/txtO62"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3.0dip"
+                android:background="@drawable/background_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO23c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.3) How many untreated mosquito nets are in your household in total? "
+                    android:textSize="@dimen/text_size_large" />
+
+                <EditText
+                    android:id="@+id/txtO63"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="3.0dip"
+                android:background="@drawable/background_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO23d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="6.4) How many times did you/your child sleep under a mosquito net in the last 7 days? "
+                    android:textSize="@dimen/text_size_large" />
+
+                <EditText
+                    android:id="@+id/txtO64"
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="2">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

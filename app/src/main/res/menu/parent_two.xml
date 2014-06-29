@@ -1,11 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="fravier.com.quest.Dashboard">
+    tools:context="fravier.com.quest.module2.ParentTwo">
     <item
-        android:id="@+id/action_exit"
-        android:icon="@drawable/ic_exit"
+        android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="EXIT"
-        app:showAsAction="always|withText" />
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
 </menu>

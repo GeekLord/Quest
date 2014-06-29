@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/contain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.6) Gender of the respondent"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioGroup
+                android:id="@+id/rdgO16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip">
+
+                <RadioButton
+                    android:id="@+id/rdgO16a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO16b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.7) How old are you ? (Respondent- adult with fever or guardian of the child)"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtO17"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.8) How many people live in your household ?"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtO18"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.9) What is the highest level of schooling completed ?"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/lblO31a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[In the case the child is ill, please collect this information for the parent/guardian of the child]" />
+
+            <RadioGroup
+                android:id="@+id/rdgO19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip">
+
+                <RadioButton
+                    android:id="@+id/rdgO19a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="None"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO19b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO19c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO19d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="College"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO19e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

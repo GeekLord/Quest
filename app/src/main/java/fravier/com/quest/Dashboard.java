@@ -3,32 +3,33 @@ package fravier.com.quest;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import fravier.com.quest.R;
+import fravier.com.quest.module1.ParentOne;
 
 public class Dashboard extends ActionBarActivity {
-    public ImageButton dash1,dash2;
+    public ImageButton dash1, dash2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#012345")));
-        dash1=(ImageButton)findViewById(R.id.btnModuleOne);
-        dash2=(ImageButton)findViewById(R.id.btnModuleTwo);
+        dash1 = (ImageButton) findViewById(R.id.btnModuleOne);
+        dash2 = (ImageButton) findViewById(R.id.btnModuleTwo);
 
         dash1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-//                Intent m1=new Intent(Dashboard.this,ParentOne.class);
-//                startActivity(m1);
+                Intent m1 = new Intent(Dashboard.this, ParentOne.class);
+                startActivity(m1);
 
             }
         });
@@ -62,11 +63,24 @@ public class Dashboard extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_exit) {
+            finish();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            this.moveTaskToBack(true);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
+    @Override
+    public void onBackPressed() {
+
+    }
 }

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/contain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="2.7) Which symptoms do you/child have right now?"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/lblO31a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_weight="1.0"
+                android:text="[Mark all that apply]" />
+
+            <RadioGroup
+                android:id="@+id/rdgO27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0">
+
+                <CheckBox
+                    android:id="@+id/rdgO27a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fever"
+                    android:textSize="@dimen/text_size_large" />
+
+                <CheckBox
+                    android:id="@+id/rdgO27b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nausea"
+                    android:textSize="@dimen/text_size_large" />
+
+                <CheckBox
+                    android:id="@+id/rdgO27c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headache"
+                    android:textSize="@dimen/text_size_large" />
+
+                <CheckBox
+                    android:id="@+id/rdgO27d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vomiting"
+                    android:textSize="@dimen/text_size_large" />
+
+                <CheckBox
+                    android:id="@+id/rdgO27e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shivering"
+                    android:textSize="@dimen/text_size_large" />
+
+                <CheckBox
+                    android:id="@+id/rdgO27f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't know"
+                    android:textSize="@dimen/text_size_large" />
+
+                <CheckBox
+                    android:id="@+id/rdgO27g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/rdgO27h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:ems="10"
+                android:hint="specify">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="2.8) How would you rate your health at this moment ?"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/sbvO40d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_weight="1.0"
+                android:text="[To ask only to the adult respondent with fever, NOT to guardian/parent of the child]" />
+
+            <RadioGroup
+                android:id="@+id/rdgO28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0">
+
+                <RadioButton
+                    android:id="@+id/rdgO28a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Very poor health"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO28b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poor health"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO28c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just OK"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO28d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good health"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO28e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very good health"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

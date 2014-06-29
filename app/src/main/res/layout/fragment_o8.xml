@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/background_card"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <TextView
+            android:id="@+id/lblO23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.3) Was your / child blood taken and tested for malaria ?"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioGroup
+            android:id="@+id/rdgO23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rdgO23a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Yes"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO23b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO23c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't know"
+                android:textSize="@dimen/text_size_large" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

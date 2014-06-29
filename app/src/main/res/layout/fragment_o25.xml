@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblO66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.6) How ? Mode of spread"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="[Mark all that apply]" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/rdgO66a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mosquito bite"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO66b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fly bite"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO66c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dirty drinking water"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO66d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unhygienic food"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO66e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
+                        android:id="@+id/rdgO66f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rdgO66g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:hint="specify">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

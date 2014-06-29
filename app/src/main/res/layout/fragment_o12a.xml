@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sbvO40d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="GAME 2: RISK AVERSION"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_xlarge" />
+
+            <TextView
+                android:id="@+id/lblO31a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now I would like to ask you about whether you prefer to take a chance to receive a higher prize amount. Suppose that the scratch card you will offers you two options: one option is to get a fixed amount of money that is mentioned on the card. Another option is to flip a coin that will decide whether you get a higher amount.  For example, if the coin shows heads you get 1000 KES and if it shows tails you get 0.   \n\n\nFor example, if the scratch card shows a fixed amount prize of 10 KES would you choose the fixed amount or to flip the coin?      "
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

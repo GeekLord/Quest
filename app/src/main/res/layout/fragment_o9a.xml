@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/background_card"
+        android:orientation="vertical"
+        android:padding="10.0dip">
+
+        <TextView
+            android:id="@+id/lblO25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="2.5) What were the main reasons for not making seeking advice or care ?"
+            android:textSize="@dimen/text_size_large" />
+
+        <RadioGroup
+            android:id="@+id/rdgO25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0">
+
+            <RadioButton
+                android:id="@+id/rdgO25a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Lacked money"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescribed drugs not available"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self-medication"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poor quality of service"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High cost of care"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Religious /cultural reasons"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fear of discovering serious illness"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long distance to provider"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Illness not considered serious enough"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textSize="@dimen/text_size_large" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/rdgO25k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0"
+            android:ems="10"
+            android:hint="specify"
+            android:visibility="invisible">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+</ScrollView>

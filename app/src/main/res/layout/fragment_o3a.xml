@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/contain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2) What is the relationship with the child?"
+                android:textSize="@dimen/text_size_large" />
+
+            <LinearLayout
+                android:id="@+id/rela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdgO12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip">
+
+                    <RadioButton
+                        android:id="@+id/rdgO12a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Parent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO12b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grandparent"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO12c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/rdgO12d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:hint="specify"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.3) Gender of the child"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioGroup
+                android:id="@+id/rdgO13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip">
+
+                <RadioButton
+                    android:id="@+id/rdgO13a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO13b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.4) How old is the child ?"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtO14"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/lblO3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.5) How many people live in the household of the child ?"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtO15"
+                android:layout_width="94.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
