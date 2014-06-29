@@ -31,15 +31,19 @@ public class Exporting {
     CSVReader reader = null;
     CSVWriter writer = null;
 
-    public static boolean createDirIfNotExists(String paramString) {
-        boolean bool = true;
-        File localFile = new File(paramString);
-        if ((!localFile.exists()) && (!localFile.mkdirs())) {
-            System.out.println("error creating folder");
-            bool = false;
+    public static boolean createDirIfNotExists(String path) {
+        boolean ret = true;
+
+        File file = new File(path);
+        if (!file.exists()) {
+            if (!file.mkdirs()) {
+                System.out.println("error creating folder in local");
+                ret = false;
+            }
         }
-        return bool;
+        return ret;
     }
+
 
     public int getCountofRows()
             throws IOException {
@@ -169,7 +173,7 @@ public class Exporting {
             writer = new CSVWriter(new FileWriter(folder + "BaselineQuestionnaire.csv", true), ',');
             writer.writeNext(arrayOfString);
             writer.close();
-            return;
+
         } catch (Exception localException) {
             localException.printStackTrace();
         }

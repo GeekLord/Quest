@@ -19,15 +19,24 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/lblT52"
-                    android:layout_width="0.0dip"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
                     android:text="5.2) In the last week, what did you do for your fever /sickness?"
                     android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="[Mark all that apply}"
+                    android:textSize="@dimen/text_size_medium" />
             </LinearLayout>
 
             <LinearLayout
@@ -114,7 +123,7 @@
                         android:id="@+id/rdgT53a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -162,7 +171,7 @@
                         android:id="@+id/rdgT54a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Shop"
                         android:textSize="@dimen/text_size_large" />
 
@@ -245,7 +254,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="5.6) Which medicine did you buy ?"
+                    android:text="5.6) At which price ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -258,7 +267,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:numeric="decimal" />
 
                 <TextView
                     android:id="@+id/txtT56Ksh"

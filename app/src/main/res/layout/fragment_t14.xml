@@ -44,7 +44,7 @@
                         android:id="@+id/rdgT91x"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Piped water /Public Tap /borehole"
                         android:textSize="@dimen/text_size_large" />
 
@@ -153,7 +153,7 @@
                         android:id="@+id/rdgT92aa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 

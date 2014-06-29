@@ -44,7 +44,7 @@
                         android:id="@+id/rdgT95a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Liquefied petroleum gas"
                         android:textSize="@dimen/text_size_large" />
 
@@ -146,7 +146,7 @@
                         android:id="@+id/rdgT96a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Earthen"
                         android:textSize="@dimen/text_size_large" />
 
@@ -231,7 +231,7 @@
                         android:id="@+id/rdgT97a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Stone"
                         android:textSize="@dimen/text_size_large" />
 
@@ -323,7 +323,7 @@
                         android:id="@+id/rdgT98a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Iron sheets"
                         android:textSize="@dimen/text_size_large" />
 

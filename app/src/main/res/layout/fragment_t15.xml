@@ -44,7 +44,7 @@
                         android:id="@+id/rdgT92ba"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -99,7 +99,7 @@
                         android:id="@+id/rdgT92ca"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -154,7 +154,7 @@
                         android:id="@+id/rdgT92da"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -209,7 +209,7 @@
                         android:id="@+id/rdgT92ea"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -264,7 +264,7 @@
                         android:id="@+id/rdgT92fa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -319,7 +319,7 @@
                         android:id="@+id/rdgT92ga"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
@@ -374,7 +374,7 @@
                         android:id="@+id/rdgT92ha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 

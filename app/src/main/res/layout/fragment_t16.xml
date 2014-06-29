@@ -44,18 +44,28 @@
                         android:id="@+id/rdgT93aa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Don't know"
                         android:textSize="@dimen/text_size_large" />
 
-                    <EditText
+                    <RadioButton
                         android:id="@+id/rdgT93ab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Number of Cows"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/txtT93ab"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
                         android:ems="10"
                         android:hint="No of cows"
-                        android:inputType="number">
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:numeric="integer">
 
                         <requestFocus />
                     </EditText>
@@ -97,18 +107,27 @@
                         android:id="@+id/rdgT93ba"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Don't know"
                         android:textSize="@dimen/text_size_large" />
 
-                    <EditText
+                    <RadioButton
                         android:id="@+id/rdgT93bb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Number of Sheep"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/txtT93bb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
                         android:ems="10"
                         android:hint="No of sheep"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        android:numeric="integer" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
@@ -147,18 +166,27 @@
                         android:id="@+id/rdgT93ca"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Don't know"
                         android:textSize="@dimen/text_size_large" />
 
-                    <EditText
+                    <RadioButton
                         android:id="@+id/rdgT93cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Number of Goats"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/txtT93cb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.0"
                         android:ems="10"
                         android:hint="No of goats"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        android:numeric="integer" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
@@ -197,7 +225,7 @@
                         android:id="@+id/rdgT94a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Flush or pour flush toilet"
                         android:textSize="@dimen/text_size_large" />
 

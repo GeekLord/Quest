@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import fravier.com.quest.module1.ParentOne;
+import fravier.com.quest.module2.ParentTwo;
 
 public class Dashboard extends ActionBarActivity {
     public ImageButton dash1, dash2;
@@ -37,8 +38,8 @@ public class Dashboard extends ActionBarActivity {
 
             @Override
             public void onClick(View v) {
-//                Intent m1=new Intent(Dashboard.this,ParentTwo.class);
-//                startActivity(m1);
+                Intent m1 = new Intent(Dashboard.this, ParentTwo.class);
+                startActivity(m1);
 
             }
         });

@@ -44,7 +44,7 @@
                         android:id="@+id/rdgT72a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Positive"
                         android:textSize="@dimen/text_size_large" />
 
@@ -92,7 +92,7 @@
                         android:id="@+id/rdgT73a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
