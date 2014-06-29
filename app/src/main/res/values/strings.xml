@@ -7,6 +7,6 @@
     <string name="title_activity_dashboard">Main Menu</string>
     <string name="title_activity_parent_one">BASELINE QUESTIONNAIRE</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_parent_two">ParentTwo</string>
+    <string name="title_activity_parent_two">FOLLOW UP QUESTIONNAIRE</string>
 
 </resources>
