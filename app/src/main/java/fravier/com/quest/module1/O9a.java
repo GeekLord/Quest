@@ -29,7 +29,7 @@ public class O9a extends Fragment {
                         txtO25.setVisibility(View.VISIBLE);
                         return;
                     } else {
-                        txtO25.setVisibility(View.INVISIBLE);
+                        txtO25.setVisibility(View.GONE);
                     }
                     break;
             }

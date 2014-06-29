@@ -66,7 +66,7 @@ public class O23 extends Fragment {
                     txtO61l.setVisibility(View.VISIBLE);
                     return;
                 } else {
-                    txtO61l.setVisibility(View.INVISIBLE);
+                    txtO61l.setVisibility(View.GONE);
                 }
 
             }

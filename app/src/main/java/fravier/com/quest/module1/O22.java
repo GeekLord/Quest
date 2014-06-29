@@ -63,7 +63,7 @@ public class O22 extends Fragment {
                     txtO52.setVisibility(View.VISIBLE);
                     return;
                 }
-                txtO52.setVisibility(View.INVISIBLE);
+                txtO52.setVisibility(View.GONE);
                 Answers.setO52(O52.indexOfChild(O52.findViewById(O52.getCheckedRadioButtonId())) + "");
             }
         });

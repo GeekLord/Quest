@@ -184,7 +184,7 @@
                 android:ems="10"
                 android:hint="specify"
                 android:textSize="@dimen/text_size_large"
-                android:visibility="invisible">
+                android:visibility="gone">
 
                 <requestFocus />
             </EditText>

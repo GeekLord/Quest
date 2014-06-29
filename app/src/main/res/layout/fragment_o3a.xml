@@ -68,7 +68,7 @@
                     android:layout_weight="1.0"
                     android:ems="10"
                     android:hint="specify"
-                    android:visibility="invisible" />
+                    android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
 

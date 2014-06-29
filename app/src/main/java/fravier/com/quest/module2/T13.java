@@ -25,6 +25,8 @@ public class T13 extends Fragment {
 
                 case R.id.sbT81:
                     progressChanged_81 = paramAnonymousInt;
+                    sbvT81.setText(progressChanged_81 + "% likelihood");
+
                     T81a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     T81a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     T81b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -32,6 +34,7 @@ public class T13 extends Fragment {
                     return;
                 case R.id.sbT82:
                     progressChanged_82 = paramAnonymousInt;
+                    sbvT82.setText(progressChanged_82 + "% likelihood");
                     T82a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     T82a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     T82b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -56,6 +59,7 @@ public class T13 extends Fragment {
 
         }
     };
+    TextView sbvT81, sbvT82;
     ImageView T81a;
     ImageView T81b;
     ImageView T82a;
@@ -73,14 +77,21 @@ public class T13 extends Fragment {
         T81a = ((ImageView) paramView.findViewById(R.id.imgT81a));
         T81b = ((ImageView) paramView.findViewById(R.id.imgT81b));
         T82a = ((ImageView) paramView.findViewById(R.id.imgT82a));
-        T82b = ((ImageView) paramView.findViewById(R.id.imgT82a));
+        T82b = ((ImageView) paramView.findViewById(R.id.imgT82b));
         lbl = ((TextView) paramView.findViewById(R.id.lblT81));
         sbT81 = ((SeekBar) paramView.findViewById(R.id.sbT81));
         sbT82 = ((SeekBar) paramView.findViewById(R.id.sbT82));
+
+        sbvT81 = ((TextView) paramView.findViewById(R.id.sbvT81));
+        sbvT82 = ((TextView) paramView.findViewById(R.id.sbvT82));
+
         sbT81.setMax(100);
         sbT81.setProgress(50);
         sbT82.setMax(100);
         sbT82.setProgress(50);
+
+        sbvT81.setText(progressChanged_81 + "% likelihood");
+        sbvT82.setText(progressChanged_82 + "% likelihood");
     }
 
     private void listeners() {

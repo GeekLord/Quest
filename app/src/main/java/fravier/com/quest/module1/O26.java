@@ -207,7 +207,7 @@ public class O26 extends Fragment {
                     txtO67k.setVisibility(View.VISIBLE);
                     return;
                 }
-                txtO67k.setVisibility(View.INVISIBLE);
+                txtO67k.setVisibility(View.GONE);
             }
         });
         O68f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -216,7 +216,7 @@ public class O26 extends Fragment {
                     txtO68g.setVisibility(View.VISIBLE);
                     return;
                 }
-                txtO68g.setVisibility(View.INVISIBLE);
+                txtO68g.setVisibility(View.GONE);
             }
         });
         O69i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -225,7 +225,7 @@ public class O26 extends Fragment {
                     txtO69j.setVisibility(View.VISIBLE);
                     return;
                 }
-                txtO69j.setVisibility(View.INVISIBLE);
+                txtO69j.setVisibility(View.GONE);
             }
         });
         super.onResume();

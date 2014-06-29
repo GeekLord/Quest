@@ -31,7 +31,7 @@ public class O5 extends Fragment {
                         txtO111.setVisibility(View.VISIBLE);
 
                     } else {
-                        txtO111.setVisibility(View.INVISIBLE);
+                        txtO111.setVisibility(View.GONE);
                     }
 
                     Answers.setO111(O111.indexOfChild(O111.findViewById(O111.getCheckedRadioButtonId())) + "");

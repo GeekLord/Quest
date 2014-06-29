@@ -129,7 +129,7 @@
                 android:layout_marginLeft="15.0dip"
                 android:ems="10"
                 android:hint="specify"
-                android:visibility="invisible">
+                android:visibility="gone">
 
                 <requestFocus />
             </EditText>
@@ -227,7 +227,7 @@
                 android:layout_marginLeft="15.0dip"
                 android:ems="10"
                 android:hint="specify"
-                android:visibility="invisible" />
+                android:visibility="gone" />
         </LinearLayout>
 
         <LinearLayout
@@ -342,7 +342,7 @@
                 android:layout_marginLeft="15.0dip"
                 android:ems="10"
                 android:hint="specify"
-                android:visibility="invisible" />
+                android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

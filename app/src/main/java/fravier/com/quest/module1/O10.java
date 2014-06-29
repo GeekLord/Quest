@@ -55,7 +55,7 @@ public class O10 extends Fragment {
         rdgO27f = ((CheckBox) paramView.findViewById(R.id.rdgO27f));
         rdgO27g = ((CheckBox) paramView.findViewById(R.id.rdgO27g));
         rdgO27h = ((EditText) paramView.findViewById(R.id.rdgO27h));
-        rdgO27h.setVisibility(View.INVISIBLE);
+        rdgO27h.setVisibility(View.GONE);
         lbl = ((TextView) paramView.findViewById(R.id.lblO28));
     }
 
@@ -67,7 +67,7 @@ public class O10 extends Fragment {
                     rdgO27h.setVisibility(View.VISIBLE);
 
                 } else {
-                    rdgO27h.setVisibility(View.INVISIBLE);
+                    rdgO27h.setVisibility(View.GONE);
                 }
 
             }
@@ -106,7 +106,7 @@ public class O10 extends Fragment {
         while (rdgO27g.isChecked()) {
             return str;
         }
-        // rdgO27h.setVisibility(View.INVISIBLE);
+        // rdgO27h.setVisibility(View.GONE);
         return str;
     }
 

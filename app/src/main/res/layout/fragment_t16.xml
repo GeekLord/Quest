@@ -65,9 +65,10 @@
                         android:hint="No of cows"
                         android:inputType="number"
                         android:maxLength="10"
-                        android:numeric="integer">
+                        android:numeric="integer"
+                        android:visibility="gone">
 
-                        <requestFocus />
+                    <requestFocus />
                     </EditText>
                 </RadioGroup>
             </LinearLayout>
@@ -127,7 +128,8 @@
                         android:ems="10"
                         android:hint="No of sheep"
                         android:inputType="number"
-                        android:numeric="integer" />
+                        android:numeric="integer"
+                        android:visibility="gone" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
@@ -186,7 +188,8 @@
                         android:ems="10"
                         android:hint="No of goats"
                         android:inputType="number"
-                        android:numeric="integer" />
+                        android:numeric="integer"
+                        android:visibility="gone" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
@@ -275,8 +278,18 @@
                         android:id="@+id/rdgT94h"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Other(please specify)"
+                        android:checked="false"
+                        android:text="Other"
                         android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/rdgT94i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="please specify"
+                        android:textSize="@dimen/text_size_large"
+                        android:visibility="gone" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>

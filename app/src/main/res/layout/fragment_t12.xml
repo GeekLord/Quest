@@ -52,7 +52,8 @@
                         android:id="@+id/rdgT72b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nrgative"
+                        android:checked="false"
+                        android:text="Negative"
                         android:textSize="@dimen/text_size_large" />
                 </RadioGroup>
             </LinearLayout>

@@ -12,6 +12,25 @@
         android:orientation="vertical"
         android:padding="10.0dip">
 
+        <TextView
+            android:id="@+id/lblO31a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10.0dip"
+            android:gravity="center_horizontal"
+            android:text="SECTION 8: \nEXPECTATIONS ON RDT AND EFFECTIVENESS(updated)"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="@dimen/text_size_xlarge" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="[Ask ONLY to people who went to be tested with RDT at CHW center]"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -70,7 +89,16 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sbvT81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="New Text" />
 
                 <SeekBar
                     android:id="@+id/sbT81"
@@ -139,7 +167,16 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sbvT82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.0"
+                    android:text="New Text" />
 
                 <SeekBar
                     android:id="@+id/sbT82"

@@ -50,7 +50,7 @@ public class O25 extends Fragment {
                     txtO66g.setVisibility(View.VISIBLE);
                     return;
                 } else {
-                    txtO66g.setVisibility(View.INVISIBLE);
+                    txtO66g.setVisibility(View.GONE);
                 }
 
             }

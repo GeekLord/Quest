@@ -58,7 +58,7 @@ public class T10 extends Fragment {
                     txtT52e.setVisibility(View.VISIBLE);
                     return;
                 } else {
-                    txtT52e.setVisibility(View.INVISIBLE);
+                    txtT52e.setVisibility(View.GONE);
                 }
 
             }
@@ -76,7 +76,7 @@ public class T10 extends Fragment {
                     txtT54d.setVisibility(View.VISIBLE);
                     return;
                 }
-                txtT54d.setVisibility(View.INVISIBLE);
+                txtT54d.setVisibility(View.GONE);
                 Answers.setT54(T54.indexOfChild(T54.findViewById(T54.getCheckedRadioButtonId())) + "");
             }
         });
