@@ -111,6 +111,15 @@ public class ParentOne extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        if (viewPager.getCurrentItem() != 0) {
+            viewPager.setCurrentItem(-1 + viewPager.getCurrentItem());
+            return;
+        }
+        super.onBackPressed();
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */

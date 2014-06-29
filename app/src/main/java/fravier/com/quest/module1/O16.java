@@ -7,32 +7,48 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
 
+import fravier.com.fravier.com.results.Answers;
 import fravier.com.quest.R;
 
 
 public class O16 extends Fragment {
+    RadioGroup O49;
     Context ctx;
 
-    @Override
-    public void onAttach(Activity activity) {
-        // TODO Auto-generated method stub
-        super.onAttach(activity);
+    private void initviews(View paramView) {
+        O49 = ((RadioGroup) paramView.findViewById(R.id.rdgO49));
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onCreate(savedInstanceState);
+    private void listeners() {
+        O49.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+                savePageData();
+            }
+        });
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        ctx = container.getContext();
-        View v = inflater.inflate(R.layout.fragment_o16, container, false);
-
-        return v;
+    public void onAttach(Activity paramActivity) {
+        super.onAttach(paramActivity);
     }
 
+    public void onCreate(Bundle paramBundle) {
+        super.onCreate(paramBundle);
+    }
+
+    public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle) {
+        ctx = paramViewGroup.getContext();
+        View localView = paramLayoutInflater.inflate(R.layout.fragment_o16, paramViewGroup, false);
+        initviews(localView);
+        listeners();
+        savePageData();
+        return localView;
+    }
+
+
+    public void savePageData() {
+        Answers.setO49(O49.indexOfChild(O49.findViewById(O49.getCheckedRadioButtonId())) + "");
+    }
 }
+

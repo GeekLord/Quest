@@ -7,32 +7,64 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
+import fravier.com.fravier.com.results.Answers;
+import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
 
 public class O27 extends Fragment {
+    RadioGroup O53;
+    RadioGroup O54;
     Context ctx;
+    TextView lbl;
 
-    @Override
-    public void onAttach(Activity activity) {
-        // TODO Auto-generated method stub
-        super.onAttach(activity);
+    private void fonting() {
+        Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onCreate(savedInstanceState);
+    private void initviews(View paramView) {
+        O53 = ((RadioGroup) paramView.findViewById(R.id.rdgO53));
+        O54 = ((RadioGroup) paramView.findViewById(R.id.rdgO54));
+        lbl = ((TextView) paramView.findViewById(R.id.lblO53));
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        ctx = container.getContext();
-        View v = inflater.inflate(R.layout.fragment_o27, container, false);
-
-        return v;
+    private void listeners() {
+        O53.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+                savePageData();
+            }
+        });
+        O54.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+                savePageData();
+            }
+        });
     }
 
+    public void onAttach(Activity paramActivity) {
+        super.onAttach(paramActivity);
+    }
+
+    public void onCreate(Bundle paramBundle) {
+        super.onCreate(paramBundle);
+    }
+
+    public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle) {
+        ctx = paramViewGroup.getContext();
+        View localView = paramLayoutInflater.inflate(R.layout.fragment_o27, paramViewGroup, false);
+        initviews(localView);
+        fonting();
+        listeners();
+        savePageData();
+        return localView;
+    }
+
+
+    public void savePageData() {
+        Answers.setO53(O53.indexOfChild(O53.findViewById(O53.getCheckedRadioButtonId())) + "");
+        Answers.setO54(O54.indexOfChild(O54.findViewById(O54.getCheckedRadioButtonId())) + "");
+    }
 }
