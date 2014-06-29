@@ -6,6 +6,8 @@ package fravier.com.fravier.com.results;
 
 
 public class Answers {
+
+    public static String x = getRandom() + "";
     // BASELINE QUESTIONNAIRE
     // section 0:Coding
     public static String O01;
@@ -17,7 +19,6 @@ public class Answers {
     public static String O07;
     public static String O07_day;
     public static String O07_time;
-
     // section 1: Respondents Information
     public static String O11;
     public static String O12;
@@ -30,7 +31,6 @@ public class Answers {
     public static String O19;
     public static String O110;
     public static String O111;
-
     // section 2: Health History
     public static String O21;
     public static String O22;
@@ -40,7 +40,6 @@ public class Answers {
     public static String O26;
     public static String O27;
     public static String O28;
-
     // section 3: Preferences
     // /time preferences
     public static String O31a;
@@ -53,7 +52,6 @@ public class Answers {
     public static String O32c;
     public static String O32d;
     public static String O32e;
-
     // section 4: Expectations
     public static String O40a;
     public static String O40b;
@@ -86,15 +84,12 @@ public class Answers {
     public static String O415a;
     public static String O415b;
     public static String O415c;
-
     // section 5a: Behaviour
     public static String O51;
     public static String O52;
-
     // section 5b: Behaviour(page 17)
     public static String O53;
     public static String O54;
-
     // section 6: Prevention and awareness
     public static String O61;
     public static String O62;
@@ -106,12 +101,10 @@ public class Answers {
     public static String O67;
     public static String O68;
     public static String O69;
-
     // interview section note
     public static String O121;
     public static String O122;
     public static String O12_time_end;
-
     // FOLLOW UP QUESTIONNAIRE
     // section 0:Coding
     public static String T02;
@@ -122,14 +115,12 @@ public class Answers {
     public static String T07;
     public static String T07_day;
     public static String T07_time;
-
     // section 4: Expectations
     public static String T40a;
     public static String T40b;
     public static String T40c;
     public static String T40d;
     public static String T40e;
-
     // /expectations on rdt and effectiveness
     public static String T46;
     public static String T47;
@@ -146,23 +137,19 @@ public class Answers {
     public static String T415a;
     public static String T415b;
     public static String T415c;
-
     // section 5a :Past behaviour
     public static String T51;
     public static String T52;
     public static String T53;
     public static String T54;
     public static String T55;
-
     // section 7 : RDT test and result
     public static String T71;
     public static String T72;
     public static String T73;
-
     // section 8: Expectations on RDT and effectiveness(updated)
     public static String T81;
     public static String T82;
-
     // section 9: Household characteristics
     public static String T91;
     public static String T92a;
@@ -182,12 +169,17 @@ public class Answers {
     public static String T97;
     public static String T98;
     public static String T99;// acres:hectares:feet
-
     // interview section note
     public static String T121;
     public static String T122;
     public static String T12_time_end;
 
+    public static int getRandom() {
+        if (Math.floor(10.0D * Math.random()) > 5.0D) {
+            return 0;
+        }
+        return 1;
+    }
 
     public static String getO01() {
         return O01;

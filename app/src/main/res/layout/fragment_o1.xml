@@ -18,7 +18,7 @@
             android:padding="15.0dip">
 
             <TextView
-                android:id="@+id/lblO1c"
+                android:id="@+id/lblO1"
                 android:layout_width="0.0dip"
                 android:layout_height="wrap_content"
                 android:text="0.1) Who is the patient with fever ?"
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/radio0"
+                    android:id="@+id/rdgO1a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
@@ -38,9 +38,10 @@
                     android:textSize="@dimen/text_size_large" />
 
                 <RadioButton
-                    android:id="@+id/radio1"
+                    android:id="@+id/rdgO1b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="Child"
                     android:textSize="@dimen/text_size_large" />
             </RadioGroup>
