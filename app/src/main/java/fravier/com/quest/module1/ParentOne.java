@@ -272,10 +272,10 @@ public class ParentOne extends ActionBarActivity {
                     mFragment = new O28();
                     mFragment.setArguments(null);
                     return mFragment;
-//                case 34:
-//                    mFragment = new Finish1();
-//                    mFragment.setArguments(null);
-//                    return mFragment;
+                case 34:
+                    mFragment = new Finish1();
+                    mFragment.setArguments(null);
+                    return mFragment;
 
             }
             return null;
@@ -284,7 +284,7 @@ public class ParentOne extends ActionBarActivity {
         @Override
         public int getCount() {
             // TODO Auto-generated method stub
-            return 34;
+            return 35;
         }
 
         public CharSequence getPageTitle(int position) {

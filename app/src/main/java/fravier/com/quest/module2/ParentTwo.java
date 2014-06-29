@@ -134,14 +134,96 @@ public class ParentTwo extends ActionBarActivity {
             switch (position) {
 
 
+                case 0:
+                    mFragment = new T1();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 1:
+                    mFragment = new T2a();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 2:
+                    mFragment = new T2();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 3:
+                    mFragment = new T3();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 4:
+                    mFragment = new T4();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 5:
+                    mFragment = new T5();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 6:
+                    mFragment = new T6();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 7:
+                    mFragment = new T7();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 8:
+                    mFragment = new T8();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 9:
+                    mFragment = new T9();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 10:
+                    mFragment = new T10();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 11:
+                    mFragment = new T11();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 12:
+                    mFragment = new T12();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 13:
+                    mFragment = new T13();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 14:
+                    mFragment = new T14();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 15:
+                    mFragment = new T15();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 16:
+                    mFragment = new T16();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 17:
+                    mFragment = new T17();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 18:
+                    mFragment = new T18();
+                    mFragment.setArguments(null);
+                    return mFragment;
+                case 19:
+                    mFragment = new Finish2();
+                    mFragment.setArguments(null);
+                    return mFragment;
+
             }
             return null;
+
         }
 
         @Override
         public int getCount() {
             // TODO Auto-generated method stub
-            return 34;
+            return 20;
         }
 
         public CharSequence getPageTitle(int position) {
