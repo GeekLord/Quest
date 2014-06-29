@@ -10,36 +10,71 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
+import fravier.com.fravier.com.results.Answers;
+import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
 
 public class O3a extends Fragment {
 
-    public static EditText et1;
-    public RadioGroup radioButtonGroup;
-    public int selected;
+    RadioGroup O12;
+    RadioGroup O13;
+    EditText O14;
+    EditText O15;
+    EditText txtO12;
     Context ctx;
-    View view;
+    RadioGroup.OnCheckedChangeListener changeListener = new RadioGroup.OnCheckedChangeListener() {
+        public void onCheckedChanged(RadioGroup group, int selected) {
+            switch (group.getId()) {
+                case R.id.rdgO12:
+                    int i = O12.indexOfChild(O12.findViewById(selected));
+                    if (i == 2) {
+                        txtO12.setVisibility(View.VISIBLE);
+                    } else {
+                        txtO12.setVisibility(View.INVISIBLE);
+                    }
 
-    public int getSelected() {
-        return selected;
+                    Answers.setO12(O12.indexOfChild(O12.findViewById(O12.getCheckedRadioButtonId())) + "");
+
+            }
+            Answers.setO13(O13.indexOfChild(O13.findViewById(O13.getCheckedRadioButtonId())) + "");
+        }
+    };
+
+    private void initViews(View v) {
+        O14 = ((EditText) v.findViewById(R.id.txtO14));
+        O15 = ((EditText) v.findViewById(R.id.txtO15));
+        O12 = ((RadioGroup) v.findViewById(R.id.rdgO12));
+        O13 = ((RadioGroup) v.findViewById(R.id.rdgO13));
+        txtO12 = ((EditText) v.findViewById(R.id.rdgO12d));
     }
 
-    public void setSelected(int selected) {
-        this.selected = selected;
+    private void listeners() {
+        O12.setOnCheckedChangeListener(changeListener);
+        O13.setOnCheckedChangeListener(changeListener);
     }
 
+    private void fonting() {
+        Fonting.setTypeFaceForViewGroup((ViewGroup) O12.getRootView(), ctx, Fonting.KEY_REGULAR);
+    }
+
+    private void savePageData() {
+        Answers.setO14(O14.getText().toString().trim());
+        Answers.setO15(O15.getText().toString().trim());
+        if (O12.indexOfChild(O12.findViewById(O12.getCheckedRadioButtonId())) == 2) {
+            Answers.setO12(txtO12.getText().toString());
+        }
+        Answers.setO13(O13.indexOfChild(O13.findViewById(O13.getCheckedRadioButtonId())) + "");
+    }
 
     @Override
     public void onAttach(Activity activity) {
-        // TODO Auto-generated method stub
 
         super.onAttach(activity);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
     }
 
@@ -48,9 +83,20 @@ public class O3a extends Fragment {
                              Bundle savedInstanceState) {
         ctx = container.getContext();
         View v = inflater.inflate(R.layout.fragment_o3a, container, false);
-
+        initViews(v);
+        fonting();
+        listeners();
+        savePageData();
 
         return v;
+    }
+
+    public void setUserVisibleHint(boolean paramBoolean) {
+        super.setUserVisibleHint(paramBoolean);
+        try {
+            savePageData();
+        } catch (NullPointerException e) {
+        }
     }
 
 

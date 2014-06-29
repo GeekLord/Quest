@@ -7,22 +7,57 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
+import fravier.com.fravier.com.results.Answers;
+import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
 
 public class O6 extends Fragment {
     Context ctx;
+    TextView lbl;
+
+    RadioGroup O21;
+    RadioGroup.OnCheckedChangeListener changeListener = new RadioGroup.OnCheckedChangeListener() {
+        public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+            switch (paramAnonymousRadioGroup.getId()) {
+                case R.id.rdgO21:
+                    Answers.setO21(O21.indexOfChild(O21.findViewById(O21.getCheckedRadioButtonId())) + "");
+                    break;
+            }
+
+        }
+    };
+
+
+    private void initViews(View paramView) {
+        O21 = ((RadioGroup) paramView.findViewById(R.id.rdgO21));
+        lbl = ((TextView) paramView.findViewById(R.id.lblO21));
+    }
+
+    private void listeners() {
+        O21.setOnCheckedChangeListener(changeListener);
+    }
+
+    private void savePageData() {
+        Answers.setO21(O21.indexOfChild(O21.findViewById(O21.getCheckedRadioButtonId())) + "");
+    }
 
     @Override
     public void onAttach(Activity activity) {
-        // TODO Auto-generated method stub
+
         super.onAttach(activity);
+    }
+
+    private void fonting() {
+        Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
+
         super.onCreate(savedInstanceState);
     }
 
@@ -31,8 +66,21 @@ public class O6 extends Fragment {
                              Bundle savedInstanceState) {
         ctx = container.getContext();
         View v = inflater.inflate(R.layout.fragment_o6, container, false);
-
+        initViews(v);
+        fonting();
+        listeners();
+        savePageData();
         return v;
+    }
+
+    public void setUserVisibleHint(boolean paramBoolean) {
+
+        super.setUserVisibleHint(paramBoolean);
+        try {
+            savePageData();
+
+        } catch (NullPointerException e) {
+        }
     }
 
 }

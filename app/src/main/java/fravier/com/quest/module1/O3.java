@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
 
@@ -43,6 +44,10 @@ public class O3 extends Fragment {
         super.onAttach(activity);
     }
 
+    private void fonting() {
+        Fonting.setTypeFaceForViewGroup((ViewGroup) O16.getRootView(), ctx, Fonting.KEY_REGULAR);
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
@@ -55,6 +60,7 @@ public class O3 extends Fragment {
         ctx = container.getContext();
         View v = inflater.inflate(R.layout.fragment_o3, container, false);
         initViews(v);
+        fonting();
         listeners();
         savePageData();
 

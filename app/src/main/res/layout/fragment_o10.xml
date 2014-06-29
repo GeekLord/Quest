@@ -74,6 +74,7 @@
                     android:id="@+id/rdgO27e"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="Shivering"
                     android:textSize="@dimen/text_size_large" />
 
@@ -81,6 +82,7 @@
                     android:id="@+id/rdgO27f"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="Don't know"
                     android:textSize="@dimen/text_size_large" />
 
@@ -88,6 +90,7 @@
                     android:id="@+id/rdgO27g"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="Other"
                     android:textSize="@dimen/text_size_large" />
             </RadioGroup>

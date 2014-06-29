@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.RadioGroup;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
 public class O2 extends Fragment {
@@ -27,6 +28,10 @@ public class O2 extends Fragment {
                 savePageData();
             }
         });
+    }
+
+    private void fonting() {
+        Fonting.setTypeFaceForViewGroup((ViewGroup) O11.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
 
 
@@ -50,6 +55,7 @@ public class O2 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_o2, container, false);
         initviews(v);
         listeners();
+        fonting();
         savePageData();
 
         return v;

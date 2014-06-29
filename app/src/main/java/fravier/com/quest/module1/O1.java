@@ -20,6 +20,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
 
@@ -34,7 +35,6 @@ public class O1 extends Fragment {
     public TextView O07_day;
     public TextView O07_time;
     Context ctx;
-
     DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
         private void updateDate() {
             SimpleDateFormat localSimpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
@@ -67,6 +67,10 @@ public class O1 extends Fragment {
         }
 
     };
+
+    private void fonting() {
+        Fonting.setTypeFaceForViewGroup((ViewGroup) O07_day.getRootView(), ctx, Fonting.KEY_REGULAR);
+    }
 
     private void initViews(View paramView) {
         lbl = ((TextView) paramView.findViewById(R.id.lblO1));

@@ -170,6 +170,7 @@
                         android:id="@+id/rdgO111n"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:checked="false"
                         android:text="Others"
                         android:textSize="@dimen/text_size_large" />
                 </RadioGroup>

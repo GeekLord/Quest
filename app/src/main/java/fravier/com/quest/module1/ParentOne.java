@@ -1,6 +1,8 @@
 package fravier.com.quest.module1;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -30,6 +32,8 @@ public class ParentOne extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parent_one);
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#012345")));
+
         pageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
         viewPager = (QuestViewPager) findViewById(R.id.pager);
         viewPager.setAdapter(pageAdapter);
