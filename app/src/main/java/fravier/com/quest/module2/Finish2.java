@@ -30,7 +30,7 @@ public class Finish2 extends Fragment {
 
     private void initViews(View paramView) {
 
-        btn = ((Button) paramView.findViewById(R.id.btOSave));
+        btn = ((Button) paramView.findViewById(R.id.btTSave));
     }
 
     private void listeners() {

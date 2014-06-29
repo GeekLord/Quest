@@ -10,6 +10,17 @@
         android:orientation="vertical"
         android:padding="10.0dip">
 
+        <TextView
+            android:id="@+id/sbvO410"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5.0dip"
+            android:gravity="center_horizontal"
+            android:text="EXPECTATIONS ON ACT AND DRUG EFFECTIVENESS "
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_xlarge" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -57,7 +68,7 @@
                         android:id="@+id/rdgT49a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
+                        android:checked="false"
                         android:text="Yes"
                         android:textSize="@dimen/text_size_large" />
 
