@@ -140,7 +140,8 @@ public class Answers {
     public static String T97;
     public static String T98;
     public static String T99;
-    public static String x = getRandom() + "";
+    //    public static String x = getRandom() + "";
+    public static String x = "0";
 
     static {
         O01 = "";

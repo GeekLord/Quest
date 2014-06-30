@@ -46,11 +46,13 @@ public class ParentTwo extends ActionBarActivity {
 
         next = (Button) findViewById(R.id.cmdNext);
         prev = (Button) findViewById(R.id.cmdPrev);
+        prev.setVisibility(View.INVISIBLE);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+                nextIntents();
             }
         });
 
@@ -58,6 +60,7 @@ public class ParentTwo extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+                prevIntents();
             }
         });
 
@@ -66,10 +69,7 @@ public class ParentTwo extends ActionBarActivity {
 
             @Override
             public void onPageSelected(int arg0) {
-                // System.out.println(arg0);
-                // if (arg0 == 2) {
-                // viewPager.setCurrentItem(10);
-                // }
+
 
             }
 
@@ -86,6 +86,28 @@ public class ParentTwo extends ActionBarActivity {
         });
 
     }
+
+    public void nextIntents() {
+        int i = this.viewPager.getCurrentItem();
+        if (i != 0) {
+            prev.setVisibility(View.VISIBLE);
+        }
+        if (i == 19) {
+            next.setVisibility(View.INVISIBLE);
+        }
+
+    }
+
+    public void prevIntents() {
+        int i = this.viewPager.getCurrentItem();
+        if (i != 19) {
+            next.setVisibility(View.VISIBLE);
+        }
+        if (i == 0) {
+            prev.setVisibility(View.INVISIBLE);
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

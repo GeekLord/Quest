@@ -28,22 +28,27 @@ public class T17 extends Fragment {
     EditText txtT96;
     EditText txtT97;
     EditText txtT98;
+    EditText T99x, T99y, T99z;
 
     private void fonting() {
-        Fonting.setTypeFaceForViewGroup((ViewGroup) this.lbl.getRootView(), this.ctx, Fonting.KEY_REGULAR);
+        Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
 
     private void initviews(View paramView) {
-        this.T95 = ((RadioGroup) paramView.findViewById(R.id.rdgT95));
-        this.T96 = ((RadioGroup) paramView.findViewById(R.id.rdgT96));
-        this.T97 = ((RadioGroup) paramView.findViewById(R.id.rdgT97));
-        this.T98 = ((RadioGroup) paramView.findViewById(R.id.rdgT98));
-        this.T99 = ((RadioGroup) paramView.findViewById(R.id.rdgT99));
-        this.txtT95 = ((EditText) paramView.findViewById(R.id.rdgT95i));
-        this.txtT96 = ((EditText) paramView.findViewById(R.id.rdgT96g));
-        this.txtT97 = ((EditText) paramView.findViewById(R.id.rdgT97h));
-        this.txtT98 = ((EditText) paramView.findViewById(R.id.rdgT98f));
-        this.lbl = ((TextView) paramView.findViewById(R.id.lblT95));
+        T95 = ((RadioGroup) paramView.findViewById(R.id.rdgT95));
+        T96 = ((RadioGroup) paramView.findViewById(R.id.rdgT96));
+        T97 = ((RadioGroup) paramView.findViewById(R.id.rdgT97));
+        T98 = ((RadioGroup) paramView.findViewById(R.id.rdgT98));
+        T99 = ((RadioGroup) paramView.findViewById(R.id.rdgT99));
+        txtT95 = ((EditText) paramView.findViewById(R.id.rdgT95i));
+        txtT96 = ((EditText) paramView.findViewById(R.id.rdgT96g));
+        txtT97 = ((EditText) paramView.findViewById(R.id.rdgT97h));
+        txtT98 = ((EditText) paramView.findViewById(R.id.rdgT98f));
+        lbl = ((TextView) paramView.findViewById(R.id.lblT95));
+        T99x = (EditText) paramView.findViewById(R.id.T99x);
+        T99y = (EditText) paramView.findViewById(R.id.T99y);
+        T99z = (EditText) paramView.findViewById(R.id.T99z);
+
     }
 
     private void listeners() {
@@ -58,7 +63,7 @@ public class T17 extends Fragment {
     }
 
     public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle) {
-        this.ctx = paramViewGroup.getContext();
+        ctx = paramViewGroup.getContext();
         View localView = paramLayoutInflater.inflate(R.layout.fragment_t17, paramViewGroup, false);
         initviews(localView);
         fonting();
@@ -69,57 +74,72 @@ public class T17 extends Fragment {
 
     public void onResume() {
         savePageData();
-        this.T95.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T95.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                int i = T17.this.T95.indexOfChild(T17.this.T95.findViewById(paramAnonymousInt));
+                int i = T95.indexOfChild(T95.findViewById(paramAnonymousInt));
                 System.out.println(i);
                 if (i == 7) {
-                    T17.this.txtT95.setVisibility(View.VISIBLE);
+                    txtT95.setVisibility(View.VISIBLE);
                     return;
                 }
-                T17.this.txtT95.setVisibility(View.GONE);
-                Answers.setT95(T17.this.T95.indexOfChild(T17.this.T95.findViewById(T17.this.T95.getCheckedRadioButtonId())) + "");
+                txtT95.setVisibility(View.GONE);
+                Answers.setT95(T95.indexOfChild(T95.findViewById(T95.getCheckedRadioButtonId())) + "");
             }
         });
-        this.T96.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T96.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                int i = T17.this.T96.indexOfChild(T17.this.T96.findViewById(paramAnonymousInt));
+                int i = T96.indexOfChild(T96.findViewById(paramAnonymousInt));
                 System.out.println(i);
                 if (i == 5) {
-                    T17.this.txtT96.setVisibility(View.VISIBLE);
+                    txtT96.setVisibility(View.VISIBLE);
                     return;
                 }
-                T17.this.txtT96.setVisibility(View.GONE);
-                Answers.setT96(T17.this.T96.indexOfChild(T17.this.T96.findViewById(T17.this.T96.getCheckedRadioButtonId())) + "");
+                txtT96.setVisibility(View.GONE);
+                Answers.setT96(T96.indexOfChild(T96.findViewById(T96.getCheckedRadioButtonId())) + "");
             }
         });
-        this.T97.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T97.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                int i = T17.this.T97.indexOfChild(T17.this.T97.findViewById(paramAnonymousInt));
+                int i = T97.indexOfChild(T97.findViewById(paramAnonymousInt));
                 System.out.println(i);
                 if (i == 6) {
-                    T17.this.txtT97.setVisibility(View.VISIBLE);
+                    txtT97.setVisibility(View.VISIBLE);
                     return;
                 }
-                T17.this.txtT97.setVisibility(View.GONE);
-                Answers.setT97(T17.this.T97.indexOfChild(T17.this.T97.findViewById(T17.this.T97.getCheckedRadioButtonId())) + "");
+                txtT97.setVisibility(View.GONE);
+                Answers.setT97(T97.indexOfChild(T97.findViewById(T97.getCheckedRadioButtonId())) + "");
             }
         });
-        this.T98.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T98.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                int i = T17.this.T98.indexOfChild(T17.this.T98.findViewById(paramAnonymousInt));
+                int i = T98.indexOfChild(T98.findViewById(paramAnonymousInt));
                 System.out.println(i);
                 if (i == 4) {
-                    T17.this.txtT98.setVisibility(View.VISIBLE);
+                    txtT98.setVisibility(View.VISIBLE);
                     return;
                 }
-                T17.this.txtT98.setVisibility(View.GONE);
-                Answers.setT98(T17.this.T98.indexOfChild(T17.this.T98.findViewById(T17.this.T98.getCheckedRadioButtonId())) + "");
+                txtT98.setVisibility(View.GONE);
+                Answers.setT98(T98.indexOfChild(T98.findViewById(T98.getCheckedRadioButtonId())) + "");
             }
         });
-        this.T99.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T99.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                T17.this.savePageData();
+                int i = T99.indexOfChild(T99.findViewById(paramAnonymousInt));
+                if (i == 1) {
+                    T99x.setVisibility(View.VISIBLE);
+                } else {
+                    T99x.setVisibility(View.INVISIBLE);
+                }
+                if (i == 2) {
+                    T99y.setVisibility(View.VISIBLE);
+                } else {
+                    T99y.setVisibility(View.INVISIBLE);
+                }
+                if (i == 3) {
+                    T99z.setVisibility(View.VISIBLE);
+                } else {
+                    T99z.setVisibility(View.INVISIBLE);
+                }
             }
         });
         super.onResume();

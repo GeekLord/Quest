@@ -16,7 +16,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
+import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.Logic;
 import fravier.com.global.QuestViewPager;
 import fravier.com.quest.Dashboard;
 import fravier.com.quest.R;
@@ -47,18 +50,21 @@ public class ParentOne extends ActionBarActivity {
 
         next = (Button) findViewById(R.id.cmdNext);
         prev = (Button) findViewById(R.id.cmdPrev);
+        prev.setVisibility(View.INVISIBLE);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+                //viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+                nextIntents();
             }
         });
 
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+                //viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+                prevIntents();
             }
         });
 
@@ -86,6 +92,170 @@ public class ParentOne extends ActionBarActivity {
             }
         });
 
+    }
+
+    public void nextIntents() {
+        Logic localLogic = new Logic(getApplication());
+        int i = viewPager.getCurrentItem();
+        if (i == 0) {
+            prev.setVisibility(View.VISIBLE);
+        }
+        if (i == 33) {
+            next.setVisibility(View.INVISIBLE);
+        }
+        //the page navigations
+
+        if (Answers.x.equals("0")) {
+            if (i == 1) {
+                if (Answers.getO11().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 1.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O11", Answers.getO11(), i));
+                }
+            } else if (i == 3) {
+                if (Answers.getO19().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 1.9 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O19", Answers.getO19(), i));
+                }
+            } else if (i == 6) {
+                if (Answers.getO21().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O21", Answers.getO21(), i));
+                }
+            } else if (i == 7) {
+                if (Answers.getO22().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.2 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O22", Answers.getO22(), i));
+                }
+            } else if (i == 9) {
+                if (Answers.getO24().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.4 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O24", Answers.getO24(), i));
+                }
+            } else if (i == 21) {
+                if (Answers.getO49().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 4.9 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
+                }
+            } else if (i == 23) {
+                if (Answers.getO413().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O413", Answers.getO413(), i));
+                }
+            } else if (i == 26) {
+                if (Answers.getO51().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 5.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O51", Answers.getO51(), i));
+                }
+            } else if (i == 29) {
+                if (Answers.getO65().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 6.5 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O65", Answers.getO65(), i));
+                }
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+
+            }
+        } else {
+
+            if (i == 32) {
+                viewPager.setCurrentItem(21);
+
+            }
+            if (i == 25) {
+
+                viewPager.setCurrentItem(33);
+            }
+        }
+    }
+
+
+    public void prevIntents() {
+        int i = viewPager.getCurrentItem();
+        if (i != 34) {
+            next.setVisibility(View.VISIBLE);
+        }
+        if (i == 1) {
+            prev.setVisibility(View.INVISIBLE);
+        }
+        if (Answers.x.equals("0")) {
+
+            if (i == 3) {
+                if (Answers.getO11().equals("0")) {
+                    viewPager.setCurrentItem(1);
+                }
+            }
+
+
+            if (i == 5) {
+                String str6 = Answers.getO19();
+                if ((str6.equals("0")) || (str6.equals("3")) || (str6.equals("4"))) {
+                    viewPager.setCurrentItem(3);
+                }
+            } else if (i == 12) {
+                String str4 = Answers.getO21();
+                String str5 = Answers.getO22();
+                Answers.getO26();
+                if (str4.equals("1")) {
+                    viewPager.setCurrentItem(6);
+                } else if (str5.equals("2")) {
+                    viewPager.setCurrentItem(7);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 9) {
+                if (Answers.getO22().equals("1")) {
+                    viewPager.setCurrentItem(7);
+                }
+            } else if (i == 11) {
+                String str3 = Answers.getO24();
+                if ((str3.equals("0")) || (str3.equals("2"))) {
+                    viewPager.setCurrentItem(9);
+                }
+            } else if (i == 23) {
+                String str2 = Answers.getO49();
+                if ((str2.equals("1")) || (str2.equals("2"))) {
+                    viewPager.setCurrentItem(21);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 24) {
+                if (Answers.getO413().equals("0")) {
+                    viewPager.setCurrentItem(23);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 25) {
+                if (Answers.getO413().equals("1")) {
+                    viewPager.setCurrentItem(23);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 28) {
+                if (Answers.getO51().equals("1")) {
+                    viewPager.setCurrentItem(26);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 31) {
+                String str1 = Answers.getO65();
+                if ((str1.equals("1")) || (str1.equals("2"))) {
+                    viewPager.setCurrentItem(29);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else {
+                viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+            }
+        }
     }
 
     @Override
