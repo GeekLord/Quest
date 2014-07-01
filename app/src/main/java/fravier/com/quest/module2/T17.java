@@ -140,6 +140,8 @@ public class T17 extends Fragment {
                 } else {
                     T99z.setVisibility(View.INVISIBLE);
                 }
+                //  Answers.setT98(T99.indexOfChild(T99.findViewById(T99.getCheckedRadioButtonId())) + "");
+
             }
         });
         super.onResume();
@@ -158,7 +160,16 @@ public class T17 extends Fragment {
         if (this.T98.indexOfChild(this.T98.findViewById(this.T98.getCheckedRadioButtonId())) == 4) {
             Answers.setT98(this.txtT98.getText().toString());
         }
-        Answers.setT99(this.T99.indexOfChild(this.T99.findViewById(this.T99.getCheckedRadioButtonId())) + "");
+        if (this.T99.indexOfChild(this.T99.findViewById(this.T99.getCheckedRadioButtonId())) == 1) {
+            Answers.setT99(this.T99x.getText().toString() + " Acres");
+        } else if (this.T99.indexOfChild(this.T99.findViewById(this.T99.getCheckedRadioButtonId())) == 2) {
+            Answers.setT99(this.T99y.getText().toString() + " Hectares");
+        } else if (this.T99.indexOfChild(this.T99.findViewById(this.T99.getCheckedRadioButtonId())) == 3) {
+            Answers.setT99(this.T99z.getText().toString() + " Feet");
+        } else {
+            Answers.setT99(this.T99.indexOfChild(this.T99.findViewById(this.T99.getCheckedRadioButtonId())) + "");
+        }
+
     }
 
     public void setUserVisibleHint(boolean paramBoolean) {

@@ -39,6 +39,13 @@
                 android:text="a)"
                 android:textAlignment="center" />
 
+            <RadioButton
+                android:id="@+id/rd31ax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
+
             <Button
                 android:id="@+id/btbO31aa"
                 android:layout_width="0.0dip"
@@ -50,6 +57,13 @@
                 android:padding="10.0dip"
                 android:text="In 1 WEEK\n1000 Shillings" />
 
+            <RadioButton
+                android:id="@+id/rd31ay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
+
             <Button
                 android:id="@+id/btbO31ab"
                 android:layout_width="0.0dip"
@@ -60,6 +74,7 @@
                 android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
                 android:text="In 4 WEEKS\n1000 Shillings" />
+
         </TableRow>
 
         <TableRow
@@ -77,6 +92,13 @@
                 android:text="b)"
                 android:textAlignment="center" />
 
+            <RadioButton
+                android:id="@+id/rd31bx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
+
             <Button
                 android:id="@+id/btbO31ba"
                 android:layout_width="0.0dip"
@@ -88,6 +110,13 @@
                 android:padding="10.0dip"
                 android:text="In 1 WEEK\n1000 Shillings" />
 
+            <RadioButton
+                android:id="@+id/rd31by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
+
             <Button
                 android:id="@+id/btbO31bb"
                 android:layout_width="0.0dip"
@@ -98,6 +127,7 @@
                 android:drawableBottom="@drawable/icon_1050"
                 android:padding="10.0dip"
                 android:text="In 4 WEEKS\n1050 Shillings" />
+
         </TableRow>
 
         <TableRow
@@ -115,6 +145,13 @@
                 android:text="c)"
                 android:textAlignment="center" />
 
+            <RadioButton
+                android:id="@+id/rd31cx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
+
             <Button
                 android:id="@+id/btbO31ca"
                 android:layout_width="0.0dip"
@@ -125,6 +162,13 @@
                 android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
                 android:text="In 1 WEEK\n1000 Shillings" />
+
+            <RadioButton
+                android:id="@+id/rd31cy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
 
             <Button
                 android:id="@+id/btbO31cb"
@@ -153,6 +197,13 @@
                 android:text="d)"
                 android:textAlignment="center" />
 
+            <RadioButton
+                android:id="@+id/rd31dx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
+
             <Button
                 android:id="@+id/btbO31da"
                 android:layout_width="0.0dip"
@@ -163,6 +214,13 @@
                 android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
                 android:text="In 1 WEEK\n1000 Shillings" />
+
+            <RadioButton
+                android:id="@+id/rd31dy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false" />
 
             <Button
                 android:id="@+id/btbO31db"

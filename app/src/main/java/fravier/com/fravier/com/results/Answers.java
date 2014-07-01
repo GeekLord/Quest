@@ -2,7 +2,7 @@ package fravier.com.fravier.com.results;
 
 public class Answers {
     public static String O01;
-    public static String O02;
+    public static String O02 = "0";
     public static String O03;
     public static String O04;
     public static String O05;
@@ -141,7 +141,20 @@ public class Answers {
     public static String T98;
     public static String T99;
     //    public static String x = getRandom() + "";
-    public static String x = "0";
+    //public static String x = "0";
+    public static int x = 0;
+
+    // public static int x = 1;
+    public static int getXx() {
+        int y;
+        try {
+            y = Integer.valueOf(getO02());
+        } catch (Exception e) {
+            y = 0;
+        }
+        int x = (y + 2) % 2;
+        return x;
+    }
 
     static {
         O01 = "";

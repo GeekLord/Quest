@@ -19,9 +19,8 @@ public class O5 extends Fragment {
     Context ctx;
     EditText txtO111;
     RadioGroup O111;
-
-
     RadioGroup.OnCheckedChangeListener changeListener = new RadioGroup.OnCheckedChangeListener() {
+        @Override
         public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
             switch (paramAnonymousRadioGroup.getId()) {
                 case R.id.rdgO111:
@@ -37,6 +36,7 @@ public class O5 extends Fragment {
                     Answers.setO111(O111.indexOfChild(O111.findViewById(O111.getCheckedRadioButtonId())) + "");
             }
         }
+
 
     };
 

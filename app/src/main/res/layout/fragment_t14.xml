@@ -10,6 +10,24 @@
         android:orientation="vertical"
         android:padding="10.0dip">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR ALL CLIENTS "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/sbvO410"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5.0dip"
+            android:gravity="center_horizontal"
+            android:text="SECTION9: HOUSEHOLD CHARACTERISTICS "
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_xlarge" />
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

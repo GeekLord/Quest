@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
@@ -27,43 +28,75 @@ public class O12 extends Fragment {
     Button O32ea;
     Button O32eb;
     Context ctx;
+
+    RadioButton rd32ax, rd32ay;
+    RadioButton rd32bx, rd32by;
+    RadioButton rd32cx, rd32cy;
+    RadioButton rd32dx, rd32dy;
+    RadioButton rd32ex, rd32ey;
+
+
     View.OnClickListener l = new View.OnClickListener() {
-        public void onClick(View paramAnonymousView) {
-            switch (paramAnonymousView.getId()) {
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
                 case R.id.btnO32aa:
                     Answers.setO32a("A");
+                    rd32ax.setChecked(true);
+                    rd32ay.setChecked(false);
                     return;
                 case R.id.btnO32ab:
                     Answers.setO32a("B");
+                    rd32ax.setChecked(false);
+                    rd32ay.setChecked(true);
                     return;
                 case R.id.btnO32ba:
                     Answers.setO32b("A");
+                    rd32bx.setChecked(true);
+                    rd32by.setChecked(false);
                     return;
                 case R.id.btnO32bb:
                     Answers.setO32b("B");
+                    rd32bx.setChecked(false);
+                    rd32by.setChecked(true);
                     return;
                 case R.id.btnO32ca:
                     Answers.setO32c("A");
+                    rd32cx.setChecked(true);
+                    rd32cy.setChecked(false);
                     return;
                 case R.id.btnO32cb:
                     Answers.setO32c("B");
+                    rd32cx.setChecked(false);
+                    rd32cy.setChecked(true);
                     return;
                 case R.id.btnO32da:
                     Answers.setO32d("A");
+                    rd32dx.setChecked(true);
+                    rd32dy.setChecked(false);
                     return;
                 case R.id.btnO32db:
                     Answers.setO32d("B");
+                    rd32dx.setChecked(false);
+                    rd32dy.setChecked(true);
                     return;
                 case R.id.btnO32ea:
                     Answers.setO32e("A");
+                    rd32ex.setChecked(true);
+                    rd32ey.setChecked(false);
                     return;
                 case R.id.btnO32eb:
                     Answers.setO32e("B");
+                    rd32ex.setChecked(false);
+                    rd32ey.setChecked(true);
                     return;
             }
 
         }
     };
+
+
     TextView lbl;
 
     private void fonting() {
@@ -75,13 +108,28 @@ public class O12 extends Fragment {
         O32aa = ((Button) paramView.findViewById(R.id.btnO32aa));
         O32ab = ((Button) paramView.findViewById(R.id.btnO32ab));
         O32ba = ((Button) paramView.findViewById(R.id.btnO32ba));
-        O32bb = ((Button) paramView.findViewById(R.id.btnO32ab));
+        O32bb = ((Button) paramView.findViewById(R.id.btnO32bb));
         O32ca = ((Button) paramView.findViewById(R.id.btnO32ca));
         O32cb = ((Button) paramView.findViewById(R.id.btnO32cb));
         O32da = ((Button) paramView.findViewById(R.id.btnO32da));
         O32db = ((Button) paramView.findViewById(R.id.btnO32db));
         O32ea = ((Button) paramView.findViewById(R.id.btnO32ea));
         O32eb = ((Button) paramView.findViewById(R.id.btnO32eb));
+
+        rd32ax = (RadioButton) paramView.findViewById(R.id.rd32ax);
+        rd32ay = (RadioButton) paramView.findViewById(R.id.rd32ay);
+
+        rd32bx = (RadioButton) paramView.findViewById(R.id.rd32bx);
+        rd32by = (RadioButton) paramView.findViewById(R.id.rd32by);
+
+        rd32cx = (RadioButton) paramView.findViewById(R.id.rd32cx);
+        rd32cy = (RadioButton) paramView.findViewById(R.id.rd32cy);
+
+        rd32dx = (RadioButton) paramView.findViewById(R.id.rd32dx);
+        rd32dy = (RadioButton) paramView.findViewById(R.id.rd32dy);
+
+        rd32ex = (RadioButton) paramView.findViewById(R.id.rd32ex);
+        rd32ey = (RadioButton) paramView.findViewById(R.id.rd32ey);
     }
 
     private void listeners() {
@@ -118,7 +166,10 @@ public class O12 extends Fragment {
                              Bundle savedInstanceState) {
         ctx = container.getContext();
         View v = inflater.inflate(R.layout.fragment_o12, container, false);
-
+        initViews(v);
+        fonting();
+        listeners();
+        savePageData();
         return v;
     }
 

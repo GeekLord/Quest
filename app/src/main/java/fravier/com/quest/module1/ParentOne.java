@@ -105,7 +105,9 @@ public class ParentOne extends ActionBarActivity {
         }
         //the page navigations
 
-        if (Answers.x.equals("0")) {
+        if (Answers.getXx() == 0) {
+            // int x=(Integer.parseInt(Answers.getO02())+3)%2;
+            //Toast.makeText(getApplication(),"Using zero "+Answers.getXx()+"::",Toast.LENGTH_SHORT).show();
             if (i == 1) {
                 if (Answers.getO11().equals("-1")) {
                     Toast.makeText(getApplication(), "Kindly answer question 1.1 ", Toast.LENGTH_SHORT).show();
@@ -159,20 +161,79 @@ public class ParentOne extends ActionBarActivity {
                     Toast.makeText(getApplication(), "Kindly answer question 6.5 ", Toast.LENGTH_SHORT).show();
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O65", Answers.getO65(), i));
-                }
-            } else {
+                }//diversion here
+            } else {//till here
                 viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
 
             }
-        } else {
+        } else if (Answers.getXx() == 1) {
+            // Toast.makeText(getApplication(), "Using One " + Answers.getXx(), Toast.LENGTH_SHORT).show();
 
-            if (i == 32) {
+            if (i == 1) {
+                if (Answers.getO11().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 1.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O11", Answers.getO11(), i));
+                }
+            } else if (i == 3) {
+                if (Answers.getO19().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 1.9 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O19", Answers.getO19(), i));
+                }
+            } else if (i == 6) {
+                if (Answers.getO21().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O21", Answers.getO21(), i));
+                }
+            } else if (i == 7) {
+                if (Answers.getO22().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.2 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O22", Answers.getO22(), i));
+                }
+            } else if (i == 9) {
+                if (Answers.getO24().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.4 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O24", Answers.getO24(), i));
+                }
+            } else if (i == 21) {
+                if (Answers.getO49().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 4.9 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
+                }
+            } else if (i == 23) {
+                if (Answers.getO413().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O413", Answers.getO413(), i));
+                }
+            } else if (i == 26) {
+                if (Answers.getO51().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 5.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O51", Answers.getO51(), i));
+                }
+            } else if (i == 29) {
+                if (Answers.getO65().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 6.5 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O65", Answers.getO65(), i));
+                }//diversion here
+            } else if (i == 20) {
+                viewPager.setCurrentItem(26);
+            } else if (i == 32) {
                 viewPager.setCurrentItem(21);
 
-            }
-            if (i == 25) {
+            } else if (i == 25) {
 
                 viewPager.setCurrentItem(33);
+            } else {//till here
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+
             }
         }
     }
@@ -186,11 +247,11 @@ public class ParentOne extends ActionBarActivity {
         if (i == 1) {
             prev.setVisibility(View.INVISIBLE);
         }
-        if (Answers.x.equals("0")) {
+        if (Answers.x == 0) {
 
             if (i == 3) {
                 if (Answers.getO11().equals("0")) {
-                    viewPager.setCurrentItem(1);
+                    viewPager.setCurrentItem(2);
                 }
             }
 
@@ -203,7 +264,7 @@ public class ParentOne extends ActionBarActivity {
             } else if (i == 12) {
                 String str4 = Answers.getO21();
                 String str5 = Answers.getO22();
-                Answers.getO26();
+                //Answers.getO26();
                 if (str4.equals("1")) {
                     viewPager.setCurrentItem(6);
                 } else if (str5.equals("2")) {
@@ -214,11 +275,15 @@ public class ParentOne extends ActionBarActivity {
             } else if (i == 9) {
                 if (Answers.getO22().equals("1")) {
                     viewPager.setCurrentItem(7);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
             } else if (i == 11) {
                 String str3 = Answers.getO24();
                 if ((str3.equals("0")) || (str3.equals("2"))) {
                     viewPager.setCurrentItem(9);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
             } else if (i == 23) {
                 String str2 = Answers.getO49();
@@ -255,6 +320,87 @@ public class ParentOne extends ActionBarActivity {
             } else {
                 viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
             }
+        } else if (Answers.x == 1) {
+
+            if (i == 3) {
+                if (Answers.getO11().equals("0")) {
+                    viewPager.setCurrentItem(2);
+                }
+            }
+
+
+            if (i == 5) {
+                String str6 = Answers.getO19();
+                if ((str6.equals("0")) || (str6.equals("3")) || (str6.equals("4"))) {
+                    viewPager.setCurrentItem(3);
+                }
+            } else if (i == 12) {
+                String str4 = Answers.getO21();
+                String str5 = Answers.getO22();
+                //Answers.getO26();
+                if (str4.equals("1")) {
+                    viewPager.setCurrentItem(6);
+                } else if (str5.equals("2")) {
+                    viewPager.setCurrentItem(7);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 9) {
+                if (Answers.getO22().equals("1")) {
+                    viewPager.setCurrentItem(7);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 11) {
+                String str3 = Answers.getO24();
+                if ((str3.equals("0")) || (str3.equals("2"))) {
+                    viewPager.setCurrentItem(9);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 23) {
+                String str2 = Answers.getO49();
+                if ((str2.equals("1")) || (str2.equals("2"))) {
+                    viewPager.setCurrentItem(21);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 24) {
+                if (Answers.getO413().equals("0")) {
+                    viewPager.setCurrentItem(23);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 25) {
+                if (Answers.getO413().equals("1")) {
+                    viewPager.setCurrentItem(23);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 28) {
+                if (Answers.getO51().equals("1")) {
+                    viewPager.setCurrentItem(26);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 31) {
+                String str1 = Answers.getO65();
+                if ((str1.equals("1")) || (str1.equals("2"))) {
+                    viewPager.setCurrentItem(29);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 26) {
+                viewPager.setCurrentItem(20);
+            } else if (i == 21) {
+                viewPager.setCurrentItem(32);
+
+            } else if (i == 33) {
+
+                viewPager.setCurrentItem(25);
+            } else {
+                viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+            }
         }
     }
 
@@ -284,7 +430,8 @@ public class ParentOne extends ActionBarActivity {
     @Override
     public void onBackPressed() {
         if (viewPager.getCurrentItem() != 0) {
-            viewPager.setCurrentItem(-1 + viewPager.getCurrentItem());
+            // viewPager.setCurrentItem(-1 + viewPager.getCurrentItem());
+            prevIntents();
             return;
         }
         super.onBackPressed();
@@ -380,11 +527,11 @@ public class ParentOne extends ActionBarActivity {
                     mFragment.setArguments(null);
                     return mFragment;
                 case 15:
-                    mFragment = new O12();
+                    mFragment = new O12a();
                     mFragment.setArguments(null);
                     return mFragment;
                 case 16:
-                    mFragment = new O12a();
+                    mFragment = new O12();
                     mFragment.setArguments(null);
                     return mFragment;
                 case 17:
@@ -466,7 +613,7 @@ public class ParentOne extends ActionBarActivity {
 
         @Override
         public int getCount() {
-            // TODO Auto-generated method stub
+
             return 35;
         }
 

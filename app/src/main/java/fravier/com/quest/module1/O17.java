@@ -60,13 +60,13 @@ public class O17 extends Fragment {
             switch (paramAnonymousSeekBar.getId()) {
 
                 case R.id.sbO410:
-                    Answers.setO410(O17.progressChanged_410 + "%");
+                    Answers.setO410(progressChanged_410 + "%");
                     return;
                 case R.id.sbO411:
-                    Answers.setO411(O17.progressChanged_411 + "%");
+                    Answers.setO411(progressChanged_411 + "%");
                     return;
                 case R.id.sbO412:
-                    Answers.setO412(O17.progressChanged_412 + "%");
+                    Answers.setO412(progressChanged_412 + "%");
                     return;
             }
 

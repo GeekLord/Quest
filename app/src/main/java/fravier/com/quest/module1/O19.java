@@ -20,13 +20,16 @@ public class O19 extends Fragment {
     public static int progressChanged_b = 50;
     public static int progressChanged_c = 50;
     public static int progressChanged_d = 50;
+
+
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
-        public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
+        @Override
+        public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean fromUser) {
             switch (paramAnonymousSeekBar.getId()) {
 
                 case R.id.sbO414a:
                     progressChanged_b = paramAnonymousInt;
-                    sbvO414aa.setText(O19.progressChanged_b + "% likelihood");
+                    sbvO414aa.setText(progressChanged_b + "% likelihood");
                     O414aa.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O414aa.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O414ab.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -34,7 +37,7 @@ public class O19 extends Fragment {
                     return;
                 case R.id.sbO414b:
                     progressChanged_c = paramAnonymousInt;
-                    sbvO414ba.setText(O19.progressChanged_c + "% likelihood");
+                    sbvO414ba.setText(progressChanged_c + "% likelihood");
                     O414ba.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O414ba.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O414bb.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -42,7 +45,7 @@ public class O19 extends Fragment {
                     return;
                 case R.id.sbO414c:
                     progressChanged_d = paramAnonymousInt;
-                    sbvO414ca.setText(O19.progressChanged_d + "% likelihood");
+                    sbvO414ca.setText(progressChanged_d + "% likelihood");
                     O414ca.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O414ca.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O414cb.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -53,25 +56,28 @@ public class O19 extends Fragment {
 
         }
 
-        public void onStartTrackingTouch(SeekBar paramAnonymousSeekBar) {
+        @Override
+        public void onStartTrackingTouch(SeekBar seekBar) {
+
         }
 
+        @Override
         public void onStopTrackingTouch(SeekBar paramAnonymousSeekBar) {
             switch (paramAnonymousSeekBar.getId()) {
-
                 case R.id.sbO414a:
-                    Answers.setO414a(O19.progressChanged_b + "%");
+                    Answers.setO414a(progressChanged_b + "%");
                     return;
                 case R.id.sbO414b:
-                    Answers.setO414b(O19.progressChanged_c + "%");
+                    Answers.setO414b(progressChanged_c + "%");
                     return;
                 case R.id.sbO414c:
-                    Answers.setO414c(O19.progressChanged_d + "%");
+                    Answers.setO414c(progressChanged_d + "%");
                     return;
             }
-
         }
     };
+
+
     ImageView O414aa;
     ImageView O414ab;
     ImageView O414ba;

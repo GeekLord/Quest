@@ -26,7 +26,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="9.3a) How many of the following livestock does your household have? \nCows ?"
+                    android:text="9.3) How many of the following livestock does your household have? \na) Cows ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -68,7 +68,7 @@
                         android:numeric="integer"
                         android:visibility="gone">
 
-                    <requestFocus />
+                        <requestFocus />
                     </EditText>
                 </RadioGroup>
             </LinearLayout>

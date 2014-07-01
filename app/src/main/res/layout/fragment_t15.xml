@@ -356,7 +356,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="h) A bank account(at least one member of the househol has)?"
+                    android:text="h) A bank account(at least one member of the household has)?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

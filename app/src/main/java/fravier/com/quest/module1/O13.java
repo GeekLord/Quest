@@ -156,7 +156,7 @@ public class O13 extends Fragment {
     }
 
     private void savePageData() {
-        Answers.setO40a(O40aa.getText().toString().trim() + "/" + O40ab.getText().toString().trim());
+        Answers.setO40a(O40aa.getText().toString().trim() + " of " + O40ab.getText().toString().trim());
         Answers.setO40b(progressChanged_b + "%");
         Answers.setO40c(progressChanged_c + "%");
         Answers.setO40d(progressChanged_d + "%");

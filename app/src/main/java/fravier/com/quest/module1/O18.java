@@ -31,9 +31,12 @@ public class O18 extends Fragment {
 
     private void listeners() {
         O413.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
                 savePageData();
             }
+
+
         });
     }
 

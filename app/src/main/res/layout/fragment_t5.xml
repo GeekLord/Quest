@@ -26,7 +26,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.10) If you use either Artefan or Fansidar, how likely is that you will recover in 2 days?"
+                    android:text="4.10) If you use either Fansidar or Artefan, how likely is that you will recover in 2 days?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -104,7 +104,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.11) If you use either Artefan or Fansidar, how likely is that you will recover in 5 days?"
+                    android:text="4.11) If you use either Fansidar or Artefan, how likely is that you will recover in 5 days?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -182,7 +182,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.12) If you use either Artefan or Fansidar, how likely is that you will recover in 2 weeks?"
+                    android:text="4.12) If you use either Fansidar or Artefan, how likely is that you will recover in 2 weeks?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

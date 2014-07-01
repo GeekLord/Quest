@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
@@ -25,35 +26,62 @@ public class O11 extends Fragment {
     Button O31da;
     Button O31db;
     Context ctx;
+    RadioButton rd31ax, rd31ay;
+    RadioButton rd31bx, rd31by;
+    RadioButton rd31cx, rd31cy;
+    RadioButton rd31dx, rd31dy;
     View.OnClickListener l = new View.OnClickListener() {
-        public void onClick(View paramAnonymousView) {
-            switch (paramAnonymousView.getId()) {
+
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
 
                 case R.id.btbO31aa:
+                    rd31ax.setChecked(true);
+                    rd31ay.setChecked(false);
                     Answers.setO31a("A");
                     return;
                 case R.id.btbO31ab:
+                    rd31ax.setChecked(false);
+                    rd31ay.setChecked(true);
                     Answers.setO31a("B");
                     return;
                 case R.id.btbO31ba:
+                    rd31bx.setChecked(true);
+                    rd31by.setChecked(false);
                     Answers.setO31b("A");
                     return;
                 case R.id.btbO31bb:
                     Answers.setO31b("B");
+                    rd31bx.setChecked(false);
+                    rd31by.setChecked(true);
                     return;
                 case R.id.btbO31ca:
                     Answers.setO31c("A");
+                    rd31cx.setChecked(true);
+                    rd31cy.setChecked(false);
                     return;
                 case R.id.btbO31cb:
                     Answers.setO31c("B");
+                    rd31cx.setChecked(false);
+                    rd31cy.setChecked(true);
                     return;
                 case R.id.btbO31da:
                     Answers.setO31d("A");
+                    rd31dx.setChecked(true);
+                    rd31dy.setChecked(false);
                     return;
                 case R.id.btbO31db:
                     Answers.setO31c("B");
+                    rd31dx.setChecked(false);
+                    rd31dy.setChecked(true);
                     return;
             }
+        }
+
+        {
+
 
         }
     };
@@ -73,6 +101,20 @@ public class O11 extends Fragment {
         O31cb = ((Button) paramView.findViewById(R.id.btbO31cb));
         O31da = ((Button) paramView.findViewById(R.id.btbO31da));
         O31db = ((Button) paramView.findViewById(R.id.btbO31db));
+
+        rd31ax = (RadioButton) paramView.findViewById(R.id.rd31ax);
+        rd31ay = (RadioButton) paramView.findViewById(R.id.rd31ay);
+
+        rd31bx = (RadioButton) paramView.findViewById(R.id.rd31bx);
+        rd31by = (RadioButton) paramView.findViewById(R.id.rd31by);
+
+        rd31cx = (RadioButton) paramView.findViewById(R.id.rd31cx);
+        rd31cy = (RadioButton) paramView.findViewById(R.id.rd31cy);
+
+        rd31dx = (RadioButton) paramView.findViewById(R.id.rd31dx);
+        rd31dy = (RadioButton) paramView.findViewById(R.id.rd31dy);
+
+
     }
 
     private void listeners() {

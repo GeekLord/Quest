@@ -17,7 +17,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="5.0dip"
             android:gravity="center_horizontal"
-            android:text="EXPECTATIONS ON ACT AND DRUG EFFECTIVENESS "
+            android:text="EXPECTATIONS ON ACT AND EFFECTIVENESS "
             android:textAlignment="center"
             android:textSize="@dimen/text_size_xlarge" />
 

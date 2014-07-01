@@ -27,7 +27,7 @@ public class Logic {
             }
 
         } else if (qn.equals("O21")) {
-            if (ans.equals("0")) {
+            if (ans.equals("1")) {
                 return Addressing("O27");
             } else {
                 return els + 1;
@@ -73,6 +73,31 @@ public class Logic {
         } else if (qn.equals("O65")) {
             if (ans.equals("1")) {
                 return Addressing("O67");
+            }
+            //for module two
+        } else if (qn.equals("T49")) {
+            if (ans.equals("1") || ans.equals("2")) {
+                return Addressing("T413");
+            }
+        } else if (qn.equals("T413")) {
+            if (ans.equals("0")) {
+                return Addressing("T414a");
+            } else if (ans.equals("1")) {
+                return Addressing("T415a");
+            } else {
+                return els + 1;
+            }
+        } else if (qn.equals("T51")) {
+            if (ans.equals("1")) {
+                return Addressing("T71");
+            } else {
+                return els + 1;
+            }
+        } else if (qn.equals("T71")) {
+            if (ans.equals("0")) {
+                return Addressing("T91");
+            } else {
+                return els + 1;
             }
         }
         return els + 1;
@@ -121,17 +146,28 @@ public class Logic {
 
         } else if (qn.equals("O415a")) {
             return 25;
+
         } else if (qn.equals("O61")) {
             return 28;
+
         } else if (qn.equals("O67")) {
 
             return 31;
+        } else if (qn.equals("T413")) {
+
+            return 6;
+        } else if (qn.equals("T414a")) {
+
+            return 7;
+        } else if (qn.equals("T415a")) {
+
+            return 8;
         } else if (qn.equals("T71")) {
 
-            return 10;
+            return 11;
         } else if (qn.equals("T91")) {
 
-            return 13;
+            return 14;
         } else if (qn.equals("O111")) {
             return 5;
         }

@@ -24,7 +24,8 @@ public class O2 extends Fragment {
 
     private void listeners() {
         O11.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            public void onCheckedChanged(RadioGroup group, int selected) {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
                 savePageData();
             }
         });

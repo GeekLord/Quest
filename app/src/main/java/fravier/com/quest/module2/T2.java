@@ -156,7 +156,7 @@ public class T2 extends Fragment {
     }
 
     private void savePageData() {
-        Answers.setT40a(T40aa.getText().toString().trim() + "/" + T40ab.getText().toString().trim());
+        Answers.setT40a(T40aa.getText().toString().trim() + " of " + T40ab.getText().toString().trim());
         Answers.setT40b(progressChanged_b + "%");
         Answers.setT40c(progressChanged_c + "%");
         Answers.setT40d(progressChanged_d + "%");
