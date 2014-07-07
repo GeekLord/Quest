@@ -1,5 +1,8 @@
 package fravier.com.quest.module2;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -29,6 +32,10 @@ public class ParentTwo extends ActionBarActivity {
 
     Button next;
     Button prev;
+
+    public static void customDialog(String title, String message, Context ctx,
+                                    int MessageType) {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,7 +178,7 @@ public class ParentTwo extends ActionBarActivity {
             }
         } else if (i == 14) {
             String str6 = Answers.getT71();
-            if ((str6.equals("0"))) {
+            if ((str6.equals("1"))) {
                 viewPager.setCurrentItem(11);
             } else {
                 viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
@@ -180,7 +187,6 @@ public class ParentTwo extends ActionBarActivity {
             viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -197,9 +203,34 @@ public class ParentTwo extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_home) {
-            Intent intent = new Intent(getApplication(), Dashboard.class);
-            startActivity(intent);
-            finish();
+
+            AlertDialog.Builder adb = new AlertDialog.Builder(ParentTwo.this);
+
+
+            adb.setMessage("Kindly note that if you exit the form before saving, you will loose all your form data. Would you still like to go to HOME");
+            adb.setCancelable(true);
+            adb.setTitle("Are you sure you would like to exit ?");
+            //adb.setIcon(dble);
+            adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface arg0, int arg1) {
+                    arg0.cancel();
+                }
+
+            });
+            adb.setPositiveButton("Home", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent intent = new Intent(getApplication(), Dashboard.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+
+            adb.show();
+
+
             return true;
         }
         return super.onOptionsItemSelected(item);

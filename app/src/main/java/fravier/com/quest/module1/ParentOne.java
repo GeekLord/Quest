@@ -1,5 +1,7 @@
 package fravier.com.quest.module1;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -20,6 +22,7 @@ import android.widget.Toast;
 
 import fravier.com.fravier.com.results.Answers;
 import fravier.com.fravier.com.results.Logic;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.QuestViewPager;
 import fravier.com.quest.Dashboard;
 import fravier.com.quest.R;
@@ -102,6 +105,8 @@ public class ParentOne extends ActionBarActivity {
         }
         if (i == 33) {
             next.setVisibility(View.INVISIBLE);
+        } else if (i != 0) {
+            prev.setVisibility(View.VISIBLE);
         }
         //the page navigations
 
@@ -120,6 +125,74 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O19", Answers.getO19(), i));
                 }
+            } else if (i == 5) {//others
+                String str6 = Answers.getO111();
+                if (OthersMap.getO111() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 10) {//others
+                String str6 = Answers.getO25();
+                if (OthersMap.getO25() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 12) {//others
+                String str6 = Answers.getO27();
+                if (OthersMap.getO27() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 27) {//others
+                String str6 = Answers.getO52();
+                if (OthersMap.getO52() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 28) {//others
+                // String str6 = Answers.getO27();
+                if (OthersMap.getO61() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 30) {//others
+                // String str6 = Answers.getO27();
+                if (OthersMap.getO66() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 31) {//others
+
+                if (OthersMap.getO67() == 2) {
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+                }
+                if (OthersMap.getO68() == 2) {
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+                }
+                if (OthersMap.getO69() == 2) {
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+                }
+                if (OthersMap.getO67() != 2 && OthersMap.getO68() != 2 && OthersMap.getO69() != 2) {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
             } else if (i == 6) {
                 if (Answers.getO21().trim().equals("-1")) {
                     Toast.makeText(getApplication(), "Kindly answer question 2.1 ", Toast.LENGTH_SHORT).show();
@@ -137,6 +210,16 @@ public class ParentOne extends ActionBarActivity {
                     Toast.makeText(getApplication(), "Kindly answer question 2.4 ", Toast.LENGTH_SHORT).show();
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O24", Answers.getO24(), i));
+                }
+            } else if (i == 18) {//fraction split
+                String answersplit[] = Answers.getO40a().split("of");
+                boolean a = answersplit[0].trim().isEmpty();
+                boolean b = answersplit[1].trim().isEmpty();
+                boolean c = a ^ b;
+                if (c) {
+                    Toast.makeText(getApplication(), "Kindly answer complete question 4.0a", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
                 }
             } else if (i == 21) {
                 if (Answers.getO49().trim().equals("-1")) {
@@ -247,7 +330,10 @@ public class ParentOne extends ActionBarActivity {
         if (i == 1) {
             prev.setVisibility(View.INVISIBLE);
         }
-        if (Answers.x == 0) {
+        if (i != 0) {
+            prev.setVisibility(View.VISIBLE);
+        }
+        if (Answers.getXx() == 0) {
 
             if (i == 3) {
                 if (Answers.getO11().equals("0")) {
@@ -320,8 +406,8 @@ public class ParentOne extends ActionBarActivity {
             } else {
                 viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
             }
-        } else if (Answers.x == 1) {
-
+        } else if (Answers.getXx() == 1) {
+            // Toast.makeText(getApplication(),"shoing "+i,Toast.LENGTH_SHORT).show();
             if (i == 3) {
                 if (Answers.getO11().equals("0")) {
                     viewPager.setCurrentItem(2);
@@ -392,6 +478,7 @@ public class ParentOne extends ActionBarActivity {
                 }
             } else if (i == 26) {
                 viewPager.setCurrentItem(20);
+                // Toast.makeText(getApplication(),"am here"+i,Toast.LENGTH_SHORT).show();
             } else if (i == 21) {
                 viewPager.setCurrentItem(32);
 
@@ -419,9 +506,33 @@ public class ParentOne extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_home) {
-            Intent intent = new Intent(getApplication(), Dashboard.class);
-            startActivity(intent);
-            finish();
+            AlertDialog.Builder adb = new AlertDialog.Builder(ParentOne.this);
+
+
+            adb.setMessage("Kindly note that if you exit the form before saving, you will loose all your form data. Would you still like to go to HOME");
+            adb.setCancelable(true);
+            adb.setTitle("Are you sure you would like to exit ?");
+            //adb.setIcon(dble);
+            adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+
+                @Override
+                public void onClick(DialogInterface arg0, int arg1) {
+                    arg0.cancel();
+                }
+
+            });
+            adb.setPositiveButton("Home", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent intent = new Intent(getApplication(), Dashboard.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+
+            adb.show();
+
+
             return true;
         }
         return super.onOptionsItemSelected(item);

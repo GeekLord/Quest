@@ -42,8 +42,9 @@
 
             <ImageView
                 android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:scaleType="matrix"
                 android:src="@drawable/rain1" />
 
             <TextView
@@ -55,8 +56,9 @@
 
             <ImageView
                 android:id="@+id/ImageView01"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:scaleType="matrix"
                 android:src="@drawable/rain2" />
 
             <TextView
@@ -68,8 +70,9 @@
 
             <ImageView
                 android:id="@+id/ImageView02"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:scaleType="matrix"
                 android:src="@drawable/rain3" />
 
             <TextView

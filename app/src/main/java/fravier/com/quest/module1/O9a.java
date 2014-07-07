@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -27,13 +30,17 @@ public class O9a extends Fragment {
                     System.out.println(i);
                     if (i == 9) {
                         txtO25.setVisibility(View.VISIBLE);
+                        OthersMap.setO25(1);
+                        savePageData();
                         return;
                     } else {
                         txtO25.setVisibility(View.GONE);
+                        OthersMap.setO25(0);
+                        savePageData();
                     }
                     break;
             }
-            Answers.setO25(O25.indexOfChild(O25.findViewById(O25.getCheckedRadioButtonId())) + "");
+            // Answers.setO25(O25.indexOfChild(O25.findViewById(O25.getCheckedRadioButtonId())) + "");
         }
     };
     Context ctx;
@@ -52,6 +59,22 @@ public class O9a extends Fragment {
 
     private void listeners() {
         O25.setOnCheckedChangeListener(changeListener);
+        txtO25.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
     }
 
     private void savePageData() {

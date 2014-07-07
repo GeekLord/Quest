@@ -99,31 +99,60 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="false"
-                        android:text="ACT SUBSIDY (free- conditional on being positive) + RDT SUBSIDY  (free) "
+                        android:text="Chloroquine"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton
                         android:id="@+id/rdgO54b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ACT SUBSIDY (free- conditional on being positive) + NO RDT SUBSIDY (40KES)"
+                        android:checked="false"
+                        android:text="Quinine"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton
                         android:id="@+id/rdgO54c"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NO ACT SUBSIDY (current price 85 KES) + RDT SUBSIDY (free)"
+                        android:checked="false"
+                        android:text="AL/CoArtem/Artefan"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton
                         android:id="@+id/rdgO54d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NO ACT SUBSIDY (current price 85 KES) + NO RDT SUBSIDY (40KES)"
+                        android:checked="false"
+                        android:text="SP/Fansidar"
                         android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO54e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Don’t know"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO54f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Other"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/rdgO54g"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:hint="specify"
+                        android:textSize="@dimen/text_size_large"
+                        android:visibility="gone" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

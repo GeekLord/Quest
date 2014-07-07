@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class O27 extends Fragment {
     RadioGroup O54;
     Context ctx;
     TextView lbl;
+    EditText others;
 
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
@@ -29,6 +31,7 @@ public class O27 extends Fragment {
         O53 = ((RadioGroup) paramView.findViewById(R.id.rdgO53));
         O54 = ((RadioGroup) paramView.findViewById(R.id.rdgO54));
         lbl = ((TextView) paramView.findViewById(R.id.lblO53));
+        others = (EditText) paramView.findViewById(R.id.rdgO54g);
     }
 
     private void listeners() {
@@ -39,6 +42,14 @@ public class O27 extends Fragment {
         });
         O54.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+                int i = O54.indexOfChild(O54.findViewById(paramAnonymousInt));
+                System.out.println(i);
+                if (i == 5) {
+                    others.setVisibility(View.VISIBLE);
+                    return;
+                }
+                others.setVisibility(View.GONE);
+
                 savePageData();
             }
         });
@@ -65,6 +76,11 @@ public class O27 extends Fragment {
 
     public void savePageData() {
         Answers.setO53(O53.indexOfChild(O53.findViewById(O53.getCheckedRadioButtonId())) + "");
-        Answers.setO54(O54.indexOfChild(O54.findViewById(O54.getCheckedRadioButtonId())) + "");
+        if (O54.indexOfChild(O54.findViewById(O54.getCheckedRadioButtonId())) == 5) {
+            Answers.setO54(others.getText().toString());
+        } else {
+            Answers.setO54(O54.indexOfChild(O54.findViewById(O54.getCheckedRadioButtonId())) + "");
+
+        }
     }
 }

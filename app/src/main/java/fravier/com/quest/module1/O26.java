@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -119,6 +120,11 @@ public class O26 extends Fragment {
         }
         if (O67j.isChecked()) {
             str = str + txtO67k.getText().toString().trim() + " ";
+            if (txtO67k.getText().toString().trim().length() == 0) {
+                OthersMap.setO67(2);
+            } else {
+                OthersMap.setO67(1);
+            }
         }
         return str;
     }
@@ -143,6 +149,11 @@ public class O26 extends Fragment {
         if (O68f.isChecked()) {
 
             str = str + txtO68g.getText().toString().trim() + " ";
+            if (txtO68g.getText().toString().trim().length() == 0) {
+                OthersMap.setO68(2);
+            } else {
+                OthersMap.setO68(1);
+            }
         }
 
         return str;
@@ -177,6 +188,11 @@ public class O26 extends Fragment {
         if (O69i.isChecked()) {
 
             str = str + txtO69j.getText().toString().trim() + " ";
+            if (txtO69j.getText().toString().trim().length() == 0) {
+                OthersMap.setO69(2);
+            } else {
+                OthersMap.setO69(1);
+            }
         }
         return str;
     }
@@ -205,27 +221,45 @@ public class O26 extends Fragment {
             public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
                 if (paramAnonymousBoolean) {
                     txtO67k.setVisibility(View.VISIBLE);
+                    OthersMap.setO67(1);
+                    savePageData();
                     return;
+                } else {
+                    txtO67k.setVisibility(View.GONE);
+                    OthersMap.setO67(0);
+                    savePageData();
                 }
-                txtO67k.setVisibility(View.GONE);
+
             }
         });
         O68f.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
                 if (paramAnonymousBoolean) {
                     txtO68g.setVisibility(View.VISIBLE);
+                    OthersMap.setO68(1);
+                    savePageData();
                     return;
+                } else {
+                    txtO68g.setVisibility(View.GONE);
+                    OthersMap.setO68(0);
+                    savePageData();
                 }
-                txtO68g.setVisibility(View.GONE);
+
             }
         });
         O69i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
                 if (paramAnonymousBoolean) {
                     txtO69j.setVisibility(View.VISIBLE);
+                    OthersMap.setO69(1);
+                    savePageData();
                     return;
+                } else {
+                    txtO69j.setVisibility(View.GONE);
+                    OthersMap.setO69(0);
+                    savePageData();
                 }
-                txtO69j.setVisibility(View.GONE);
+
             }
         });
         super.onResume();

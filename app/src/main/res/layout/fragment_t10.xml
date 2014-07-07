@@ -105,7 +105,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="5.3) In the last week, did you go anywhere to buy any medicine specificallly for your fever /sickness ?"
+                    android:text="5.3) In the last week, did you go anywhere to buy any medicine specifically for your fever /sickness ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

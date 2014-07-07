@@ -94,7 +94,7 @@ public class Logic {
                 return els + 1;
             }
         } else if (qn.equals("T71")) {
-            if (ans.equals("0")) {
+            if (ans.equals("1")) {
                 return Addressing("T91");
             } else {
                 return els + 1;

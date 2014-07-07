@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,8 +20,8 @@ import fravier.com.quest.R;
 
 
 public class O13 extends Fragment {
-    public static int progressChanged_b = 50;
-    public static int progressChanged_c = 50;
+    public static int progressChanged_b = 0;
+    public static int progressChanged_c = 0;
     public static int progressChanged_d = 50;
     public static int progressChanged_e = 50;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
@@ -106,6 +108,18 @@ public class O13 extends Fragment {
     TextView sbvO40da;
     TextView sbvO40ea;
 
+    public void setToZero() {
+        O40ba.setScaleX(1.0F + (50) / 100.0F);
+        O40ba.setScaleY(1.0F + (50) / 100.0F);
+        O40bb.setScaleX(1.0F + (-50) / 100.0F);
+        O40bb.setScaleY(1.0F + (-50) / 100.0F);
+
+        O40ca.setScaleX(1.0F + (50) / 100.0F);
+        O40ca.setScaleY(1.0F + (50) / 100.0F);
+        O40cb.setScaleX(1.0F + (-50) / 100.0F);
+        O40cb.setScaleY(1.0F + (-50) / 100.0F);
+    }
+
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
@@ -133,11 +147,13 @@ public class O13 extends Fragment {
         sbvO40da = ((TextView) paramView.findViewById(R.id.sbvO40d));
         sbvO40ea = ((TextView) paramView.findViewById(R.id.sbvO40e));
 
+        setToZero();
+
 
         sbO40ba.setMax(100);
-        sbO40ba.setProgress(50);
+        sbO40ba.setProgress(0);
         sbO40ca.setMax(100);
-        sbO40ca.setProgress(50);
+        sbO40ca.setProgress(0);
         sbO40da.setMax(100);
         sbO40da.setProgress(50);
         sbO40ea.setMax(100);
@@ -153,6 +169,40 @@ public class O13 extends Fragment {
         sbO40ca.setOnSeekBarChangeListener(l);
         sbO40da.setOnSeekBarChangeListener(l);
         sbO40ea.setOnSeekBarChangeListener(l);
+
+        O40aa.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        O40ab.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+
     }
 
     private void savePageData() {

@@ -12,7 +12,7 @@ public class Answers {
     public static String O07_time;
     public static String O11;
     public static String O110;
-    public static String O111;
+    public static String O111 = "";
     public static String O12;
     public static String O121;
     public static String O122;

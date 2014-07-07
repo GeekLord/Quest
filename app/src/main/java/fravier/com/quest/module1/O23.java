@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -64,11 +67,31 @@ public class O23 extends Fragment {
             public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
                 if (paramAnonymousBoolean) {
                     txtO61l.setVisibility(View.VISIBLE);
+                    OthersMap.setO61(1);
+                    savePageData();
                     return;
                 } else {
                     txtO61l.setVisibility(View.GONE);
+                    OthersMap.setO61(0);
+                    savePageData();
                 }
 
+            }
+        });
+        txtO61l.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
             }
         });
     }
@@ -108,6 +131,11 @@ public class O23 extends Fragment {
         if (O61k.isChecked()) {
             txtO61l.setVisibility(View.VISIBLE);
             str = str + txtO61l.getText().toString().trim() + " ";
+            if (txtO61l.getText().toString().trim().length() == 0) {
+                OthersMap.setO61(2);
+            } else {
+                OthersMap.setO61(1);
+            }
         }
 
         return str;

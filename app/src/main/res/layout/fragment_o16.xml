@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10.0dip"
                     android:layout_weight="1.0"
-                    android:text="[Ask this part before randomization/FIRST random group of clients per each design cell]\n\nCompare two groups of drugs (ACT (artemisinin based) vs not) and show two groups of drugs to the clients.\nGROUP 1: Artefan (AL) \nGROUP 2: Fansidar (SP)"
+                    android:text="Compare two groups of drugs (ACT (artemisinin based) vs not) and show two groups of drugs to the clients.\nGROUP 1: Artefan (AL) \nGROUP 2: Fansidar (SP)"
                     android:textSize="@dimen/text_size_medium" />
             </LinearLayout>
         </LinearLayout>
