@@ -30,7 +30,7 @@
                 android:id="@+id/lblO31a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Now I would like to ask you about whether you prefer to take a chance to receive a higher prize amount. Suppose that the scratch card you will offers you two options: one option is to get a fixed amount of money that is mentioned on the card. Another option is to flip a coin that will decide whether you get a higher amount.  For example, if the coin shows heads you get 1000 KES and if it shows tails you get 0.   \n\n\nFor example, if the scratch card shows a fixed amount prize of 10 KES would you choose the fixed amount or to flip the coin?      "
+                android:text="Now I would like to ask you about whether you prefer to take a chance to receive a higher prize amount. Suppose that the scratch card will offer you two options: one option is to get a fixed amount of money that is mentioned on the card. Another option is to flip a coin that will decide whether you get a higher amount or 0Ksh. For example, if the coin shows heads you get 1000 KES and if it shows tails you get 0.  \n\nFor example, if the scratch card shows a fixed amount prize of 10 KES would you choose the fixed amount or to flip the coin? "
                 android:textSize="@dimen/text_size_medium" />
         </LinearLayout>
     </LinearLayout>

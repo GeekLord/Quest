@@ -13,6 +13,116 @@ public class OthersMap {
     public static int O67 = 0;
     public static int O68 = 0;
     public static int O69 = 0;
+    public static int O54 = 0;
+    public static int T52 = 0;
+    public static int T54 = 0;
+    public static int T91 = 0;
+
+    public static int T93a = 0;
+    public static int T93b = 0;
+    public static int T93c = 0;
+    public static int T94 = 0;
+
+    public static int T95 = 0;
+    public static int T96 = 0;
+    public static int T97 = 0;
+    public static int T98 = 0;
+
+    public static int getT95() {
+        return T95;
+    }
+
+    public static void setT95(int t95) {
+        T95 = t95;
+    }
+
+    public static int getT96() {
+        return T96;
+    }
+
+    public static void setT96(int t96) {
+        T96 = t96;
+    }
+
+    public static int getT97() {
+        return T97;
+    }
+
+    public static void setT97(int t97) {
+        T97 = t97;
+    }
+
+    public static int getT98() {
+        return T98;
+    }
+
+    public static void setT98(int t98) {
+        T98 = t98;
+    }
+
+    public static int getT94() {
+        return T94;
+    }
+
+    public static void setT94(int t94) {
+        T94 = t94;
+    }
+
+    public static int getT93c() {
+        return T93c;
+    }
+
+    public static void setT93c(int t93c) {
+        T93c = t93c;
+    }
+
+    public static int getT93b() {
+        return T93b;
+    }
+
+    public static void setT93b(int t93b) {
+        T93b = t93b;
+    }
+
+    public static int getT93a() {
+        return T93a;
+    }
+
+    public static void setT93a(int t93a) {
+        T93a = t93a;
+    }
+
+    public static int getT91() {
+        return T91;
+    }
+
+    public static void setT91(int t91) {
+        T91 = t91;
+    }
+
+    public static int getT54() {
+        return T54;
+    }
+
+    public static void setT54(int t54) {
+        T54 = t54;
+    }
+
+    public static int getT52() {
+        return T52;
+    }
+
+    public static void setT52(int t52) {
+        T52 = t52;
+    }
+
+    public static int getO54() {
+        return O54;
+    }
+
+    public static void setO54(int o54) {
+        O54 = o54;
+    }
 
     public static int getO67() {
         return O67;

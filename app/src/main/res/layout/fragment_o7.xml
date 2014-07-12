@@ -25,7 +25,7 @@
                     android:id="@+id/lblO22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2.2) Is your / child current sickness similar to what you had in the last 4 weeks ?"
+                    android:text="2.2)Is your /child current sickness similar to what you /you’re child had in the last 4 weeks?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

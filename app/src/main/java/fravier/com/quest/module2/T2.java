@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +20,10 @@ import fravier.com.quest.R;
 
 
 public class T2 extends Fragment {
-    public static int progressChanged_b = 50;
-    public static int progressChanged_c = 50;
-    public static int progressChanged_d = 50;
-    public static int progressChanged_e = 50;
+    public static int progressChanged_b = 0;
+    public static int progressChanged_c = 0;
+    public static int progressChanged_d = 0;
+    public static int progressChanged_e = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {
@@ -106,6 +108,28 @@ public class T2 extends Fragment {
     TextView sbvT40da;
     TextView sbvT40ea;
 
+    public void setToZero() {
+        T40ba.setScaleX(1.0F + (50) / 100.0F);
+        T40ba.setScaleY(1.0F + (50) / 100.0F);
+        T40bb.setScaleX(1.0F + (-50) / 100.0F);
+        T40bb.setScaleY(1.0F + (-50) / 100.0F);
+
+        T40ca.setScaleX(1.0F + (50) / 100.0F);
+        T40ca.setScaleY(1.0F + (50) / 100.0F);
+        T40cb.setScaleX(1.0F + (-50) / 100.0F);
+        T40cb.setScaleY(1.0F + (-50) / 100.0F);
+
+        T40da.setScaleX(1.0F + (50) / 100.0F);
+        T40da.setScaleY(1.0F + (50) / 100.0F);
+        T40db.setScaleX(1.0F + (-50) / 100.0F);
+        T40db.setScaleY(1.0F + (-50) / 100.0F);
+
+        T40ea.setScaleX(1.0F + (50) / 100.0F);
+        T40ea.setScaleY(1.0F + (50) / 100.0F);
+        T40eb.setScaleX(1.0F + (-50) / 100.0F);
+        T40eb.setScaleY(1.0F + (-50) / 100.0F);
+    }
+
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
@@ -133,15 +157,16 @@ public class T2 extends Fragment {
         sbvT40da = ((TextView) paramView.findViewById(R.id.sbvT40d));
         sbvT40ea = ((TextView) paramView.findViewById(R.id.sbvT40e));
 
+        setToZero();
 
         sbT40ba.setMax(100);
-        sbT40ba.setProgress(50);
+        sbT40ba.setProgress(0);
         sbT40ca.setMax(100);
-        sbT40ca.setProgress(50);
+        sbT40ca.setProgress(0);
         sbT40da.setMax(100);
-        sbT40da.setProgress(50);
+        sbT40da.setProgress(0);
         sbT40ea.setMax(100);
-        sbT40ea.setProgress(50);
+        sbT40ea.setProgress(0);
         sbvT40ba.setText(progressChanged_b + "% likelihood");
         sbvT40ca.setText(progressChanged_c + "% likelihood");
         sbvT40da.setText(progressChanged_d + "% likelihood");
@@ -161,6 +186,38 @@ public class T2 extends Fragment {
         Answers.setT40c(progressChanged_c + "%");
         Answers.setT40d(progressChanged_d + "%");
         Answers.setT40e(progressChanged_e + "%");
+        T40aa.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        T40ab.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
     }
 
     public void onAttach(Activity paramActivity) {

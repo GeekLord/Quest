@@ -17,9 +17,9 @@ import fravier.com.quest.R;
 
 
 public class O19 extends Fragment {
-    public static int progressChanged_b = 50;
-    public static int progressChanged_c = 50;
-    public static int progressChanged_d = 50;
+    public static int progressChanged_b = 0;
+    public static int progressChanged_c = 0;
+    public static int progressChanged_d = 0;
 
 
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
@@ -97,6 +97,23 @@ public class O19 extends Fragment {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
 
+    public void setToZero() {
+        O414aa.setScaleX(1.0F + (50) / 100.0F);
+        O414aa.setScaleY(1.0F + (50) / 100.0F);
+        O414ab.setScaleX(1.0F + (-50) / 100.0F);
+        O414ab.setScaleY(1.0F + (-50) / 100.0F);
+
+        O414ba.setScaleX(1.0F + (50) / 100.0F);
+        O414ba.setScaleY(1.0F + (50) / 100.0F);
+        O414bb.setScaleX(1.0F + (-50) / 100.0F);
+        O414bb.setScaleY(1.0F + (-50) / 100.0F);
+
+        O414ca.setScaleX(1.0F + (50) / 100.0F);
+        O414ca.setScaleY(1.0F + (50) / 100.0F);
+        O414cb.setScaleX(1.0F + (-50) / 100.0F);
+        O414cb.setScaleY(1.0F + (-50) / 100.0F);
+    }
+
     private void initViews(View paramView) {
         lbl = ((TextView) paramView.findViewById(R.id.lblO414a));
         O414aa = ((ImageView) paramView.findViewById(R.id.imgO414aa));
@@ -114,12 +131,14 @@ public class O19 extends Fragment {
         sbvO414ba = ((TextView) paramView.findViewById(R.id.sbvO414b));
         sbvO414ca = ((TextView) paramView.findViewById(R.id.sbvO414c));
 
+        setToZero();
+
         sbO414aa.setMax(100);
-        sbO414aa.setProgress(50);
+        sbO414aa.setProgress(0);
         sbO414ba.setMax(100);
-        sbO414ba.setProgress(50);
+        sbO414ba.setProgress(0);
         sbO414ca.setMax(100);
-        sbO414ca.setProgress(50);
+        sbO414ca.setProgress(0);
 
         sbvO414aa.setText(progressChanged_b + "% likelihood");
         sbvO414ba.setText(progressChanged_c + "% likelihood");

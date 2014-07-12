@@ -28,7 +28,7 @@ public class O9a extends Fragment {
 
                     int i = O25.indexOfChild(O25.findViewById(paramAnonymousInt));
                     System.out.println(i);
-                    if (i == 9) {
+                    if (i == 10) {
                         txtO25.setVisibility(View.VISIBLE);
                         OthersMap.setO25(1);
                         savePageData();
@@ -54,7 +54,7 @@ public class O9a extends Fragment {
     private void initViews(View paramView) {
         O25 = ((RadioGroup) paramView.findViewById(R.id.rdgO25));
         lbl = ((TextView) paramView.findViewById(R.id.lblO25));
-        txtO25 = ((EditText) paramView.findViewById(R.id.rdgO25k));
+        txtO25 = ((EditText) paramView.findViewById(R.id.rdgO25l));
     }
 
     private void listeners() {
@@ -78,7 +78,7 @@ public class O9a extends Fragment {
     }
 
     private void savePageData() {
-        if (O25.indexOfChild(O25.findViewById(O25.getCheckedRadioButtonId())) == 9) {
+        if (O25.indexOfChild(O25.findViewById(O25.getCheckedRadioButtonId())) == 10) {
             Answers.setO25(txtO25.getText().toString());
         }
     }

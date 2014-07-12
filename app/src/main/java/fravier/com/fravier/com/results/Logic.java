@@ -20,7 +20,7 @@ public class Logic {
             }
 
         } else if (qn.equals("O19")) {
-            if (ans.equals("0") || ans.equals("3") || ans.equals("4")) {
+            if (ans.equals("0")) {
                 return Addressing("O111");
             } else {
                 return els + 1;

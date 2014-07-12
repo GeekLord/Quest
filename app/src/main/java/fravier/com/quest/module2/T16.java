@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -45,13 +48,79 @@ public class T16 extends Fragment {
     }
 
     private void listeners() {
+        txtT93a.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT93b.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT93c.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT94.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
         T93a.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
                 int i = T93a.indexOfChild(T93a.findViewById(paramAnonymousInt));
                 if (i == 1) {
                     txtT93a.setVisibility(View.VISIBLE);
+                    OthersMap.setT93a(1);
                 } else {
                     txtT93a.setVisibility(View.GONE);
+                    OthersMap.setT93a(0);
                 }
 
                 savePageData();
@@ -63,8 +132,10 @@ public class T16 extends Fragment {
                 int i = T93b.indexOfChild(T93b.findViewById(paramAnonymousInt));
                 if (i == 1) {
                     txtT93b.setVisibility(View.VISIBLE);
+                    OthersMap.setT93b(1);
                 } else {
                     txtT93b.setVisibility(View.GONE);
+                    OthersMap.setT93b(0);
                 }
 
                 savePageData();
@@ -76,8 +147,10 @@ public class T16 extends Fragment {
                 int i = T93c.indexOfChild(T93c.findViewById(paramAnonymousInt));
                 if (i == 1) {
                     txtT93c.setVisibility(View.VISIBLE);
+                    OthersMap.setT93c(1);
                 } else {
                     txtT93c.setVisibility(View.GONE);
+                    OthersMap.setT93c(0);
                 }
 
                 savePageData();
@@ -89,8 +162,10 @@ public class T16 extends Fragment {
                 int i = T94.indexOfChild(T94.findViewById(paramAnonymousInt));
                 if (i == 7) {
                     txtT94.setVisibility(View.VISIBLE);
+                    OthersMap.setT94(1);
                 } else {
                     txtT94.setVisibility(View.GONE);
+                    OthersMap.setT94(0);
                 }
 
                 savePageData();

@@ -27,6 +27,66 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:padding="5.0dip">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2.0"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:enabled="false"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Fixed Amount "
+                    android:textSize="@dimen/text_size_large" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2.0"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Coin Toss "
+                    android:textSize="@dimen/text_size_large" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

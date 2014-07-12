@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -52,13 +55,49 @@ public class T10 extends Fragment {
     }
 
     private void listeners() {
+
+        txtT52e.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT54d.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
         T52d.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
                 if (paramAnonymousBoolean) {
                     txtT52e.setVisibility(View.VISIBLE);
+                    OthersMap.setT52(1);
+                    savePageData();
                     return;
                 } else {
                     txtT52e.setVisibility(View.GONE);
+                    OthersMap.setT52(0);
                 }
 
             }
@@ -74,12 +113,17 @@ public class T10 extends Fragment {
                 System.out.println(i);
                 if (i == 2) {
                     txtT54d.setVisibility(View.VISIBLE);
+                    OthersMap.setT54(1);
                     return;
+                } else {
+                    txtT54d.setVisibility(View.GONE);
+                    OthersMap.setT54(0);
                 }
-                txtT54d.setVisibility(View.GONE);
-                Answers.setT54(T54.indexOfChild(T54.findViewById(T54.getCheckedRadioButtonId())) + "");
+
+                //Answers.setT54(T54.indexOfChild(T54.findViewById(T54.getCheckedRadioButtonId())) + "");
             }
         });
+
     }
 
     public String getCheckedStuff68() {
@@ -96,6 +140,11 @@ public class T10 extends Fragment {
         if (T52d.isChecked()) {
 
             str = str + txtT52e.getText().toString().trim() + " ";
+            if (txtT52e.getText().toString().trim().length() == 0) {
+                OthersMap.setT52(2);
+            } else {
+                OthersMap.setT52(1);
+            }
         }
 
         return str;

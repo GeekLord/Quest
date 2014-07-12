@@ -84,7 +84,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.7) If you believe you HAVE malaria and the test shows that you do not have malaria, how likely do you think the result from the test is correct ?"
+                    android:text="4.7) If you believe you HAVE malaria and the test shows that you DO NOT have malaria, how likely do you think the result from the test is correct ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

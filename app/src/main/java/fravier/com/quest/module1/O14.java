@@ -17,14 +17,14 @@ import fravier.com.quest.R;
 
 
 public class O14 extends Fragment {
-    public static int progressChanged_41 = 50;
-    public static int progressChanged_42 = 50;
-    public static int progressChanged_43 = 50;
-    public static int progressChanged_44a = 50;
-    public static int progressChanged_44b = 50;
-    public static int progressChanged_44c = 50;
-    public static int progressChanged_45a = 50;
-    public static int progressChanged_45b = 50;
+    public static int progressChanged_41 = 0;
+    public static int progressChanged_42 = 0;
+    public static int progressChanged_43 = 0;
+    public static int progressChanged_44a = 0;
+    public static int progressChanged_44b = 0;
+    public static int progressChanged_44c = 0;
+    public static int progressChanged_45a = 0;
+    public static int progressChanged_45b = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {
@@ -167,6 +167,48 @@ public class O14 extends Fragment {
     TextView srvO45a;
     TextView srvO45b;
 
+    public void setToZero() {
+        O41a.setScaleX(1.0F + (50) / 100.0F);
+        O41a.setScaleY(1.0F + (50) / 100.0F);
+        O41b.setScaleX(1.0F + (-50) / 100.0F);
+        O41b.setScaleY(1.0F + (-50) / 100.0F);
+
+        O42a.setScaleX(1.0F + (50) / 100.0F);
+        O42a.setScaleY(1.0F + (50) / 100.0F);
+        O42b.setScaleX(1.0F + (-50) / 100.0F);
+        O42b.setScaleY(1.0F + (-50) / 100.0F);
+
+        O43a.setScaleX(1.0F + (50) / 100.0F);
+        O43a.setScaleY(1.0F + (50) / 100.0F);
+        O43b.setScaleX(1.0F + (-50) / 100.0F);
+        O43b.setScaleY(1.0F + (-50) / 100.0F);
+
+        O44aa.setScaleX(1.0F + (50) / 100.0F);
+        O44aa.setScaleY(1.0F + (50) / 100.0F);
+        O44ab.setScaleX(1.0F + (-50) / 100.0F);
+        O44ab.setScaleY(1.0F + (-50) / 100.0F);
+
+        O44ba.setScaleX(1.0F + (50) / 100.0F);
+        O44ba.setScaleY(1.0F + (50) / 100.0F);
+        O44bb.setScaleX(1.0F + (-50) / 100.0F);
+        O44bb.setScaleY(1.0F + (-50) / 100.0F);
+
+        O44ca.setScaleX(1.0F + (50) / 100.0F);
+        O44ca.setScaleY(1.0F + (50) / 100.0F);
+        O44cb.setScaleX(1.0F + (-50) / 100.0F);
+        O44cb.setScaleY(1.0F + (-50) / 100.0F);
+
+        O45aa.setScaleX(1.0F + (50) / 100.0F);
+        O45aa.setScaleY(1.0F + (50) / 100.0F);
+        O45ab.setScaleX(1.0F + (-50) / 100.0F);
+        O45ab.setScaleY(1.0F + (-50) / 100.0F);
+
+        O45ba.setScaleX(1.0F + (50) / 100.0F);
+        O45ba.setScaleY(1.0F + (50) / 100.0F);
+        O45bb.setScaleX(1.0F + (-50) / 100.0F);
+        O45bb.setScaleY(1.0F + (-50) / 100.0F);
+    }
+
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
@@ -207,22 +249,25 @@ public class O14 extends Fragment {
         srvO44c = ((TextView) paramView.findViewById(R.id.srvO44c));
         srvO45a = ((TextView) paramView.findViewById(R.id.srvO45a));
         srvO45b = ((TextView) paramView.findViewById(R.id.srvO45b));
+
+        setToZero();
+
         sbO41.setMax(100);
-        sbO41.setProgress(50);
+        sbO41.setProgress(0);
         sbO42.setMax(100);
-        sbO42.setProgress(50);
+        sbO42.setProgress(0);
         sbO43.setMax(100);
-        sbO43.setProgress(50);
+        sbO43.setProgress(0);
         sbO44aa.setMax(100);
-        sbO44aa.setProgress(50);
+        sbO44aa.setProgress(0);
         sbO44ba.setMax(100);
-        sbO44ba.setProgress(50);
+        sbO44ba.setProgress(0);
         sbO44ca.setMax(100);
-        sbO44ca.setProgress(50);
+        sbO44ca.setProgress(0);
         sbO45aa.setMax(100);
-        sbO45aa.setProgress(50);
+        sbO45aa.setProgress(0);
         sbO45ba.setMax(100);
-        sbO45ba.setProgress(50);
+        sbO45ba.setProgress(0);
         srvO41.setText(progressChanged_41 + "% likelihood");
         srvO42.setText(progressChanged_42 + "% likelihood");
         srvO43.setText(progressChanged_43 + "% likelihood");

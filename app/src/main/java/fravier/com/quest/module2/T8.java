@@ -17,9 +17,9 @@ import fravier.com.quest.R;
 
 
 public class T8 extends Fragment {
-    public static int progressChanged_b = 50;
-    public static int progressChanged_c = 50;
-    public static int progressChanged_d = 50;
+    public static int progressChanged_b = 0;
+    public static int progressChanged_c = 0;
+    public static int progressChanged_d = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {
@@ -85,6 +85,22 @@ public class T8 extends Fragment {
     SeekBar sbT415ba;
     SeekBar sbT415ca;
 
+    public void setToZero() {
+        T415aa.setScaleX(1.0F + (50) / 100.0F);
+        T415aa.setScaleY(1.0F + (50) / 100.0F);
+        T415ab.setScaleX(1.0F + (-50) / 100.0F);
+        T415ab.setScaleY(1.0F + (-50) / 100.0F);
+
+        T415ba.setScaleX(1.0F + (50) / 100.0F);
+        T415ba.setScaleY(1.0F + (50) / 100.0F);
+        T415bb.setScaleX(1.0F + (-50) / 100.0F);
+        T415bb.setScaleY(1.0F + (-50) / 100.0F);
+
+        T415ca.setScaleX(1.0F + (50) / 100.0F);
+        T415ca.setScaleY(1.0F + (50) / 100.0F);
+        T415cb.setScaleX(1.0F + (-50) / 100.0F);
+        T415cb.setScaleY(1.0F + (-50) / 100.0F);
+    }
 
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
@@ -107,12 +123,15 @@ public class T8 extends Fragment {
         sbvT415b = ((TextView) paramView.findViewById(R.id.sbvT415b));
         sbvT415c = ((TextView) paramView.findViewById(R.id.sbvT415c));
 
+
+        setToZero();
+
         sbT415aa.setMax(100);
-        sbT415aa.setProgress(50);
+        sbT415aa.setProgress(0);
         sbT415ba.setMax(100);
-        sbT415ba.setProgress(50);
+        sbT415ba.setProgress(0);
         sbT415ca.setMax(100);
-        sbT415ca.setProgress(50);
+        sbT415ca.setProgress(0);
 
         sbvT415a.setText(progressChanged_b + "% likelihood");
         sbvT415b.setText(progressChanged_c + "% likelihood");

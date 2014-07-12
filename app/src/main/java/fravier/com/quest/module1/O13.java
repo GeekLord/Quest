@@ -22,8 +22,8 @@ import fravier.com.quest.R;
 public class O13 extends Fragment {
     public static int progressChanged_b = 0;
     public static int progressChanged_c = 0;
-    public static int progressChanged_d = 50;
-    public static int progressChanged_e = 50;
+    public static int progressChanged_d = 0;
+    public static int progressChanged_e = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {
@@ -118,6 +118,16 @@ public class O13 extends Fragment {
         O40ca.setScaleY(1.0F + (50) / 100.0F);
         O40cb.setScaleX(1.0F + (-50) / 100.0F);
         O40cb.setScaleY(1.0F + (-50) / 100.0F);
+
+        O40da.setScaleX(1.0F + (50) / 100.0F);
+        O40da.setScaleY(1.0F + (50) / 100.0F);
+        O40db.setScaleX(1.0F + (-50) / 100.0F);
+        O40db.setScaleY(1.0F + (-50) / 100.0F);
+
+        O40ea.setScaleX(1.0F + (50) / 100.0F);
+        O40ea.setScaleY(1.0F + (50) / 100.0F);
+        O40eb.setScaleX(1.0F + (-50) / 100.0F);
+        O40eb.setScaleY(1.0F + (-50) / 100.0F);
     }
 
     private void fonting() {
@@ -155,9 +165,9 @@ public class O13 extends Fragment {
         sbO40ca.setMax(100);
         sbO40ca.setProgress(0);
         sbO40da.setMax(100);
-        sbO40da.setProgress(50);
+        sbO40da.setProgress(0);
         sbO40ea.setMax(100);
-        sbO40ea.setProgress(50);
+        sbO40ea.setProgress(0);
         sbvO40ba.setText(progressChanged_b + "% likelihood");
         sbvO40ca.setText(progressChanged_c + "% likelihood");
         sbvO40da.setText(progressChanged_d + "% likelihood");

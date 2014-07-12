@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -87,6 +89,54 @@ public class O26 extends Fragment {
     }
 
     private void listeners() {
+        txtO67k.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtO68g.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtO69j.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
     }
 
     public String getCheckedStuff67() {

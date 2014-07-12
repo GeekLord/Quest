@@ -116,7 +116,7 @@ public class Exporting {
             arrayOfString[21] = StringUtils.replaceEach(Answers.getO22(), new String[]{"0", "1", "2", "-1"}, new String[]{"1", "2", "99", " "});
             arrayOfString[22] = StringUtils.replaceEach(Answers.getO23(), new String[]{"0", "1", "2", "-1"}, new String[]{"1", "2", "99", " "});
             arrayOfString[23] = StringUtils.replaceEach(Answers.getO24(), new String[]{"0", "1", "2", "-1"}, new String[]{"1", "2", "99", " "});
-            arrayOfString[24] = StringUtils.replaceEach(Answers.getO25(), new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "-1"}, new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", " "});
+            arrayOfString[24] = StringUtils.replaceEach(Answers.getO25(), new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "-1"}, new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", " "});
             arrayOfString[25] = StringUtils.replaceEach(Answers.getO26(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[26] = Answers.getO27();
             arrayOfString[27] = StringUtils.replaceEach(Answers.getO28(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});

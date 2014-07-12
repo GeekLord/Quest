@@ -127,6 +127,8 @@ public class O10 extends Fragment {
             str = str + rdgO27h.getText().toString().trim() + " ";
             if (rdgO27h.getText().toString().trim().length() == 0) {
                 OthersMap.setO27(2);
+            } else {
+                OthersMap.setO27(1);
             }
         }
 

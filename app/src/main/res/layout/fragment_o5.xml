@@ -86,7 +86,7 @@
                         android:id="@+id/rdgO111d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Government or Parastatal"
+                        android:text="Government or parastatal"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton
@@ -114,7 +114,7 @@
                         android:id="@+id/rdgO111g"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Without employees (motocycle, byclycle, taxi riders)"
+                        android:text="Without employees (motorcycle, bicycle, taxi riders)"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton
@@ -135,7 +135,7 @@
                         android:id="@+id/rdgO111i"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="And available for work (casual workiers as sugar farms)"
+                        android:text="And available for work (casual workers as sugar farms)"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton

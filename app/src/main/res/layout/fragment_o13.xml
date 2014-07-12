@@ -39,7 +39,8 @@
                     android:layout_width="80.0dip"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number">
+                    android:inputType="number"
+                    android:maxLength="1">
 
                     <requestFocus />
                 </EditText>
@@ -56,7 +57,8 @@
                     android:layout_width="81.0dip"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:maxLength="1" />
 
                 <TextView
                     android:id="@+id/lblO1d"

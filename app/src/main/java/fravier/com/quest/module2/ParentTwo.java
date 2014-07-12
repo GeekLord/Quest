@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import fravier.com.fravier.com.results.Answers;
 import fravier.com.fravier.com.results.Logic;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.QuestViewPager;
 import fravier.com.quest.Dashboard;
 import fravier.com.quest.R;
@@ -107,7 +108,94 @@ public class ParentTwo extends ActionBarActivity {
         if (i == 18) {
             next.setVisibility(View.INVISIBLE);
         }
-        if (i == 4) {
+        if (i == 2) {//fraction
+            String answersplit[] = Answers.getT40a().split("of");
+            boolean a = answersplit[0].trim().isEmpty();
+            boolean b = answersplit[1].trim().isEmpty();
+            boolean c = a ^ b;
+            if (c) {
+                Toast.makeText(getApplication(), "Kindly answer complete question 4.0a", Toast.LENGTH_SHORT).show();
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+            }
+        } else if (i == 10) {//others
+            String str6 = Answers.getT54();
+            if (OthersMap.getT52() == 2) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT54() == 1 && str6.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+            }
+        } else if (i == 14) {//others
+            String str6 = Answers.getT91();
+            if (OthersMap.getT91() == 1 && str6.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+            }
+        } else if (i == 16) {//others
+            String str1 = Answers.getT93a();
+            String str2 = Answers.getT93b();
+            String str3 = Answers.getT93c();
+            String str4 = Answers.getT94();
+            if (OthersMap.getT93a() == 1 && str1.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT93b() == 1 && str2.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT93c() == 1 && str3.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT94() == 1 && str4.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+            }
+        } else if (i == 17) {//others
+            String str1 = Answers.getT95();
+            String str2 = Answers.getT96();
+            String str3 = Answers.getT97();
+            String str4 = Answers.getT98();
+            String str5 = Answers.getT99();
+            if (OthersMap.getT95() == 1 && str1.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT96() == 1 && str2.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT97() == 1 && str3.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (OthersMap.getT98() == 1 && str4.equals("")) {
+
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+            } else if (str5.contains("Acres") && str5.trim().length() == 5) {
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+            } else if (str5.contains("Hectares") && str5.trim().length() == 8) {
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+            } else if (str5.contains("Feet") && str5.trim().length() == 4) {
+                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+            }
+        } else if (i == 4) {
             if (Answers.getT49().equals("-1")) {
                 Toast.makeText(getApplication(), "Kindly answer question 4.9 ", Toast.LENGTH_SHORT).show();
             } else {
@@ -223,6 +311,7 @@ public class ParentTwo extends ActionBarActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Intent intent = new Intent(getApplication(), Dashboard.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                 }

@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -52,6 +55,111 @@ public class T17 extends Fragment {
     }
 
     private void listeners() {
+        T99x.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        T99y.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        T99z.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT95.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT96.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT97.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
+        txtT98.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
     }
 
     public void onAttach(Activity paramActivity) {
@@ -80,10 +188,14 @@ public class T17 extends Fragment {
                 System.out.println(i);
                 if (i == 7) {
                     txtT95.setVisibility(View.VISIBLE);
+                    OthersMap.setT95(1);
                     return;
+                } else {
+                    txtT95.setVisibility(View.GONE);
+                    OthersMap.setT95(0);
                 }
-                txtT95.setVisibility(View.GONE);
-                Answers.setT95(T95.indexOfChild(T95.findViewById(T95.getCheckedRadioButtonId())) + "");
+
+                // Answers.setT95(T95.indexOfChild(T95.findViewById(T95.getCheckedRadioButtonId())) + "");
             }
         });
         T96.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -92,10 +204,14 @@ public class T17 extends Fragment {
                 System.out.println(i);
                 if (i == 5) {
                     txtT96.setVisibility(View.VISIBLE);
+                    OthersMap.setT96(1);
                     return;
+                } else {
+                    txtT96.setVisibility(View.GONE);
+                    OthersMap.setT96(0);
                 }
-                txtT96.setVisibility(View.GONE);
-                Answers.setT96(T96.indexOfChild(T96.findViewById(T96.getCheckedRadioButtonId())) + "");
+
+                //Answers.setT96(T96.indexOfChild(T96.findViewById(T96.getCheckedRadioButtonId())) + "");
             }
         });
         T97.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -104,10 +220,14 @@ public class T17 extends Fragment {
                 System.out.println(i);
                 if (i == 6) {
                     txtT97.setVisibility(View.VISIBLE);
+                    OthersMap.setT97(1);
                     return;
+                } else {
+                    txtT97.setVisibility(View.GONE);
+                    OthersMap.setT97(0);
                 }
-                txtT97.setVisibility(View.GONE);
-                Answers.setT97(T97.indexOfChild(T97.findViewById(T97.getCheckedRadioButtonId())) + "");
+
+                // Answers.setT97(T97.indexOfChild(T97.findViewById(T97.getCheckedRadioButtonId())) + "");
             }
         });
         T98.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -116,10 +236,14 @@ public class T17 extends Fragment {
                 System.out.println(i);
                 if (i == 4) {
                     txtT98.setVisibility(View.VISIBLE);
+                    OthersMap.setT98(1);
                     return;
+                } else {
+                    txtT98.setVisibility(View.GONE);
+                    OthersMap.setT98(0);
                 }
-                txtT98.setVisibility(View.GONE);
-                Answers.setT98(T98.indexOfChild(T98.findViewById(T98.getCheckedRadioButtonId())) + "");
+
+                // Answers.setT98(T98.indexOfChild(T98.findViewById(T98.getCheckedRadioButtonId())) + "");
             }
         });
         T99.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -140,6 +264,7 @@ public class T17 extends Fragment {
                 } else {
                     T99z.setVisibility(View.INVISIBLE);
                 }
+                savePageData();
                 //  Answers.setT98(T99.indexOfChild(T99.findViewById(T99.getCheckedRadioButtonId())) + "");
 
             }

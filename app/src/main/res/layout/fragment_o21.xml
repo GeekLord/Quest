@@ -33,7 +33,7 @@
                     android:id="@+id/lblO51a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5.1) Are you planning to go somewhere to buy any medicine?"
+                    android:text="5.1) Are you planning to go somewhere to buy any medicine for this illness?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

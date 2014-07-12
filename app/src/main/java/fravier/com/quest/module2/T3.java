@@ -18,8 +18,8 @@ import fravier.com.quest.R;
 
 
 public class T3 extends Fragment {
-    public static int progressChanged_47 = 50;
-    public static int progressChanged_48 = 50;
+    public static int progressChanged_47 = 0;
+    public static int progressChanged_48 = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {
@@ -72,6 +72,18 @@ public class T3 extends Fragment {
     TextView sbvT47;
     TextView sbvT48;
 
+    public void setToZero() {
+        T47a.setScaleX(1.0F + (50) / 100.0F);
+        T47a.setScaleY(1.0F + (50) / 100.0F);
+        T47b.setScaleX(1.0F + (-50) / 100.0F);
+        T47b.setScaleY(1.0F + (-50) / 100.0F);
+
+        T48a.setScaleX(1.0F + (50) / 100.0F);
+        T48a.setScaleY(1.0F + (50) / 100.0F);
+        T48b.setScaleX(1.0F + (-50) / 100.0F);
+        T48b.setScaleY(1.0F + (-50) / 100.0F);
+    }
+
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
     }
@@ -87,10 +99,13 @@ public class T3 extends Fragment {
         sbT48 = ((SeekBar) paramView.findViewById(R.id.sbT48));
         sbvT47 = ((TextView) paramView.findViewById(R.id.sbvT47));
         sbvT48 = ((TextView) paramView.findViewById(R.id.sbvT48));
+
+        setToZero();
+
         sbT47.setMax(100);
-        sbT47.setProgress(50);
+        sbT47.setProgress(0);
         sbT48.setMax(100);
-        sbT48.setProgress(50);
+        sbT48.setProgress(0);
         sbvT47.setText(progressChanged_47 + "% likelihood");
         sbvT48.setText(progressChanged_48 + "% likelihood");
     }

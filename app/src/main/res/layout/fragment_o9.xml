@@ -22,7 +22,7 @@
                 android:id="@+id/lblO24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2.4) Did your / child visit / consult a health provider (hospital / health centre / clinic / Dispensary / Pharmacy / chemist /shop / Traditional Birth Attendant(TBA) &amp; Traditional Healers, Religious /cultural Healers)?"
+                android:text="2.4) Did you /your child visit / consult a health provider (hospital / health centre / clinic / Dispensary / Pharmacy / chemist /shop / Traditional Birth Attendant(TBA) &amp; Traditional Healers, Religious /cultural Healers)?"
                 android:textSize="@dimen/text_size_large" />
 
             <RadioGroup

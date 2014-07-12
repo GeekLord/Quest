@@ -88,6 +88,7 @@
                 android:id="@+id/rdgO25i"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="Illness not considered serious enough"
                 android:textSize="@dimen/text_size_large" />
 
@@ -95,12 +96,21 @@
                 android:id="@+id/rdgO25j"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Did not have time "
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/rdgO25k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
                 android:text="Other"
                 android:textSize="@dimen/text_size_large" />
         </RadioGroup>
 
         <EditText
-            android:id="@+id/rdgO25k"
+            android:id="@+id/rdgO25l"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15.0dip"

@@ -34,6 +34,7 @@ public class ParentOne extends ActionBarActivity {
     Button next;
     Button prev;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,6 +99,8 @@ public class ParentOne extends ActionBarActivity {
     }
 
     public void nextIntents() {
+        getWindow().setSoftInputMode(
+                WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         Logic localLogic = new Logic(getApplication());
         int i = viewPager.getCurrentItem();
         if (i == 0) {
@@ -181,17 +184,170 @@ public class ParentOne extends ActionBarActivity {
                 }
             } else if (i == 31) {//others
 
-                if (OthersMap.getO67() == 2) {
+                if (OthersMap.getO67() == 2 || OthersMap.getO68() == 2 || OthersMap.getO69() == 2) {
+
                     Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
-                }
-                if (OthersMap.getO68() == 2) {
-                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
-                }
-                if (OthersMap.getO69() == 2) {
-                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
-                }
-                if (OthersMap.getO67() != 2 && OthersMap.getO68() != 2 && OthersMap.getO69() != 2) {
+
+                } else {
                     viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 32) {//others
+
+                String str6 = Answers.getO54();
+                if (OthersMap.getO54() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 6) {
+                if (Answers.getO21().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O21", Answers.getO21(), i));
+                }
+            } else if (i == 7) {
+                if (Answers.getO22().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.2 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O22", Answers.getO22(), i));
+                }
+            } else if (i == 9) {
+                if (Answers.getO24().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 2.4 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O24", Answers.getO24(), i));
+                }
+            } else if (i == 18) {//fraction split
+                String answersplit[] = Answers.getO40a().split("of");
+                boolean a = answersplit[0].trim().isEmpty();
+                boolean b = answersplit[1].trim().isEmpty();
+                boolean c = a ^ b;
+                if (c) {
+                    Toast.makeText(getApplication(), "Kindly answer complete question 4.0a", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
+                }
+            } else if (i == 21) {
+                if (Answers.getO49().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 4.9 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
+                }
+            } else if (i == 23) {
+                if (Answers.getO413().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O413", Answers.getO413(), i));
+                }
+            } else if (i == 24) {//skip page 25(no 4.15)
+                if (Answers.getO413().trim().equals("0")) {
+                    viewPager.setCurrentItem(26);
+                }
+            } else if (i == 26) {
+                if (Answers.getO51().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 5.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O51", Answers.getO51(), i));
+                }
+            } else if (i == 29) {
+                if (Answers.getO65().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 6.5 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O65", Answers.getO65(), i));
+                }//diversion here
+            } else {//till here
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+
+            }
+        } else if (Answers.getXx() == 1) {
+            // Toast.makeText(getApplication(), "Using One " + Answers.getXx(), Toast.LENGTH_SHORT).show();
+
+            if (i == 1) {
+                if (Answers.getO11().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 1.1 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O11", Answers.getO11(), i));
+                }
+            } else if (i == 3) {
+                if (Answers.getO19().trim().equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 1.9 ", Toast.LENGTH_SHORT).show();
+                } else {
+                    viewPager.setCurrentItem(localLogic.ALU("O19", Answers.getO19(), i));
+                }
+            } else if (i == 5) {//others
+                String str6 = Answers.getO111();
+                if (OthersMap.getO111() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 10) {//others
+                String str6 = Answers.getO25();
+                if (OthersMap.getO25() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 12) {//others
+                String str6 = Answers.getO27();
+                if (OthersMap.getO27() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 27) {//others
+                String str6 = Answers.getO52();
+                if (OthersMap.getO52() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 28) {//others
+                // String str6 = Answers.getO27();
+                if (OthersMap.getO61() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 30) {//others
+                // String str6 = Answers.getO27();
+                if (OthersMap.getO66() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 31) {//others
+
+                if (OthersMap.getO67() == 2 || OthersMap.getO68() == 2 || OthersMap.getO69() == 2) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
+            } else if (i == 32) {//others
+
+                String str6 = Answers.getO54();
+                if (OthersMap.getO54() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(21);
                 }
             } else if (i == 6) {
                 if (Answers.getO21().trim().equals("-1")) {
@@ -245,72 +401,12 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O65", Answers.getO65(), i));
                 }//diversion here
-            } else {//till here
-                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
-
-            }
-        } else if (Answers.getXx() == 1) {
-            // Toast.makeText(getApplication(), "Using One " + Answers.getXx(), Toast.LENGTH_SHORT).show();
-
-            if (i == 1) {
-                if (Answers.getO11().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 1.1 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O11", Answers.getO11(), i));
-                }
-            } else if (i == 3) {
-                if (Answers.getO19().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 1.9 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O19", Answers.getO19(), i));
-                }
-            } else if (i == 6) {
-                if (Answers.getO21().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 2.1 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O21", Answers.getO21(), i));
-                }
-            } else if (i == 7) {
-                if (Answers.getO22().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 2.2 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O22", Answers.getO22(), i));
-                }
-            } else if (i == 9) {
-                if (Answers.getO24().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 2.4 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O24", Answers.getO24(), i));
-                }
-            } else if (i == 21) {
-                if (Answers.getO49().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 4.9 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
-                }
-            } else if (i == 23) {
-                if (Answers.getO413().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O413", Answers.getO413(), i));
-                }
-            } else if (i == 26) {
-                if (Answers.getO51().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 5.1 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O51", Answers.getO51(), i));
-                }
-            } else if (i == 29) {
-                if (Answers.getO65().trim().equals("-1")) {
-                    Toast.makeText(getApplication(), "Kindly answer question 6.5 ", Toast.LENGTH_SHORT).show();
-                } else {
-                    viewPager.setCurrentItem(localLogic.ALU("O65", Answers.getO65(), i));
-                }//diversion here
             } else if (i == 20) {
                 viewPager.setCurrentItem(26);
-            } else if (i == 32) {
-                viewPager.setCurrentItem(21);
-
+            } else if (i == 24) {//skip page 25(no 4.15)
+                if (Answers.getO413().trim().equals("0")) {
+                    viewPager.setCurrentItem(33);
+                }
             } else if (i == 25) {
 
                 viewPager.setCurrentItem(33);
@@ -338,14 +434,18 @@ public class ParentOne extends ActionBarActivity {
             if (i == 3) {
                 if (Answers.getO11().equals("0")) {
                     viewPager.setCurrentItem(2);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
             }
 
 
             if (i == 5) {
                 String str6 = Answers.getO19();
-                if ((str6.equals("0")) || (str6.equals("3")) || (str6.equals("4"))) {
+                if ((str6.equals("0"))) {
                     viewPager.setCurrentItem(3);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
             } else if (i == 12) {
                 String str4 = Answers.getO21();
@@ -379,13 +479,11 @@ public class ParentOne extends ActionBarActivity {
                     viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
             } else if (i == 24) {
-                if (Answers.getO413().equals("0")) {
-                    viewPager.setCurrentItem(23);
-                } else {
-                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
-                }
+
+                viewPager.setCurrentItem(23);
+
             } else if (i == 25) {
-                if (Answers.getO413().equals("1")) {
+                if (Answers.getO413().equals("0")) {
                     viewPager.setCurrentItem(23);
                 } else {
                     viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
@@ -417,7 +515,7 @@ public class ParentOne extends ActionBarActivity {
 
             if (i == 5) {
                 String str6 = Answers.getO19();
-                if ((str6.equals("0")) || (str6.equals("3")) || (str6.equals("4"))) {
+                if ((str6.equals("0"))) {
                     viewPager.setCurrentItem(3);
                 }
             } else if (i == 12) {
@@ -451,12 +549,10 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
-            } else if (i == 24) {
-                if (Answers.getO413().equals("0")) {
-                    viewPager.setCurrentItem(23);
-                } else {
-                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
-                }
+            } else if (i == 24) {//the 4.13 saga
+
+                viewPager.setCurrentItem(23);
+
             } else if (i == 25) {
                 if (Answers.getO413().equals("1")) {
                     viewPager.setCurrentItem(23);
@@ -482,9 +578,14 @@ public class ParentOne extends ActionBarActivity {
             } else if (i == 21) {
                 viewPager.setCurrentItem(32);
 
-            } else if (i == 33) {
+            } else if (i == 33) {//the 4.13 saga
+                if (Answers.getO413().equals("0")) {
+                    viewPager.setCurrentItem(24);
+                } else {
+                    viewPager.setCurrentItem(25);
+                }
 
-                viewPager.setCurrentItem(25);
+
             } else {
                 viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
             }
@@ -525,6 +626,7 @@ public class ParentOne extends ActionBarActivity {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     Intent intent = new Intent(getApplication(), Dashboard.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
                 }
