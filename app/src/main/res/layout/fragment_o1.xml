@@ -89,6 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="First name, Last name"
                 android:inputType="textCapWords|textPersonName" />
         </TableRow>
 
@@ -153,6 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="First name, Last name"
                 android:inputType="textCapWords|textPersonName" />
         </TableRow>
 

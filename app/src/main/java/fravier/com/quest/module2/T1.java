@@ -6,6 +6,8 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +23,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -36,9 +39,9 @@ public class T1 extends Fragment {
     public TextView T07_time;
 
     TableRow viewB, viewC, viewD;
-    RadioGroup O3a, O3c, O3d;
-    EditText O3b;
-    EditText O3dd;
+    RadioGroup T3a, T3c, T3d;
+    EditText T3b;
+    EditText T3dd;
     Context ctx;
     DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
         private void updateDate() {
@@ -93,12 +96,12 @@ public class T1 extends Fragment {
         viewC = (TableRow) paramView.findViewById(R.id.viewC);
         viewD = (TableRow) paramView.findViewById(R.id.viewD);
 
-        O3a = (RadioGroup) paramView.findViewById(R.id.rdgO3a);
-        O3c = (RadioGroup) paramView.findViewById(R.id.rdgO3c);
-        O3d = (RadioGroup) paramView.findViewById(R.id.rdgO3d);
+        T3a = (RadioGroup) paramView.findViewById(R.id.rdgO3a);
+        T3c = (RadioGroup) paramView.findViewById(R.id.rdgO3c);
+        T3d = (RadioGroup) paramView.findViewById(R.id.rdgO3d);
 
-        O3b = (EditText) paramView.findViewById(R.id.txtO3b);
-        O3dd = (EditText) paramView.findViewById(R.id.rdgO3dd);
+        T3b = (EditText) paramView.findViewById(R.id.txtO3b);
+        T3dd = (EditText) paramView.findViewById(R.id.rdgO3dd);
 
 
     }
@@ -128,10 +131,10 @@ public class T1 extends Fragment {
     }
 
     private void listeners() {
-        O3a.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T3a.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                int x = O3a.indexOfChild(O3a.findViewById(checkedId));
+                int x = T3a.indexOfChild(T3a.findViewById(checkedId));
                 if (x == 0) {
                     viewB.setVisibility(View.VISIBLE);
                     viewC.setVisibility(View.VISIBLE);
@@ -142,18 +145,35 @@ public class T1 extends Fragment {
                     viewC.setVisibility(View.GONE);
                     viewD.setVisibility(View.GONE);
                 }
+                savePageData();
             }
         });
-        O3c.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        T3c.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                int x = O3c.indexOfChild(O3c.findViewById(checkedId));
+                int x = T3c.indexOfChild(T3c.findViewById(checkedId));
                 if (x == 0) {
                     viewD.setVisibility(View.GONE);
 
                 } else {
                     viewD.setVisibility(View.VISIBLE);
                 }
+                savePageData();
+            }
+        });
+        T3d.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                int x = T3d.indexOfChild(T3d.findViewById(checkedId));
+                if (x == 2) {
+                    T3dd.setVisibility(View.VISIBLE);
+                    OthersMap.setT3(1);
+
+                } else {
+                    T3dd.setVisibility(View.GONE);
+                    OthersMap.setT3(0);
+                }
+                savePageData();
             }
         });
 
@@ -168,6 +188,22 @@ public class T1 extends Fragment {
                 new TimePickerDialog(ctx, time, myCalendar.get(Calendar.HOUR_OF_DAY), myCalendar.get(Calendar.MINUTE), true).show();
             }
         });
+        T3dd.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
     }
 
 
@@ -180,10 +216,31 @@ public class T1 extends Fragment {
         Answers.setT07(this.T07.getText().toString().trim());
         Answers.setT07_day(this.T07_day.getText().toString().trim());
         Answers.setT07_time(this.T07_time.getText().toString().trim());
+
+        //
+        Answers.setT03a(T3a.indexOfChild(T3a.findViewById(T3a.getCheckedRadioButtonId())) + "");
+        Answers.setT03c(T3c.indexOfChild(T3c.findViewById(T3c.getCheckedRadioButtonId())) + "");
+        if (T3d.indexOfChild(T3d.findViewById(T3d.getCheckedRadioButtonId())) == 2) {
+            Answers.setT03d(T3dd.getText().toString());
+        } else {
+            Answers.setT03d(T3d.indexOfChild(T3d.findViewById(T3d.getCheckedRadioButtonId())) + "");
+
+        }
     }
 
     public void setUserVisibleHint(boolean paramBoolean) {
         super.setUserVisibleHint(paramBoolean);
+        try {
+            savePageData();
+
+        } catch (NullPointerException e) {
+
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         try {
             savePageData();
 

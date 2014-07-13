@@ -118,6 +118,38 @@ public class ParentTwo extends ActionBarActivity {
             } else {
                 viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
             }
+        } else if (i == 0) {
+            String str3a = Answers.getT03a().trim();
+            String str3c = Answers.getT03c().trim();
+            String str3d = Answers.getT03d().trim();
+            if (str3a.equals("-1")) {
+                Toast.makeText(getApplication(), "Kindly answer question 3a ", Toast.LENGTH_SHORT).show();
+            } else if (str3a.equals("0")) {
+                if (str3c.equals("-1")) {
+                    Toast.makeText(getApplication(), "Kindly answer question 3c ", Toast.LENGTH_SHORT).show();
+                } else {
+                    if (str3c.equals("1")) {
+                        if (str3d.equals("-1")) {
+                            Toast.makeText(getApplication(), "Kindly answer question 3d ", Toast.LENGTH_SHORT).show();
+                        } else {
+                            String str6 = Answers.getT03d();
+                            if (OthersMap.getT3() == 1 && str6.equals("")) {
+
+                                Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                            } else {
+                                viewPager.setCurrentItem(1);
+                            }
+                        }
+
+                    } else {
+                        viewPager.setCurrentItem(1);
+                    }
+                }
+
+            } else {
+                viewPager.setCurrentItem(1);
+            }
         } else if (i == 10) {//others
             String str6 = Answers.getT54();
             String str7 = Answers.getT53();

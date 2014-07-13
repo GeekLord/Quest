@@ -52,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="First name, Last name"
                 android:inputType="textCapWords|textPersonName" />
         </TableRow>
 
@@ -100,7 +101,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_card"
             android:orientation="vertical"
-            android:padding="15.0dip">
+            android:padding="15.0dip"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/textView"
@@ -114,7 +116,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:hint="First name, Last name"
+                android:inputType="textCapWords|textPersonName" />
 
         </TableRow>
 
@@ -124,9 +127,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_card"
             android:orientation="vertical"
-            android:padding="15.0dip">
+            android:padding="15.0dip"
+            android:visibility="gone">
 
-            <TextView
+        <TextView
                 android:id="@+id/textView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -163,7 +167,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/background_card"
             android:orientation="vertical"
-            android:padding="15.0dip">
+            android:padding="15.0dip"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/textView3"
@@ -207,7 +212,9 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:textSize="@dimen/text_size_large" />
+                    android:hint="specify"
+                    android:textSize="@dimen/text_size_large"
+                    android:visibility="gone" />
             </RadioGroup>
         </TableRow>
 

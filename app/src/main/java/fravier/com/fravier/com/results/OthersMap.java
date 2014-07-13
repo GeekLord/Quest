@@ -15,6 +15,7 @@ public class OthersMap {
     public static int O69 = 0;
     public static int O54 = 0;
     public static int T52 = 0;
+    public static int T3 = 0;
     public static int T54 = 0;
     public static int T91 = 0;
 
@@ -27,6 +28,14 @@ public class OthersMap {
     public static int T96 = 0;
     public static int T97 = 0;
     public static int T98 = 0;
+
+    public static int getT3() {
+        return T3;
+    }
+
+    public static void setT3(int t3) {
+        T3 = t3;
+    }
 
     public static int getT95() {
         return T95;
