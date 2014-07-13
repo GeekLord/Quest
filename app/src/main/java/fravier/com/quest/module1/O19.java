@@ -17,9 +17,9 @@ import fravier.com.quest.R;
 
 
 public class O19 extends Fragment {
-    public static int progressChanged_b = 0;
-    public static int progressChanged_c = 0;
-    public static int progressChanged_d = 0;
+    public int progressChanged_b = 0;
+    public int progressChanged_c = 0;
+    public int progressChanged_d = 0;
 
 
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {

@@ -17,14 +17,14 @@ import fravier.com.quest.R;
 
 
 public class O14 extends Fragment {
-    public static int progressChanged_41 = 0;
-    public static int progressChanged_42 = 0;
-    public static int progressChanged_43 = 0;
-    public static int progressChanged_44a = 0;
-    public static int progressChanged_44b = 0;
-    public static int progressChanged_44c = 0;
-    public static int progressChanged_45a = 0;
-    public static int progressChanged_45b = 0;
+    public int progressChanged_41 = 0;
+    public int progressChanged_42 = 0;
+    public int progressChanged_43 = 0;
+    public int progressChanged_44a = 0;
+    public int progressChanged_44b = 0;
+    public int progressChanged_44c = 0;
+    public int progressChanged_45a = 0;
+    public int progressChanged_45b = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {

@@ -17,8 +17,8 @@ import fravier.com.quest.R;
 
 
 public class T13 extends Fragment {
-    public static int progressChanged_81 = 0;
-    public static int progressChanged_82 = 0;
+    public int progressChanged_81 = 0;
+    public int progressChanged_82 = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {

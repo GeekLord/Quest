@@ -24,6 +24,8 @@ public class Dashboard extends ActionBarActivity {
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#012345")));
         dash1 = (ImageButton) findViewById(R.id.btnModuleOne);
         dash2 = (ImageButton) findViewById(R.id.btnModuleTwo);
+        new ParentOne().finish();
+        new ParentTwo().finish();
 
         dash1.setOnClickListener(new View.OnClickListener() {
 

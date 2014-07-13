@@ -89,7 +89,7 @@ public class Exporting {
 
     public void toCSC() {
         try {
-            title = new String[]{"Q 0.1", "Q 0.2", "Q 0.3", "Q 0.4", "Q 0.5", "Q 0.6", "Q 0.7", "Interview date", "Start time", "Q 1.1", "Q 1.2", "Q 1.3", "Q 1.4", "Q 1.5", "Q 1.6", "Q 1.7", "Q 1.8", "Q 1.9", "Q 1.10", "Q 1.11", "Q 2.1", "Q 2.2", "Q 2.3", "Q 2.4", "Q 2.5", "Q 2.6", "Q 2.7", "Q 2.8", "Q 3.1a", "Q 3.1b", "Q 3.1c", "Q 3.1d", "Q 3.2a", "Q 3.2b", "Q 3.2c", "Q 3.2d", "Q 3.2e", "Q 4.0a", "Q 4.0b", "Q 4.0c", "Q 4.0d", "Q 4.0e", "Q 4.1", "Q 4.2", "Q 4.3", "Q 4.4a", "Q 4.4b", "Q 4.4c", "Q 4.5a", "Q 4.5b", "Q 4.6", "Q 4.7", "Q 4.8", "Q 4.9", "Q 4.10", "Q 4.11", "Q 4.12", "Q 4.13", "Q 4.14a", "Q 4.14b", "Q 4.14c", "Q 4.15a", "Q 4.15b", "Q 4.15c", "Q 5.1", "Q 5.2", "Q 5.3", "Q 5.4", "Q 6.1", "Q 6.2", "Q 6.3", "Q 6.4", "Q 6.5", "Q 6.6", "Q 6.7", "Q 6.8", "Q 6.9", "Q 12.1", "Q 12.2", "End time"};
+            title = new String[]{"q0_1", "q0_2", "q0_3", "q0_4", "q0_5", "q0_6", "q0_7", "Interview date", "Start time", "q1_1", "q1_2", "q1_3", "q1_4", "q1_5", "q1_6", "q1_7", "q1_8", "q1_9", "q1_10", "q1_11", "q2_1", "q2_2", "q2_3", "q2_4", "q2_5", "q2_6", "q2_7", "q2_8", "q3_1a", "q3_1b", "q3_1c", "q3_1d", "q3_2a", "q3_2b", "q3_2c", "q3_2d", "q3_2e", "q4_0a", "q4_0b", "q4_0c", "q4_0d", "q4_0e", "q4_1", "q4_2", "q4_3", "q4_4a", "q4_4b", "q4_4c", "q4_5a", "q4_5b", "q4_6", "q4_7", "q4_8", "q4_9", "q4_10", "q4_11", "q4_12", "q4_13", "q4_14a", "q4_14b", "q4_14c", "q4_15a", "q4_15b", "q4_15c", "q5_1", "q5_2", "q5_3", "q5_4", "q6_1", "q6_2", "q6_3", "q6_4", "q6_5", "q6_6", "q6_7", "q6_8", "q6_9", "q12_1", "q12_2", "End time"};
             String[] arrayOfString = new String[80];
             arrayOfString[0] = StringUtils.replaceEach(Answers.getO01(), new String[]{"0", "1", "-1"}, new String[]{"1", "2", " "});
             arrayOfString[1] = Answers.getO02();
@@ -184,7 +184,7 @@ public class Exporting {
 
     public void toCSC2() {
         try {
-            title2 = new String[]{"Q 0.2", "Q 0.3", "Q 0.3a", "Q 0.3b", "Q 0.3c", "Q 0.3d", "Q 0.4", "Q 0.5", "Q 0.6", "Q 0.7", "Day", "Time", "Q 4.0a", "Q 4.0b", "Q 4.0c", "Q 4.0d", "Q 4.0e", "Q 4.6", "Q 4.7", "Q 4.8", "Q 4.9", "Q 4.10", "Q 4.11", "Q 4.12", "Q 4.13", "Q 4.14a", "Q 4.14b", "Q 4.14c", "Q 4.15a", "Q 4.15b", "Q 4.15c", "Q 5.1", "Q 5.2", "Q 5.3", "Q 5.4", "Q 5.5", "Q 5.6", "Q 7.1", "Q 7.2", "Q 7.3", "Q T81", "Q T82", "Q 9.1", "Q 9.2a", "Q 9.2b", "Q 9.2c", "Q 9.2d", "Q 9.2e", "Q 9.2f", "Q 9.2g", "Q 9.2h", "Q 9.3a", "Q 9.3b", "Q 9.3c", "Q 9.4", "Q 9.5", "Q 9.6", "Q 9.7", "Q 9.8", "Q 9.9", "Q 12.1", "Q 12.2", "End Time"};
+            title2 = new String[]{"q0_2", "q0_3", "q0_3a", "q0_3b", "q0_3c", "q0_3d", "q0_4", "q0_5", "q0_6", "q0_7", "Day", "Time", "q4_0a", "q4_0b", "q4_0c", "q4_0d", "q4_0e", "q4_6", "q4_7", "q4_8", "q4_9", "q4_10", "q4_11", "q4_12", "q4_13", "q4_14a", "q4_14b", "q4_14c", "q4_15a", "q4_15b", "q4_15c", "q5_1", "q5_2", "q5_3", "q5_4", "q5_5", "q5_6", "q7_1", "q7_2", "q7_3", "q8_1", "q8_2", "q9_1", "q9_2a", "q9_2b", "q9_2c", "q9_2d", "q9_2e", "q9_2f", "q9_2g", "q9_2h", "q9_3a", "q9_3b", "q9_3c", "q9_4", "q9_5", "q9_6", "q9_7", "q9_8", "q9_9", "q12_1", "q12_2", "End Time"};
             String[] arrayOfString = new String[63];
             arrayOfString[0] = Answers.getT02();
             arrayOfString[1] = Answers.getT03();
@@ -254,9 +254,12 @@ public class Exporting {
             writer = new CSVWriter(new FileWriter(folder + "FollowUpQuestionnaire.csv", true), ',');
             writer.writeNext(arrayOfString);
             writer.close();
+
             return;
         } catch (Exception localException) {
             localException.printStackTrace();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
         }
     }
 }

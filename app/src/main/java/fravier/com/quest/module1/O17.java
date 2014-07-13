@@ -17,9 +17,9 @@ import fravier.com.quest.R;
 
 
 public class O17 extends Fragment {
-    public static int progressChanged_410 = 0;
-    public static int progressChanged_411 = 0;
-    public static int progressChanged_412 = 0;
+    public int progressChanged_410 = 0;
+    public int progressChanged_411 = 0;
+    public int progressChanged_412 = 0;
 
 
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
@@ -28,7 +28,7 @@ public class O17 extends Fragment {
 
                 case R.id.sbO410:
                     progressChanged_410 = paramAnonymousInt;
-                    sbvO410.setText(O17.progressChanged_410 + "% likelihood");
+                    sbvO410.setText(progressChanged_410 + "% likelihood");
                     O410a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O410a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O410b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -36,7 +36,7 @@ public class O17 extends Fragment {
                     return;
                 case R.id.sbO411:
                     progressChanged_411 = paramAnonymousInt;
-                    sbvO411.setText(O17.progressChanged_411 + "% likelihood");
+                    sbvO411.setText(progressChanged_411 + "% likelihood");
                     O411a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O411a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O411b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
@@ -44,7 +44,7 @@ public class O17 extends Fragment {
                     return;
                 case R.id.sbO412:
                     progressChanged_412 = paramAnonymousInt;
-                    sbvO412.setText(O17.progressChanged_412 + "% likelihood");
+                    sbvO412.setText(progressChanged_412 + "% likelihood");
                     O412a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O412a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
                     O412b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);

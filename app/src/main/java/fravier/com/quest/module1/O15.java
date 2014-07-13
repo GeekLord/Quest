@@ -18,8 +18,8 @@ import fravier.com.quest.R;
 
 
 public class O15 extends Fragment {
-    public static int progressChanged_47 = 0;
-    public static int progressChanged_48 = 0;
+    public int progressChanged_47 = 0;
+    public int progressChanged_48 = 0;
     SeekBar.OnSeekBarChangeListener l = new SeekBar.OnSeekBarChangeListener() {
         public void onProgressChanged(SeekBar paramAnonymousSeekBar, int paramAnonymousInt, boolean paramAnonymousBoolean) {
             switch (paramAnonymousSeekBar.getId()) {
@@ -51,10 +51,10 @@ public class O15 extends Fragment {
             switch (paramAnonymousSeekBar.getId()) {
 
                 case R.id.sbO47:
-                    Answers.setO47(O15.progressChanged_47 + "%");
+                    Answers.setO47(progressChanged_47 + "%");
                     return;
                 case R.id.sbO48:
-                    Answers.setO48(O15.progressChanged_48 + "%");
+                    Answers.setO48(progressChanged_48 + "%");
                     return;
             }
 

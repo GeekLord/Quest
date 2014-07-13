@@ -4,8 +4,6 @@ public class Answers {
     public static String O01;
     public static String O02 = "0";
     public static String O03;
-
-
     public static String O04;
     public static String O05;
     public static String O06;
@@ -146,8 +144,6 @@ public class Answers {
     public static String T97;
     public static String T98;
     public static String T99;
-    //    public static String x = getRandom() + "";
-    //public static String x = "0";
     public static int x = 0;
 
     // public static int x = 1;
@@ -1446,5 +1442,10 @@ public class Answers {
 
     public static void setT99(String paramString) {
         T99 = paramString;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
     }
 }
