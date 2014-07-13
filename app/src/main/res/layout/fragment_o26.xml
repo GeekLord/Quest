@@ -323,6 +323,7 @@
                         android:id="@+id/rdgO69h"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:checked="false"
                         android:text="Dont know"
                         android:textSize="@dimen/text_size_large" />
 

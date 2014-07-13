@@ -44,14 +44,171 @@
                 android:id="@+id/lblO1e"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0.3) Respondent name"
+                android:text="0.3) Participants name"
                 android:textSize="@dimen/text_size_large" />
 
             <EditText
                 android:id="@+id/txtT03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="textCapWords|textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/lbl3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.3a)  Child under 18? "
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioGroup
+                android:id="@+id/rdgO3a"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdgO3aa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Yes"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/rdgO3ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="No"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/viewB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.3b) Name of respondent"
+                android:textSize="@dimen/text_size_large" />
+
+            <EditText
+                android:id="@+id/txtO3b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/viewC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0.3c)  Is this the same person that responded to the baseline questionnaire for the child? "
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioGroup
+                android:id="@+id/rdgO3c"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Yes"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="No"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/viewD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_card"
+            android:orientation="vertical"
+            android:padding="15.0dip">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0.3d)  Relationship to child \n\n\n\n\n"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioGroup
+                android:id="@+id/rdgO3d"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Parent"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="GrandParent"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Other"
+                    android:textSize="@dimen/text_size_large" />
+
+                <EditText
+                    android:id="@+id/rdgO3dd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:textSize="@dimen/text_size_large" />
+            </RadioGroup>
         </TableRow>
 
         <TableRow
@@ -114,7 +271,8 @@
                 android:id="@+id/txtT06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10" />
+                android:ems="10"
+                android:inputType="textCapWords|textPersonName" />
         </TableRow>
 
         <TableRow

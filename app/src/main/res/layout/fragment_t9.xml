@@ -35,7 +35,7 @@
                     android:id="@+id/lblT51"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5.1) In the last week, did you take any action for your fever /sickness?"
+                    android:text="5.1) In the last week, did you/ your child  take any action for your fever/sickness?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

@@ -27,7 +27,7 @@
             android:layout_marginLeft="15.0dip"
             android:layout_weight="1.0">
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,56 +35,56 @@
                 android:text="Lacked money"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Prescribed drugs not available"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Self-medication"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25d"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Poor quality of service"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25e"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="High cost of care"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25f"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Religious /cultural reasons"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25g"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fear of discovering serious illness"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Long distance to provider"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25i"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:text="Illness not considered serious enough"
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25j"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
                 android:text="Did not have time "
                 android:textSize="@dimen/text_size_large" />
 
-            <RadioButton
+            <CheckBox
                 android:id="@+id/rdgO25k"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -227,7 +227,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0">
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -235,42 +235,42 @@
                         android:text="Stone"
                         android:textSize="@dimen/text_size_large" />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Brick"
                         android:textSize="@dimen/text_size_large" />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97c"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Timber"
                         android:textSize="@dimen/text_size_large" />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97d"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Iron Sheet"
                         android:textSize="@dimen/text_size_large" />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97e"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mud"
                         android:textSize="@dimen/text_size_large" />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97f"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Wood"
                         android:textSize="@dimen/text_size_large" />
 
-                    <RadioButton
+                    <CheckBox
                         android:id="@+id/rdgT97g"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

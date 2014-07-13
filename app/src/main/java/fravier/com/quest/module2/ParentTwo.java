@@ -120,7 +120,10 @@ public class ParentTwo extends ActionBarActivity {
             }
         } else if (i == 10) {//others
             String str6 = Answers.getT54();
-            if (OthersMap.getT52() == 2) {
+            String str7 = Answers.getT53();
+            if (str7.equals("-1")) {
+                Toast.makeText(getApplication(), "Kindly answer question 5.3 ", Toast.LENGTH_SHORT).show();
+            } else if (OthersMap.getT52() == 2) {
 
                 Toast.makeText(ParentTwo.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
 
@@ -201,11 +204,21 @@ public class ParentTwo extends ActionBarActivity {
             } else {
                 viewPager.setCurrentItem(localLogic.ALU("T49", Answers.getT49(), i));
             }
+        } else if (i == 5) {
+            if (Answers.getT49().equals("0")) {
+                viewPager.setCurrentItem(9);
+            } else {
+                viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+            }
         } else if (i == 6) {
             if (Answers.getT413().equals("-1")) {
                 Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
             } else {
                 viewPager.setCurrentItem(localLogic.ALU("T413", Answers.getT413(), i));
+            }
+        } else if (i == 7) {//skip page 25(no 4.15)
+            if (Answers.getT413().trim().equals("0")) {
+                viewPager.setCurrentItem(9);
             }
         } else if (i == 9) {
             if (Answers.getT51().equals("-1")) {
@@ -256,6 +269,16 @@ public class ParentTwo extends ActionBarActivity {
                 viewPager.setCurrentItem(6);
             } else {
                 viewPager.setCurrentItem(7);
+            }
+        } else if (i == 9) {
+            String str6 = Answers.getT413();
+            String str7 = Answers.getT49();
+            if ((str6.equals("0"))) {
+                viewPager.setCurrentItem(7);
+            } else if ((str7.equals("0"))) {
+                viewPager.setCurrentItem(5);
+            } else {
+                viewPager.setCurrentItem(8);
             }
         } else if (i == 11) {
             String str6 = Answers.getT51();

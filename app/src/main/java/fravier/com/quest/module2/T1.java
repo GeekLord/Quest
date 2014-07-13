@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -32,6 +34,11 @@ public class T1 extends Fragment {
     public EditText T07;
     public TextView T07_day;
     public TextView T07_time;
+
+    TableRow viewB, viewC, viewD;
+    RadioGroup O3a, O3c, O3d;
+    EditText O3b;
+    EditText O3dd;
     Context ctx;
     DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
         private void updateDate() {
@@ -80,6 +87,20 @@ public class T1 extends Fragment {
         T07_time.setText(localSimpleDateFormat1.format(myCalendar.getTime()));
         SimpleDateFormat localSimpleDateFormat2 = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
         T07_day.setText(localSimpleDateFormat2.format(myCalendar.getTime()));
+
+
+        viewB = (TableRow) paramView.findViewById(R.id.viewB);
+        viewC = (TableRow) paramView.findViewById(R.id.viewC);
+        viewD = (TableRow) paramView.findViewById(R.id.viewD);
+
+        O3a = (RadioGroup) paramView.findViewById(R.id.rdgO3a);
+        O3c = (RadioGroup) paramView.findViewById(R.id.rdgO3c);
+        O3d = (RadioGroup) paramView.findViewById(R.id.rdgO3d);
+
+        O3b = (EditText) paramView.findViewById(R.id.txtO3b);
+        O3dd = (EditText) paramView.findViewById(R.id.rdgO3dd);
+
+
     }
 
     @Override
@@ -107,6 +128,34 @@ public class T1 extends Fragment {
     }
 
     private void listeners() {
+        O3a.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                int x = O3a.indexOfChild(O3a.findViewById(checkedId));
+                if (x == 0) {
+                    viewB.setVisibility(View.VISIBLE);
+                    viewC.setVisibility(View.VISIBLE);
+                    viewD.setVisibility(View.GONE);
+
+                } else {
+                    viewB.setVisibility(View.GONE);
+                    viewC.setVisibility(View.GONE);
+                    viewD.setVisibility(View.GONE);
+                }
+            }
+        });
+        O3c.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                int x = O3c.indexOfChild(O3c.findViewById(checkedId));
+                if (x == 0) {
+                    viewD.setVisibility(View.GONE);
+
+                } else {
+                    viewD.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
 
         T07_day.setOnClickListener(new View.OnClickListener() {

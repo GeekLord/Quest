@@ -71,7 +71,7 @@ public class Logic {
                 return Addressing("O61");
             }
         } else if (qn.equals("O65")) {
-            if (ans.equals("1")) {
+            if (ans.equals("1") || ans.equals("2")) {
                 return Addressing("O67");
             }
             //for module two

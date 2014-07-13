@@ -48,7 +48,8 @@
                         android:id="@+id/rdgO12b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Grandparent"
+                        android:checked="false"
+                        android:text="Grandmother/grandfather"
                         android:textSize="@dimen/text_size_large" />
 
                     <RadioButton
@@ -56,19 +57,36 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="false"
+                        android:text="Brother/Sister"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO12d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Uncle/Aunt"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <RadioButton
+                        android:id="@+id/rdgO12e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
                         android:text="Other"
                         android:textSize="@dimen/text_size_large" />
+
+                    <EditText
+                        android:id="@+id/rdgO12f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.0"
+                        android:ems="10"
+                        android:hint="specify"
+                        android:visibility="gone" />
                 </RadioGroup>
 
-                <EditText
-                    android:id="@+id/rdgO12d"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_weight="1.0"
-                    android:ems="10"
-                    android:hint="specify"
-                    android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
 

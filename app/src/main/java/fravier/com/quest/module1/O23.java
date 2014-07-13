@@ -13,6 +13,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import fravier.com.fravier.com.results.Answers;
 import fravier.com.fravier.com.results.OthersMap;
@@ -78,6 +79,87 @@ public class O23 extends Fragment {
 
             }
         });
+        O61i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
+                    O61a.setEnabled(false);
+                    O61b.setEnabled(false);
+                    O61c.setEnabled(false);
+                    O61d.setEnabled(false);
+                    O61e.setEnabled(false);
+                    O61f.setEnabled(false);
+                    O61g.setEnabled(false);
+                    O61h.setEnabled(false);
+                    O61j.setEnabled(false);
+                    O61k.setEnabled(false);
+
+                    O61a.setChecked(false);
+                    O61b.setChecked(false);
+                    O61c.setChecked(false);
+                    O61d.setChecked(false);
+                    O61e.setChecked(false);
+                    O61f.setChecked(false);
+                    O61g.setChecked(false);
+                    O61h.setChecked(false);
+                    O61j.setChecked(false);
+                    O61k.setChecked(false);
+                    return;
+                } else {
+                    O61a.setEnabled(true);
+                    O61b.setEnabled(true);
+                    O61c.setEnabled(true);
+                    O61d.setEnabled(true);
+                    O61e.setEnabled(true);
+                    O61f.setEnabled(true);
+                    O61g.setEnabled(true);
+                    O61h.setEnabled(true);
+                    O61j.setEnabled(true);
+                    O61k.setEnabled(true);
+                }
+
+            }
+        });
+        O61j.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
+                    O61a.setEnabled(false);
+                    O61b.setEnabled(false);
+                    O61c.setEnabled(false);
+                    O61d.setEnabled(false);
+                    O61e.setEnabled(false);
+                    O61f.setEnabled(false);
+                    O61g.setEnabled(false);
+                    O61h.setEnabled(false);
+                    O61i.setEnabled(false);
+                    O61k.setEnabled(false);
+
+                    O61a.setChecked(false);
+                    O61b.setChecked(false);
+                    O61c.setChecked(false);
+                    O61d.setChecked(false);
+                    O61e.setChecked(false);
+                    O61f.setChecked(false);
+                    O61g.setChecked(false);
+                    O61h.setChecked(false);
+                    O61i.setChecked(false);
+                    O61k.setChecked(false);
+                    return;
+                } else {
+                    O61a.setEnabled(true);
+                    O61b.setEnabled(true);
+                    O61c.setEnabled(true);
+                    O61d.setEnabled(true);
+                    O61e.setEnabled(true);
+                    O61f.setEnabled(true);
+                    O61g.setEnabled(true);
+                    O61h.setEnabled(true);
+                    O61i.setEnabled(true);
+                    O61k.setEnabled(true);
+                }
+
+            }
+        });
+
         txtO61l.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -92,6 +174,42 @@ public class O23 extends Fragment {
             @Override
             public void afterTextChanged(Editable s) {
                 savePageData();
+            }
+        });
+        O64.addTextChangedListener(new TextWatcher() {
+
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                try {
+                    int days = Integer.parseInt(O64.getText().toString().trim());
+                    if (days > 7) {
+                        Toast.makeText(ctx, "The maximum number of days that can be recorded is 7", Toast.LENGTH_SHORT).show();
+                        O64.setText("");
+                    }
+                } catch (NumberFormatException e) {
+
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                try {
+                    int days = Integer.parseInt(O64.getText().toString().trim());
+                    if (days > 7) {
+                        Toast.makeText(ctx, "The maximum number of days that can be recorded is 7", Toast.LENGTH_SHORT).show();
+                        O64.setText("");
+                    }
+                } catch (NumberFormatException e) {
+
+                }
+
+
             }
         });
     }

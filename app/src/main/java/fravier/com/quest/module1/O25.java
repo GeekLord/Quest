@@ -62,6 +62,37 @@ public class O25 extends Fragment {
 
             }
         });
+        O66e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
+                    O66a.setEnabled(false);
+                    O66b.setEnabled(false);
+                    O66c.setEnabled(false);
+                    O66d.setEnabled(false);
+
+                    O66f.setEnabled(false);
+
+                    O66a.setChecked(false);
+                    O66b.setChecked(false);
+                    O66c.setChecked(false);
+                    O66d.setChecked(false);
+
+                    O66f.setChecked(false);
+
+                    return;
+                } else {
+                    O66a.setEnabled(true);
+                    O66b.setEnabled(true);
+                    O66c.setEnabled(true);
+                    O66d.setEnabled(true);
+
+                    O66f.setEnabled(true);
+
+                }
+
+            }
+        });
+
         txtO66g.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

@@ -4,6 +4,11 @@ public class Answers {
     public static String O01;
     public static String O02 = "0";
     public static String O03;
+    public static String O03a;
+    public static String O03b;
+    public static String O03c;
+    public static String O03d;
+
     public static String O04;
     public static String O05;
     public static String O06;
@@ -313,6 +318,38 @@ public class Answers {
 
     public static void setO03(String paramString) {
         O03 = paramString;
+    }
+
+    public static String getO03d() {
+        return O03d;
+    }
+
+    public static void setO03d(String o03d) {
+        O03d = o03d;
+    }
+
+    public static String getO03c() {
+        return O03c;
+    }
+
+    public static void setO03c(String o03c) {
+        O03c = o03c;
+    }
+
+    public static String getO03b() {
+        return O03b;
+    }
+
+    public static void setO03b(String o03b) {
+        O03b = o03b;
+    }
+
+    public static String getO03a() {
+        return O03a;
+    }
+
+    public static void setO03a(String o03a) {
+        O03a = o03a;
     }
 
     public static String getO04() {

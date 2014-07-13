@@ -1,7 +1,9 @@
 package fravier.com.quest.module1;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -28,14 +30,6 @@ public class O12 extends Fragment {
     Button O32ea;
     Button O32eb;
     Context ctx;
-
-    RadioButton rd32ax, rd32ay;
-    RadioButton rd32bx, rd32by;
-    RadioButton rd32cx, rd32cy;
-    RadioButton rd32dx, rd32dy;
-    RadioButton rd32ex, rd32ey;
-
-
     View.OnClickListener l = new View.OnClickListener() {
 
         @Override
@@ -50,6 +44,24 @@ public class O12 extends Fragment {
                     Answers.setO32a("B");
                     rd32ax.setChecked(false);
                     rd32ay.setChecked(true);
+
+                    AlertDialog.Builder adb = new AlertDialog.Builder(ctx);
+                    adb.setMessage("Kindly make sure that the respondent has understood the question");
+                    adb.setCancelable(true);
+                    adb.setTitle("Answer confirmation");
+
+                    adb.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface arg0, int arg1) {
+                            arg0.cancel();
+                        }
+
+                    });
+
+
+                    adb.show();
+
                     return;
                 case R.id.btnO32ba:
                     Answers.setO32b("A");
@@ -95,8 +107,11 @@ public class O12 extends Fragment {
 
         }
     };
-
-
+    RadioButton rd32ax, rd32ay;
+    RadioButton rd32bx, rd32by;
+    RadioButton rd32cx, rd32cy;
+    RadioButton rd32dx, rd32dy;
+    RadioButton rd32ex, rd32ey;
     TextView lbl;
 
     private void fonting() {

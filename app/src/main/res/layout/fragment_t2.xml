@@ -248,7 +248,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="d) How likely is that River Nzoia will dry up by next week ?"
+                    android:text="d) ? How likely is it that Webuye residents will use the train for transportation instead of matatus by the end of this year?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -328,7 +328,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="e) How likey is that you will ride on a boda boda (bicycle / motorcycle) taxi this year ?"
+                    android:text="e) How likely is it that Easter will be a public holiday?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

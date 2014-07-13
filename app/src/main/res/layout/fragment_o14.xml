@@ -104,7 +104,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.2) As you know, fever can be a symptom of many different illnesses, including malaria. How likely is it that a person living in Bungoma who currently has fever actually has malaria ?"
+                    android:text="4.2) As you know, fever can be a symptom of many different illnesses, including malaria. How likely is it that an adult living in Bungoma who currently has fever actually has malaria? "
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -182,7 +182,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.3) As you know, fever can be a symptom of many different illnesses, including malaria. How likely is it that a person living in your village who currently has fever actually has malaria ?"
+                    android:text="4.3) As you know, fever can be a symptom of many different illnesses, including malaria. How likely is it that an adult living in your village who currently has fever actually has malaria?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -260,7 +260,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.4a) If a healthy person in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 2 days ?"
+                    android:text="4.4a) If a healthy adult in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 2 days ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -337,7 +337,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.4b) if a healthy person in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 5 days ?"
+                    android:text="4.4b) if a healthy adult in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 5 days ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -415,7 +415,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="4.4c) if a healthy person in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 2 weeks ?"
+                    android:text="4.4c) if a healthy adult in Bungoma gets malaria today and she doesn't take any drug for that, how likey is that she will be hospitalized in 2 weeks ?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 

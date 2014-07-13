@@ -137,6 +137,116 @@ public class O26 extends Fragment {
                 savePageData();
             }
         });
+        O67i.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
+                    O67a.setEnabled(false);
+                    O67b.setEnabled(false);
+                    O67c.setEnabled(false);
+                    O67d.setEnabled(false);
+                    O67e.setEnabled(false);
+                    O67f.setEnabled(false);
+                    O67g.setEnabled(false);
+                    O67h.setEnabled(false);
+                    O67j.setEnabled(false);
+
+
+                    O67a.setChecked(false);
+                    O67b.setChecked(false);
+                    O67c.setChecked(false);
+                    O67d.setChecked(false);
+                    O67e.setChecked(false);
+                    O67f.setChecked(false);
+                    O67g.setChecked(false);
+                    O67h.setChecked(false);
+                    O67j.setChecked(false);
+
+                    return;
+                } else {
+                    O67a.setEnabled(true);
+                    O67b.setEnabled(true);
+                    O67c.setEnabled(true);
+                    O67d.setEnabled(true);
+                    O67e.setEnabled(true);
+                    O67f.setEnabled(true);
+                    O67g.setEnabled(true);
+                    O67h.setEnabled(true);
+                    O67j.setEnabled(true);
+
+                }
+
+            }
+        });
+        O69h.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
+                    O69a.setEnabled(false);
+                    O69b.setEnabled(false);
+                    O69c.setEnabled(false);
+                    O69d.setEnabled(false);
+                    O69e.setEnabled(false);
+                    O69f.setEnabled(false);
+                    O69g.setEnabled(false);
+                    O69i.setEnabled(false);
+
+
+                    O69a.setChecked(false);
+                    O69b.setChecked(false);
+                    O69c.setChecked(false);
+                    O69d.setChecked(false);
+                    O69e.setChecked(false);
+                    O69f.setChecked(false);
+                    O69g.setChecked(false);
+                    O69i.setChecked(false);
+
+                    return;
+                } else {
+                    O69a.setEnabled(true);
+                    O69b.setEnabled(true);
+                    O69c.setEnabled(true);
+                    O69d.setEnabled(true);
+                    O69e.setEnabled(true);
+                    O69f.setEnabled(true);
+                    O69g.setEnabled(true);
+                    O69i.setEnabled(true);
+
+                }
+
+            }
+        });
+        O68e.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
+                    O68a.setEnabled(false);
+                    O68b.setEnabled(false);
+                    O68c.setEnabled(false);
+                    O68d.setEnabled(false);
+
+                    O68f.setEnabled(false);
+
+
+                    O68a.setChecked(false);
+                    O68b.setChecked(false);
+                    O68c.setChecked(false);
+                    O68d.setChecked(false);
+
+                    O68f.setChecked(false);
+
+                    return;
+                } else {
+                    O68a.setEnabled(true);
+                    O68b.setEnabled(true);
+                    O68c.setEnabled(true);
+                    O68d.setEnabled(true);
+
+                    O68f.setEnabled(true);
+
+                }
+
+            }
+        });
+
+
     }
 
     public String getCheckedStuff67() {

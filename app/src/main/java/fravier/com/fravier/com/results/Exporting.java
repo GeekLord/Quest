@@ -241,7 +241,7 @@ public class Exporting {
             arrayOfString[52] = StringUtils.replaceEach(Answers.getT96(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[53] = StringUtils.replaceEach(Answers.getT97(), new String[]{"0", "1", "2", "3", "4", "5", "-1"}, new String[]{"1", "2", "3", "4", "5", "6", " "});
             arrayOfString[54] = StringUtils.replaceEach(Answers.getT98(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
-            arrayOfString[55] = Answers.getT99();
+            arrayOfString[55] = StringUtils.replaceEach(Answers.getT99(), new String[]{"-1"}, new String[]{" "});
             arrayOfString[56] = StringUtils.replaceEach(Answers.getT121(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[57] = StringUtils.replaceEach(Answers.getT122(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[58] = Answers.getT12_time_end();

@@ -4,11 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import fravier.com.fravier.com.results.Answers;
 import fravier.com.global.Fonting;
@@ -28,7 +31,7 @@ public class O3a extends Fragment {
             switch (group.getId()) {
                 case R.id.rdgO12:
                     int i = O12.indexOfChild(O12.findViewById(selected));
-                    if (i == 2) {
+                    if (i == 4) {
                         txtO12.setVisibility(View.VISIBLE);
                     } else {
                         txtO12.setVisibility(View.GONE);
@@ -46,12 +49,49 @@ public class O3a extends Fragment {
         O15 = ((EditText) v.findViewById(R.id.txtO15));
         O12 = ((RadioGroup) v.findViewById(R.id.rdgO12));
         O13 = ((RadioGroup) v.findViewById(R.id.rdgO13));
-        txtO12 = ((EditText) v.findViewById(R.id.rdgO12d));
+        txtO12 = ((EditText) v.findViewById(R.id.rdgO12f));
     }
 
     private void listeners() {
         O12.setOnCheckedChangeListener(changeListener);
         O13.setOnCheckedChangeListener(changeListener);
+        O14.addTextChangedListener(new TextWatcher() {
+
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                try {
+                    int years = Integer.parseInt(O14.getText().toString().trim());
+                    if (years > 18) {
+                        Toast.makeText(ctx, "The maximum age for a child that can be recorded is 18", Toast.LENGTH_SHORT).show();
+                        O14.setText("");
+                    }
+                } catch (NumberFormatException e) {
+
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                try {
+                    int years = Integer.parseInt(O14.getText().toString().trim());
+                    if (years > 18) {
+                        Toast.makeText(ctx, "The maximum age for a child that can be recorded is 18", Toast.LENGTH_SHORT).show();
+                        O14.setText("");
+                    }
+                } catch (NumberFormatException e) {
+
+                }
+
+
+            }
+        });
+
     }
 
     private void fonting() {

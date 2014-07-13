@@ -27,7 +27,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="5.2) In the last week, what did you do for your fever /sickness?"
+                    android:text="5.2) In the last week, what did you/your child  do for your fever/sickness? "
                     android:textSize="@dimen/text_size_large" />
 
                 <TextView
@@ -105,7 +105,7 @@
                     android:layout_width="0.0dip"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.0"
-                    android:text="5.3) In the last week, did you go anywhere to buy any medicine specifically for your fever /sickness ?"
+                    android:text="5.3) In the last week, did you go anywhere to buy any medicine specifically for your /your child’s fever/sickness?"
                     android:textSize="@dimen/text_size_large" />
             </LinearLayout>
 
@@ -138,11 +138,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/view54"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3.0dip"
             android:background="@drawable/background_card"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -203,11 +205,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/view55"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3.0dip"
             android:background="@drawable/background_card"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -239,11 +243,13 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/view56"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3.0dip"
             android:background="@drawable/background_card"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <LinearLayout
                 android:layout_width="wrap_content"

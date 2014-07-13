@@ -9,6 +9,8 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,7 +24,14 @@ import fravier.com.quest.R;
 public class T17 extends Fragment {
     RadioGroup T95;
     RadioGroup T96;
-    RadioGroup T97;
+    CheckBox T97a;
+    CheckBox T97b;
+    CheckBox T97c;
+    CheckBox T97d;
+    CheckBox T97e;
+    CheckBox T97f;
+    CheckBox T97g;
+
     RadioGroup T98;
     RadioGroup T99;
     Context ctx;
@@ -40,7 +49,16 @@ public class T17 extends Fragment {
     private void initviews(View paramView) {
         T95 = ((RadioGroup) paramView.findViewById(R.id.rdgT95));
         T96 = ((RadioGroup) paramView.findViewById(R.id.rdgT96));
-        T97 = ((RadioGroup) paramView.findViewById(R.id.rdgT97));
+
+        T97a = ((CheckBox) paramView.findViewById(R.id.rdgT97a));
+        T97b = ((CheckBox) paramView.findViewById(R.id.rdgT97b));
+        T97c = ((CheckBox) paramView.findViewById(R.id.rdgT97c));
+        T97d = ((CheckBox) paramView.findViewById(R.id.rdgT97d));
+        T97e = ((CheckBox) paramView.findViewById(R.id.rdgT97e));
+        T97f = ((CheckBox) paramView.findViewById(R.id.rdgT97f));
+        T97g = ((CheckBox) paramView.findViewById(R.id.rdgT97g));
+
+
         T98 = ((RadioGroup) paramView.findViewById(R.id.rdgT98));
         T99 = ((RadioGroup) paramView.findViewById(R.id.rdgT99));
         txtT95 = ((EditText) paramView.findViewById(R.id.rdgT95i));
@@ -180,6 +198,40 @@ public class T17 extends Fragment {
         return localView;
     }
 
+    public String getCheckedStuff97() {
+        String str = "";
+        if (T97a.isChecked()) {
+            str = str + T97a.getText().toString().trim() + " ";
+        }
+        if (T97b.isChecked()) {
+            str = str + T97b.getText().toString().trim() + " ";
+        }
+        if (T97c.isChecked()) {
+            str = str + T97c.getText().toString().trim() + " ";
+        }
+        if (T97d.isChecked()) {
+            str = str + T97d.getText().toString().trim() + " ";
+        }
+        if (T97e.isChecked()) {
+            str = str + T97e.getText().toString().trim() + " ";
+        }
+        if (T97f.isChecked()) {
+            str = str + T97f.getText().toString().trim() + " ";
+        }
+        if (T97g.isChecked()) {
+
+            str = str + txtT97.getText().toString().trim() + " ";
+            if (txtT97.getText().toString().trim().length() == 0) {
+                OthersMap.setT97(2);
+            } else {
+                OthersMap.setT97(1);
+            }
+        }
+
+        return str;
+    }
+
+
     public void onResume() {
         savePageData();
         T95.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -214,22 +266,24 @@ public class T17 extends Fragment {
                 //Answers.setT96(T96.indexOfChild(T96.findViewById(T96.getCheckedRadioButtonId())) + "");
             }
         });
-        T97.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                int i = T97.indexOfChild(T97.findViewById(paramAnonymousInt));
-                System.out.println(i);
-                if (i == 6) {
+
+
+        T97g.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton paramAnonymousCompoundButton, boolean paramAnonymousBoolean) {
+                if (paramAnonymousBoolean) {
                     txtT97.setVisibility(View.VISIBLE);
                     OthersMap.setT97(1);
+                    savePageData();
                     return;
                 } else {
                     txtT97.setVisibility(View.GONE);
                     OthersMap.setT97(0);
+                    savePageData();
                 }
 
-                // Answers.setT97(T97.indexOfChild(T97.findViewById(T97.getCheckedRadioButtonId())) + "");
             }
         });
+
         T98.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
                 int i = T98.indexOfChild(T98.findViewById(paramAnonymousInt));
@@ -279,9 +333,8 @@ public class T17 extends Fragment {
         if (this.T96.indexOfChild(this.T96.findViewById(this.T96.getCheckedRadioButtonId())) == 5) {
             Answers.setT96(this.txtT96.getText().toString());
         }
-        if (this.T97.indexOfChild(this.T97.findViewById(this.T97.getCheckedRadioButtonId())) == 6) {
-            Answers.setT97(this.txtT97.getText().toString());
-        }
+        Answers.setT97(getCheckedStuff97());
+
         if (this.T98.indexOfChild(this.T98.findViewById(this.T98.getCheckedRadioButtonId())) == 4) {
             Answers.setT98(this.txtT98.getText().toString());
         }

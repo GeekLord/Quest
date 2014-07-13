@@ -235,6 +235,12 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
                 }
+            } else if (i == 22) {//aversion coz in 22
+                if (Answers.getO49().equals("0")) {
+                    viewPager.setCurrentItem(26);
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
             } else if (i == 23) {
                 if (Answers.getO413().trim().equals("-1")) {
                     Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
@@ -383,6 +389,12 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O49", Answers.getO49(), i));
                 }
+            } else if (i == 22) {
+                if (Answers.getO49().equals("0")) {
+                    viewPager.setCurrentItem(33);
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
             } else if (i == 23) {
                 if (Answers.getO413().trim().equals("-1")) {
                     Toast.makeText(getApplication(), "Kindly answer question 4.13 ", Toast.LENGTH_SHORT).show();
@@ -488,6 +500,12 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
                 }
+            } else if (i == 26) {
+                if (Answers.getO49().equals("0")) {
+                    viewPager.setCurrentItem(22);
+                } else {
+                    viewPager.setCurrentItem(-1 + viewPager.getCurrentItem(), true);
+                }
             } else if (i == 28) {
                 if (Answers.getO51().equals("1")) {
                     viewPager.setCurrentItem(26);
@@ -581,6 +599,8 @@ public class ParentOne extends ActionBarActivity {
             } else if (i == 33) {//the 4.13 saga
                 if (Answers.getO413().equals("0")) {
                     viewPager.setCurrentItem(24);
+                } else if (Answers.getO49().equals("0")) {
+                    viewPager.setCurrentItem(22);
                 } else {
                     viewPager.setCurrentItem(25);
                 }

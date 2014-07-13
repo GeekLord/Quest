@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ public class T10 extends Fragment {
     TextView lbl;
     EditText txtT52e;
     EditText txtT54d;
+    LinearLayout view54, view55, view56;
 
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
@@ -52,6 +54,10 @@ public class T10 extends Fragment {
         T56 = ((EditText) paramView.findViewById(R.id.txtT56));
         txtT54d = ((EditText) paramView.findViewById(R.id.rdgT54d));
         lbl = ((TextView) paramView.findViewById(R.id.lblT52));
+
+        view54 = (LinearLayout) paramView.findViewById(R.id.view54);
+        view55 = (LinearLayout) paramView.findViewById(R.id.view55);
+        view56 = (LinearLayout) paramView.findViewById(R.id.view56);
     }
 
     private void listeners() {
@@ -104,7 +110,21 @@ public class T10 extends Fragment {
         });
         T53.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
-                savePageData();
+                int i = T53.indexOfChild(T53.findViewById(paramAnonymousInt));
+                System.out.println(i);
+                if (i == 0) {
+                    view54.setVisibility(View.VISIBLE);
+                    view55.setVisibility(View.VISIBLE);
+                    view56.setVisibility(View.VISIBLE);
+                    savePageData();
+                    return;
+                } else {
+                    view54.setVisibility(View.GONE);
+                    view55.setVisibility(View.GONE);
+                    view56.setVisibility(View.GONE);
+                    savePageData();
+                }
+
             }
         });
         T54.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -172,11 +192,19 @@ public class T10 extends Fragment {
     public void savePageData() {
         Answers.setT52(getCheckedStuff68());
         Answers.setT53(T53.indexOfChild(T53.findViewById(T53.getCheckedRadioButtonId())) + "");
-        if (T54.indexOfChild(T54.findViewById(T54.getCheckedRadioButtonId())) == 2) {
-            Answers.setT54(txtT54d.getText().toString());
+
+        if (T53.indexOfChild(T53.findViewById(T53.getCheckedRadioButtonId())) == 0) {
+            if (T54.indexOfChild(T54.findViewById(T54.getCheckedRadioButtonId())) == 2) {
+                Answers.setT54(txtT54d.getText().toString());
+            }
+            Answers.setT55(T55.getText().toString().trim());
+            Answers.setT56(T56.getText().toString().trim());
+        } else {
+            Answers.setT54("");
+            Answers.setT55("");
+            Answers.setT56("");
         }
-        Answers.setT55(T55.getText().toString().trim());
-        Answers.setT56(T56.getText().toString().trim());
+
     }
 
     public void setUserVisibleHint(boolean paramBoolean) {
