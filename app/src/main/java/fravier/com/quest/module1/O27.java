@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -25,6 +26,7 @@ public class O27 extends Fragment {
     Context ctx;
     TextView lbl;
     EditText others;
+    LinearLayout viewO54;
 
     private void fonting() {
         Fonting.setTypeFaceForViewGroup((ViewGroup) lbl.getRootView(), ctx, Fonting.KEY_REGULAR);
@@ -35,11 +37,22 @@ public class O27 extends Fragment {
         O54 = ((RadioGroup) paramView.findViewById(R.id.rdgO54));
         lbl = ((TextView) paramView.findViewById(R.id.lblO53));
         others = (EditText) paramView.findViewById(R.id.rdgO54g);
+        viewO54 = (LinearLayout) paramView.findViewById(R.id.viewO54);
     }
 
     private void listeners() {
         O53.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             public void onCheckedChanged(RadioGroup paramAnonymousRadioGroup, int paramAnonymousInt) {
+                int i = O53.indexOfChild(O53.findViewById(paramAnonymousInt));
+                System.out.println(i);
+                if (i == 1) {
+                    viewO54.setVisibility(View.GONE);
+
+                    return;
+                } else {
+                    viewO54.setVisibility(View.VISIBLE);
+
+                }
                 savePageData();
             }
         });

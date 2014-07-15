@@ -205,7 +205,7 @@ public class Exporting {
             arrayOfString[16] = Answers.getT40e();
             arrayOfString[17] = StringUtils.replaceEach(Answers.getT46(), new String[]{"0", "1", "2", "-1"}, new String[]{"1", "2", "99", " "});
             arrayOfString[18] = Answers.getT47();
-            arrayOfString[19] = StringUtils.replaceEach(Answers.getT48(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
+            arrayOfString[19] = Answers.getT48();
             arrayOfString[20] = StringUtils.replaceEach(Answers.getT49(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[21] = Answers.getT410();
             arrayOfString[22] = Answers.getT411();

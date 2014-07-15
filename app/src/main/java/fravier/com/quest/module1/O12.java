@@ -63,47 +63,268 @@ public class O12 extends Fragment {
                     adb.show();
 
                     return;
+//                case R.id.btnO32ba:
+//                    Answers.setO32b("A");
+//                    rd32bx.setChecked(true);
+//                    rd32by.setChecked(false);
+//                    return;
+//                case R.id.btnO32bb:
+//                    Answers.setO32b("B");
+//                    rd32bx.setChecked(false);
+//                    rd32by.setChecked(true);
+//                    return;
+//                case R.id.btnO32ca:
+//                    Answers.setO32c("A");
+//                    rd32cx.setChecked(true);
+//                    rd32cy.setChecked(false);
+//                    return;
+//                case R.id.btnO32cb:
+//                    Answers.setO32c("B");
+//                    rd32cx.setChecked(false);
+//                    rd32cy.setChecked(true);
+//                    return;
+//                case R.id.btnO32da:
+//                    Answers.setO32d("A");
+//                    rd32dx.setChecked(true);
+//                    rd32dy.setChecked(false);
+//                    return;
+//                case R.id.btnO32db:
+//                    Answers.setO32d("B");
+//                    rd32dx.setChecked(false);
+//                    rd32dy.setChecked(true);
+//                    return;
                 case R.id.btnO32ba:
-                    Answers.setO32b("A");
-                    rd32bx.setChecked(true);
-                    rd32by.setChecked(false);
+
+                    if (Answers.getO32b().trim().length() == 0) {
+                        rd32bx.setChecked(true);
+                        rd32by.setChecked(false);
+                        Answers.setO32b("A");
+                    } else if (Answers.getO32b().equals("B")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32bx.setChecked(true);
+                                rd32by.setChecked(false);
+                                Answers.setO32b("A");
+                            }
+                        });
+                        adb.show();
+                    }
+
                     return;
                 case R.id.btnO32bb:
-                    Answers.setO32b("B");
-                    rd32bx.setChecked(false);
-                    rd32by.setChecked(true);
+                    if (Answers.getO32b().trim().length() == 0) {
+                        rd32bx.setChecked(false);
+                        rd32by.setChecked(true);
+                        Answers.setO32b("B");
+                    } else if (Answers.getO32b().equals("A")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32bx.setChecked(false);
+                                rd32by.setChecked(true);
+                                Answers.setO32b("B");
+                            }
+                        });
+                        adb.show();
+                    }
+
                     return;
                 case R.id.btnO32ca:
-                    Answers.setO32c("A");
-                    rd32cx.setChecked(true);
-                    rd32cy.setChecked(false);
+
+
+                    if (Answers.getO32c().trim().length() == 0) {
+                        rd32cx.setChecked(true);
+                        rd32cy.setChecked(false);
+                        Answers.setO32c("A");
+                    } else if (Answers.getO32c().equals("B")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32cx.setChecked(true);
+                                rd32cy.setChecked(false);
+                                Answers.setO32c("A");
+                            }
+                        });
+                        adb.show();
+                    }
                     return;
                 case R.id.btnO32cb:
-                    Answers.setO32c("B");
-                    rd32cx.setChecked(false);
-                    rd32cy.setChecked(true);
+                    if (Answers.getO32c().trim().length() == 0) {
+                        rd32cx.setChecked(false);
+                        rd32cy.setChecked(true);
+                        Answers.setO32c("B");
+                    } else if (Answers.getO32c().equals("A")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32cx.setChecked(false);
+                                rd32cy.setChecked(true);
+                                Answers.setO32c("B");
+                            }
+                        });
+                        adb.show();
+                    }
+
                     return;
                 case R.id.btnO32da:
-                    Answers.setO32d("A");
-                    rd32dx.setChecked(true);
-                    rd32dy.setChecked(false);
+                    if (Answers.getO32d().trim().length() == 0) {
+                        rd32dx.setChecked(true);
+                        rd32dy.setChecked(false);
+                        Answers.setO32d("A");
+                    } else if (Answers.getO32d().equals("B")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32dx.setChecked(true);
+                                rd32dy.setChecked(false);
+                                Answers.setO32d("A");
+                            }
+                        });
+                        adb.show();
+                    }
                     return;
                 case R.id.btnO32db:
-                    Answers.setO32d("B");
-                    rd32dx.setChecked(false);
-                    rd32dy.setChecked(true);
-                    return;
+                    if (Answers.getO32d().trim().length() == 0) {
+                        rd32dx.setChecked(false);
+                        rd32dy.setChecked(true);
+                        Answers.setO32d("B");
+                    } else if (Answers.getO32d().equals("A")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32dx.setChecked(false);
+                                rd32dy.setChecked(true);
+                                Answers.setO32d("B");
+                            }
+                        });
+                        adb.show();
+                    }
                 case R.id.btnO32ea:
-                    Answers.setO32e("A");
-                    rd32ex.setChecked(true);
-                    rd32ey.setChecked(false);
+                    if (Answers.getO32e().trim().length() == 0) {
+                        rd32ex.setChecked(true);
+                        rd32ey.setChecked(false);
+                        Answers.setO32e("A");
+                    } else if (Answers.getO32e().equals("B")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32ex.setChecked(true);
+                                rd32ey.setChecked(false);
+                                Answers.setO32e("A");
+                            }
+                        });
+                        adb.show();
+                    }
                     return;
                 case R.id.btnO32eb:
-                    Answers.setO32e("B");
-                    rd32ex.setChecked(false);
-                    rd32ey.setChecked(true);
+                    if (Answers.getO32e().trim().length() == 0) {
+                        rd32ex.setChecked(false);
+                        rd32ey.setChecked(true);
+                        Answers.setO32e("B");
+                    } else if (Answers.getO32e().equals("A")) {
+                        adb = new AlertDialog.Builder(ctx);
+                        adb.setMessage("Are you sure you would like to change the answer ?");
+                        adb.setCancelable(true);
+                        adb.setTitle("Answer confirmation");
+                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                            }
+                        });
+                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                arg0.cancel();
+                                rd32ex.setChecked(false);
+                                rd32ey.setChecked(true);
+                                Answers.setO32e("B");
+                            }
+                        });
+                        adb.show();
+                    }
+
                     return;
             }
+
 
         }
     };

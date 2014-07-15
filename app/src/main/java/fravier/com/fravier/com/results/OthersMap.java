@@ -5,6 +5,7 @@ package fravier.com.fravier.com.results;
  */
 public class OthersMap {
     public static int O111 = 0;
+    public static int O12 = 0;
     public static int O25 = 0;
     public static int O27 = 0;
     public static int O52 = 0;
@@ -28,6 +29,14 @@ public class OthersMap {
     public static int T96 = 0;
     public static int T97 = 0;
     public static int T98 = 0;
+
+    public static int getO12() {
+        return O12;
+    }
+
+    public static void setO12(int o12) {
+        O12 = o12;
+    }
 
     public static int getT3() {
         return T3;

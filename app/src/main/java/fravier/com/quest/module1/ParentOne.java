@@ -128,6 +128,15 @@ public class ParentOne extends ActionBarActivity {
                 } else {
                     viewPager.setCurrentItem(localLogic.ALU("O19", Answers.getO19(), i));
                 }
+            } else if (i == 2) {//others
+                String str6 = Answers.getO12().trim();
+                if (OthersMap.getO12() == 1 && str6.equals("")) {
+
+                    Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
+                }
             } else if (i == 5) {//others
                 String str6 = Answers.getO111();
                 if (OthersMap.getO111() == 1 && str6.equals("")) {
@@ -138,8 +147,8 @@ public class ParentOne extends ActionBarActivity {
                     viewPager.setCurrentItem(1 + viewPager.getCurrentItem(), true);
                 }
             } else if (i == 10) {//others
-                String str6 = Answers.getO25();
-                if (OthersMap.getO25() == 1 && str6.equals("")) {
+                String str6 = Answers.getO25().trim();
+                if (OthersMap.getO25() == 2) {
 
                     Toast.makeText(ParentOne.this, "Kindly specify your answer", Toast.LENGTH_SHORT).show();
 

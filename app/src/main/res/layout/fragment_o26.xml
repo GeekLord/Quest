@@ -320,6 +320,14 @@
                         android:textSize="@dimen/text_size_large" />
 
                     <CheckBox
+                        android:id="@+id/rdgO69z"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Bed net"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <CheckBox
                         android:id="@+id/rdgO69h"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

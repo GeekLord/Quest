@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="First name, Last name"
+                android:hint="First name Last name"
                 android:inputType="textCapWords|textPersonName" />
         </TableRow>
 
@@ -130,7 +130,7 @@
             android:padding="15.0dip"
             android:visibility="gone">
 
-        <TextView
+            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

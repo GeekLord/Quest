@@ -46,6 +46,7 @@ public class O26 extends Fragment {
     CheckBox O69g;
     CheckBox O69h;
     CheckBox O69i;
+    CheckBox O69z;
     Context ctx;
     TextView lbl;
     EditText txtO67k;
@@ -84,6 +85,7 @@ public class O26 extends Fragment {
         O69g = ((CheckBox) paramView.findViewById(R.id.rdgO69g));
         O69h = ((CheckBox) paramView.findViewById(R.id.rdgO69h));
         O69i = ((CheckBox) paramView.findViewById(R.id.rdgO69i));
+        O69z = ((CheckBox) paramView.findViewById(R.id.rdgO69z));
         txtO69j = ((EditText) paramView.findViewById(R.id.rdgO69j));
         lbl = ((TextView) paramView.findViewById(R.id.lblO68));
     }
@@ -188,6 +190,7 @@ public class O26 extends Fragment {
                     O69f.setEnabled(false);
                     O69g.setEnabled(false);
                     O69i.setEnabled(false);
+                    O69z.setEnabled(false);
 
 
                     O69a.setChecked(false);
@@ -198,6 +201,7 @@ public class O26 extends Fragment {
                     O69f.setChecked(false);
                     O69g.setChecked(false);
                     O69i.setChecked(false);
+                    O69z.setChecked(false);
 
                     return;
                 } else {
@@ -209,6 +213,7 @@ public class O26 extends Fragment {
                     O69f.setEnabled(true);
                     O69g.setEnabled(true);
                     O69i.setEnabled(true);
+                    O69z.setEnabled(true);
 
                 }
 
@@ -267,16 +272,16 @@ public class O26 extends Fragment {
             str = str + O67e.getText().toString().trim() + " ";
         }
         if (O67f.isChecked()) {
-            str = str + O67e.getText().toString().trim() + " ";
+            str = str + O67f.getText().toString().trim() + " ";
         }
         if (O67g.isChecked()) {
-            str = str + O67e.getText().toString().trim() + " ";
+            str = str + O67g.getText().toString().trim() + " ";
         }
         if (O67h.isChecked()) {
-            str = str + O67e.getText().toString().trim() + " ";
+            str = str + O67h.getText().toString().trim() + " ";
         }
         if (O67i.isChecked()) {
-            str = str + O67e.getText().toString().trim() + " ";
+            str = str + O67i.getText().toString().trim() + " ";
         }
         if (O67j.isChecked()) {
             str = str + txtO67k.getText().toString().trim() + " ";
@@ -337,13 +342,16 @@ public class O26 extends Fragment {
             str = str + O69e.getText().toString().trim() + " ";
         }
         if (O69f.isChecked()) {
-            str = str + O69e.getText().toString().trim() + " ";
+            str = str + O69f.getText().toString().trim() + " ";
         }
         if (O69g.isChecked()) {
-            str = str + O69e.getText().toString().trim() + " ";
+            str = str + O69g.getText().toString().trim() + " ";
         }
         if (O69h.isChecked()) {
-            str = str + O69e.getText().toString().trim() + " ";
+            str = str + O69h.getText().toString().trim() + " ";
+        }
+        if (O69z.isChecked()) {
+            str = str + O69z.getText().toString().trim() + " ";
         }
         if (O69i.isChecked()) {
 

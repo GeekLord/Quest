@@ -14,6 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import fravier.com.fravier.com.results.Answers;
+import fravier.com.fravier.com.results.OthersMap;
 import fravier.com.global.Fonting;
 import fravier.com.quest.R;
 
@@ -33,16 +34,20 @@ public class O3a extends Fragment {
                     int i = O12.indexOfChild(O12.findViewById(selected));
                     if (i == 4) {
                         txtO12.setVisibility(View.VISIBLE);
+                        OthersMap.setO12(1);
+                        savePageData();
                     } else {
                         txtO12.setVisibility(View.GONE);
+                        OthersMap.setO12(0);
+                        savePageData();
                     }
 
-                    Answers.setO12(O12.indexOfChild(O12.findViewById(O12.getCheckedRadioButtonId())) + "");
 
             }
             Answers.setO13(O13.indexOfChild(O13.findViewById(O13.getCheckedRadioButtonId())) + "");
         }
     };
+
 
     private void initViews(View v) {
         O14 = ((EditText) v.findViewById(R.id.txtO14));
@@ -55,6 +60,22 @@ public class O3a extends Fragment {
     private void listeners() {
         O12.setOnCheckedChangeListener(changeListener);
         O13.setOnCheckedChangeListener(changeListener);
+        txtO12.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                savePageData();
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                savePageData();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                savePageData();
+            }
+        });
         O14.addTextChangedListener(new TextWatcher() {
 
 
@@ -101,8 +122,10 @@ public class O3a extends Fragment {
     private void savePageData() {
         Answers.setO14(O14.getText().toString().trim());
         Answers.setO15(O15.getText().toString().trim());
-        if (O12.indexOfChild(O12.findViewById(O12.getCheckedRadioButtonId())) == 2) {
-            Answers.setO12(txtO12.getText().toString());
+        if (O12.indexOfChild(O12.findViewById(O12.getCheckedRadioButtonId())) == 4) {
+            Answers.setO12(txtO12.getText().toString().trim());
+        } else {
+            Answers.setO12(O12.indexOfChild(O12.findViewById(O12.getCheckedRadioButtonId())) + "");
         }
         Answers.setO13(O13.indexOfChild(O13.findViewById(O13.getCheckedRadioButtonId())) + "");
     }

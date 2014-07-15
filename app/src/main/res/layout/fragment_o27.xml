@@ -11,6 +11,29 @@
         android:padding="10.0dip">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:background="@drawable/background_card"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="Randomization Instructions\n\nNow offer the participant to choose a scratch card and scratch the panel to reveal their group.  \n\nAfter scratching, record which group appears. Explain to the client what they will receive in their group.  \n\n1. Free Malaria Test \n2. Free Malaria Test. If test is positive, 45 KES discount for Green Leaf Malaria drug \n3. Malaria Test 40 KES  \n4. Malaria Test 40 KES. If test is positive 45 KES discount for Green Leaf  Malaria drug"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3.0dip"
@@ -66,6 +89,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/viewO54"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/background_card"
