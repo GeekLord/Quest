@@ -25,6 +25,56 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/background_card"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="a)"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1 week"
+                android:textSize="@dimen/text_size_large" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:enabled="false"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4 weeks"
+                android:textSize="@dimen/text_size_large" />
+
+        </TableRow>
+
+        <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,9 +103,8 @@
                 android:layout_marginRight="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
-                android:text="In 1 WEEK\n1000 Shillings" />
+                android:text="\n1000 /=\n" />
 
             <RadioButton
                 android:id="@+id/rd31ay"
@@ -71,9 +120,8 @@
                 android:layout_marginLeft="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
-                android:text="In 4 WEEKS\n1000 Shillings" />
+                android:text="\n1000 /=\n" />
 
         </TableRow>
 
@@ -106,9 +154,8 @@
                 android:layout_marginRight="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
-                android:text="In 1 WEEK\n1000 Shillings" />
+                android:text="\n1000 /=\n" />
 
             <RadioButton
                 android:id="@+id/rd31by"
@@ -124,9 +171,8 @@
                 android:layout_marginLeft="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1050"
                 android:padding="10.0dip"
-                android:text="In 4 WEEKS\n1050 Shillings" />
+                android:text="\n1050 /=\n" />
 
         </TableRow>
 
@@ -159,9 +205,8 @@
                 android:layout_marginRight="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
-                android:text="In 1 WEEK\n1000 Shillings" />
+                android:text="\n1000 /=\n" />
 
             <RadioButton
                 android:id="@+id/rd31cy"
@@ -177,9 +222,8 @@
                 android:layout_marginLeft="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1500"
                 android:padding="10.0dip"
-                android:text="In 4 WEEKS\n1500 Shillings" />
+                android:text="\n1500 /=\n" />
         </TableRow>
 
         <TableRow
@@ -211,9 +255,8 @@
                 android:layout_marginRight="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_1000"
                 android:padding="10.0dip"
-                android:text="In 1 WEEK\n1000 Shillings" />
+                android:text="\n1000 /=\n" />
 
             <RadioButton
                 android:id="@+id/rd31dy"
@@ -229,9 +272,8 @@
                 android:layout_marginLeft="5.0dip"
                 android:layout_weight="1.0"
                 android:background="@drawable/background_button"
-                android:drawableBottom="@drawable/icon_2000"
                 android:padding="10.0dip"
-                android:text="In 4 WEEKS\n2000 Shillings" />
+                android:text="\n2000/=\n" />
         </TableRow>
     </TableLayout>
 </ScrollView>

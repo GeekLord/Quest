@@ -69,7 +69,8 @@ public class Dashboard extends ActionBarActivity {
         if (id == R.id.action_exit) {
 
             super.finish();
-            //System.exit(0);
+            System.exit(0);
+            //super.onDestroy();
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -87,5 +88,11 @@ public class Dashboard extends ActionBarActivity {
     @Override
     public void onBackPressed() {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        android.os.Process.killProcess(android.os.Process.myPid());
+        super.onDestroy();
     }
 }

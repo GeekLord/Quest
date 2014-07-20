@@ -224,8 +224,8 @@ public class Exporting {
             arrayOfString[35] = Answers.getT55();
             arrayOfString[36] = Answers.getT56();
             arrayOfString[37] = StringUtils.replaceEach(Answers.getT71(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
-            arrayOfString[38] = StringUtils.replaceEach(Answers.getT72(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
-            arrayOfString[39] = StringUtils.replaceEach(Answers.getT73(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
+            arrayOfString[39] = StringUtils.replaceEach(Answers.getT72(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
+            arrayOfString[38] = StringUtils.replaceEach(Answers.getT73(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[40] = Answers.getT81();
             arrayOfString[41] = Answers.getT82();
             arrayOfString[42] = StringUtils.replaceEach(Answers.getT91(), new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "-1"}, new String[]{"1", "2", "3", "4", "5", "6", "7", "8", " "});

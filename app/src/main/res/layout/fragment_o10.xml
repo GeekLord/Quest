@@ -124,14 +124,6 @@
                 android:text="2.8) How would you rate your health at this moment ?"
                 android:textSize="@dimen/text_size_large" />
 
-            <TextView
-                android:id="@+id/sbvO40d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20.0dip"
-                android:layout_weight="1.0"
-                android:text="[To ask only to the adult respondent with fever, NOT to guardian/parent of the child]" />
-
             <RadioGroup
                 android:id="@+id/rdgO28"
                 android:layout_width="wrap_content"
