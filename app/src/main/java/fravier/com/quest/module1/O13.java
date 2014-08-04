@@ -32,34 +32,34 @@ public class O13 extends Fragment {
                 case R.id.sbO40b:
                     progressChanged_b = paramAnonymousInt;
                     sbvO40ba.setText(progressChanged_b + "% likelihood");
-                    O40ba.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40ba.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40bb.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O40bb.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O40ba.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40ba.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40bb.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O40bb.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbO40c:
                     progressChanged_c = paramAnonymousInt;
                     sbvO40ca.setText(progressChanged_c + "% likelihood");
-                    O40ca.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40ca.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40cb.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O40cb.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O40ca.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40ca.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40cb.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O40cb.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbO40d:
                     progressChanged_d = paramAnonymousInt;
                     sbvO40da.setText(progressChanged_d + "% likelihood");
-                    O40da.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40da.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40db.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O40db.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O40da.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40da.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40db.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O40db.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbO40e:
                     progressChanged_e = paramAnonymousInt;
                     sbvO40ea.setText(progressChanged_e + "% likelihood");
-                    O40ea.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40ea.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O40eb.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O40eb.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O40ea.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40ea.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O40eb.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O40eb.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
 
             }
 
@@ -109,25 +109,25 @@ public class O13 extends Fragment {
     TextView sbvO40ea;
 
     public void setToZero() {
-        O40ba.setScaleX(1.0F + (50) / 100.0F);
-        O40ba.setScaleY(1.0F + (50) / 100.0F);
-        O40bb.setScaleX(1.0F + (-50) / 100.0F);
-        O40bb.setScaleY(1.0F + (-50) / 100.0F);
+        O40ba.setScaleX(1.0F + (50) / 70.0F);
+        O40ba.setScaleY(1.0F + (50) / 70.0F);
+        O40bb.setScaleX(1.0F + (-50) / 70.0F);
+        O40bb.setScaleY(1.0F + (-50) / 70.0F);
 
-        O40ca.setScaleX(1.0F + (50) / 100.0F);
-        O40ca.setScaleY(1.0F + (50) / 100.0F);
-        O40cb.setScaleX(1.0F + (-50) / 100.0F);
-        O40cb.setScaleY(1.0F + (-50) / 100.0F);
+        O40ca.setScaleX(1.0F + (50) / 70.0F);
+        O40ca.setScaleY(1.0F + (50) / 70.0F);
+        O40cb.setScaleX(1.0F + (-50) / 70.0F);
+        O40cb.setScaleY(1.0F + (-50) / 70.0F);
 
-        O40da.setScaleX(1.0F + (50) / 100.0F);
-        O40da.setScaleY(1.0F + (50) / 100.0F);
-        O40db.setScaleX(1.0F + (-50) / 100.0F);
-        O40db.setScaleY(1.0F + (-50) / 100.0F);
+        O40da.setScaleX(1.0F + (50) / 70.0F);
+        O40da.setScaleY(1.0F + (50) / 70.0F);
+        O40db.setScaleX(1.0F + (-50) / 70.0F);
+        O40db.setScaleY(1.0F + (-50) / 70.0F);
 
-        O40ea.setScaleX(1.0F + (50) / 100.0F);
-        O40ea.setScaleY(1.0F + (50) / 100.0F);
-        O40eb.setScaleX(1.0F + (-50) / 100.0F);
-        O40eb.setScaleY(1.0F + (-50) / 100.0F);
+        O40ea.setScaleX(1.0F + (50) / 70.0F);
+        O40ea.setScaleY(1.0F + (50) / 70.0F);
+        O40eb.setScaleX(1.0F + (-50) / 70.0F);
+        O40eb.setScaleY(1.0F + (-50) / 70.0F);
     }
 
     private void fonting() {

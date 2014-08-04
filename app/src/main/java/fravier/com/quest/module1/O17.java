@@ -29,26 +29,26 @@ public class O17 extends Fragment {
                 case R.id.sbO410:
                     progressChanged_410 = paramAnonymousInt;
                     sbvO410.setText(progressChanged_410 + "% likelihood");
-                    O410a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O410a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O410b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O410b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O410a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O410a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O410b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O410b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbO411:
                     progressChanged_411 = paramAnonymousInt;
                     sbvO411.setText(progressChanged_411 + "% likelihood");
-                    O411a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O411a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O411b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O411b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O411a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O411a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O411b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O411b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbO412:
                     progressChanged_412 = paramAnonymousInt;
                     sbvO412.setText(progressChanged_412 + "% likelihood");
-                    O412a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O412a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O412b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O412b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O412a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O412a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O412b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O412b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     break;
 
             }
@@ -90,20 +90,20 @@ public class O17 extends Fragment {
     TextView sbvO412;
 
     public void setToZero() {
-        O410a.setScaleX(1.0F + (50) / 100.0F);
-        O410a.setScaleY(1.0F + (50) / 100.0F);
-        O410b.setScaleX(1.0F + (-50) / 100.0F);
-        O410b.setScaleY(1.0F + (-50) / 100.0F);
+        O410a.setScaleX(1.0F + (50) / 70.0F);
+        O410a.setScaleY(1.0F + (50) / 70.0F);
+        O410b.setScaleX(1.0F + (-50) / 70.0F);
+        O410b.setScaleY(1.0F + (-50) / 70.0F);
 
-        O411a.setScaleX(1.0F + (50) / 100.0F);
-        O411a.setScaleY(1.0F + (50) / 100.0F);
-        O411b.setScaleX(1.0F + (-50) / 100.0F);
-        O411b.setScaleY(1.0F + (-50) / 100.0F);
+        O411a.setScaleX(1.0F + (50) / 70.0F);
+        O411a.setScaleY(1.0F + (50) / 70.0F);
+        O411b.setScaleX(1.0F + (-50) / 70.0F);
+        O411b.setScaleY(1.0F + (-50) / 70.0F);
 
-        O412a.setScaleX(1.0F + (50) / 100.0F);
-        O412a.setScaleY(1.0F + (50) / 100.0F);
-        O412b.setScaleX(1.0F + (-50) / 100.0F);
-        O412b.setScaleY(1.0F + (-50) / 100.0F);
+        O412a.setScaleX(1.0F + (50) / 70.0F);
+        O412a.setScaleY(1.0F + (50) / 70.0F);
+        O412b.setScaleX(1.0F + (-50) / 70.0F);
+        O412b.setScaleY(1.0F + (-50) / 70.0F);
     }
 
     private void fonting() {

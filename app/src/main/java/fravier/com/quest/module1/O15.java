@@ -27,18 +27,18 @@ public class O15 extends Fragment {
                 case R.id.sbO47:
                     progressChanged_47 = paramAnonymousInt;
                     sbvO47.setText(progressChanged_47 + "% likelihood");
-                    O47a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O47a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O47b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O47b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O47a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O47a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O47b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O47b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbO48:
                     sbvO48.setText(progressChanged_48 + "% likelihood");
                     progressChanged_48 = paramAnonymousInt;
-                    O48a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O48a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    O48b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    O48b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    O48a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O48a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    O48b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    O48b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
             }
 
@@ -77,15 +77,15 @@ public class O15 extends Fragment {
     }
 
     public void setToZero() {
-        O47a.setScaleX(1.0F + (50) / 100.0F);
-        O47a.setScaleY(1.0F + (50) / 100.0F);
-        O47b.setScaleX(1.0F + (-50) / 100.0F);
-        O47b.setScaleY(1.0F + (-50) / 100.0F);
+        O47a.setScaleX(1.0F + (50) / 70.0F);
+        O47a.setScaleY(1.0F + (50) / 70.0F);
+        O47b.setScaleX(1.0F + (-50) / 70.0F);
+        O47b.setScaleY(1.0F + (-50) / 70.0F);
 
-        O48a.setScaleX(1.0F + (50) / 100.0F);
-        O48a.setScaleY(1.0F + (50) / 100.0F);
-        O48b.setScaleX(1.0F + (-50) / 100.0F);
-        O48b.setScaleY(1.0F + (-50) / 100.0F);
+        O48a.setScaleX(1.0F + (50) / 70.0F);
+        O48a.setScaleY(1.0F + (50) / 70.0F);
+        O48b.setScaleX(1.0F + (-50) / 70.0F);
+        O48b.setScaleY(1.0F + (-50) / 70.0F);
     }
 
 

@@ -45,34 +45,34 @@ public class O9a extends Fragment {
     public String getCheckedStuff25() {
         String str = "";
         if (O25a.isChecked()) {
-            str = str + O25a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (O25b.isChecked()) {
-            str = str + O25b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (O25c.isChecked()) {
-            str = str + O25c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (O25d.isChecked()) {
-            str = str + O25d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (O25e.isChecked()) {
-            str = str + O25e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (O25f.isChecked()) {
-            str = str + O25f.getText().toString().trim() + " ";
+            str = str + "6 ";
         }
         if (O25g.isChecked()) {
-            str = str + O25g.getText().toString().trim() + " ";
+            str = str + "7 ";
         }
         if (O25h.isChecked()) {
-            str = str + O25h.getText().toString().trim() + " ";
+            str = str + "8 ";
         }
         if (O25i.isChecked()) {
-            str = str + O25i.getText().toString().trim() + " ";
+            str = str + "9 ";
         }
         if (O25j.isChecked()) {
-            str = str + O25j.getText().toString().trim() + " ";
+            str = str + "10 ";
         }
         if (O25k.isChecked()) {
             str = str + txtO25.getText().toString().trim() + " ";

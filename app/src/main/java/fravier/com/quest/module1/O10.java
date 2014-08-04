@@ -105,22 +105,22 @@ public class O10 extends Fragment {
     public String getCheckedStuff() {
         String str = "";
         if (rdgO27a.isChecked()) {
-            str = str + rdgO27a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (rdgO27b.isChecked()) {
-            str = str + rdgO27b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (rdgO27c.isChecked()) {
-            str = str + rdgO27c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (rdgO27d.isChecked()) {
-            str = str + rdgO27d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (rdgO27e.isChecked()) {
-            str = str + rdgO27e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (rdgO27f.isChecked()) {
-            str = str + rdgO27f.getText().toString().trim() + " ";
+            str = str + "99 ";
         }
         if (rdgO27g.isChecked()) {
             rdgO27h.setVisibility(View.VISIBLE);

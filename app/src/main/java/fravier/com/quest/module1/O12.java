@@ -100,26 +100,13 @@ public class O12 extends Fragment {
                         rd32by.setChecked(false);
                         Answers.setO32b("A");
                     } else if (Answers.getO32b().equals("B")) {
-                        adb = new AlertDialog.Builder(ctx);
-                        adb.setMessage("Are you sure you would like to change the answer ?");
-                        adb.setCancelable(true);
-                        adb.setTitle("Answer confirmation");
-                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                            }
-                        });
-                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                                rd32bx.setChecked(true);
-                                rd32by.setChecked(false);
-                                Answers.setO32b("A");
-                            }
-                        });
-                        adb.show();
+
+
+                        rd32bx.setChecked(true);
+                        rd32by.setChecked(false);
+                        Answers.setO32b("A");
+
+
                     }
 
                     return;
@@ -160,26 +147,11 @@ public class O12 extends Fragment {
                         rd32cy.setChecked(false);
                         Answers.setO32c("A");
                     } else if (Answers.getO32c().equals("B")) {
-                        adb = new AlertDialog.Builder(ctx);
-                        adb.setMessage("Are you sure you would like to change the answer ?");
-                        adb.setCancelable(true);
-                        adb.setTitle("Answer confirmation");
-                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                            }
-                        });
-                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                                rd32cx.setChecked(true);
-                                rd32cy.setChecked(false);
-                                Answers.setO32c("A");
-                            }
-                        });
-                        adb.show();
+
+                        rd32cx.setChecked(true);
+                        rd32cy.setChecked(false);
+                        Answers.setO32c("A");
+
                     }
                     return;
                 case R.id.btnO32cb:
@@ -217,26 +189,10 @@ public class O12 extends Fragment {
                         rd32dy.setChecked(false);
                         Answers.setO32d("A");
                     } else if (Answers.getO32d().equals("B")) {
-                        adb = new AlertDialog.Builder(ctx);
-                        adb.setMessage("Are you sure you would like to change the answer ?");
-                        adb.setCancelable(true);
-                        adb.setTitle("Answer confirmation");
-                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                            }
-                        });
-                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                                rd32dx.setChecked(true);
-                                rd32dy.setChecked(false);
-                                Answers.setO32d("A");
-                            }
-                        });
-                        adb.show();
+
+                        rd32dx.setChecked(true);
+                        rd32dy.setChecked(false);
+                        Answers.setO32d("A");
                     }
                     return;
                 case R.id.btnO32db:
@@ -266,32 +222,18 @@ public class O12 extends Fragment {
                         });
                         adb.show();
                     }
+                    return;
                 case R.id.btnO32ea:
                     if (Answers.getO32e().trim().length() == 0) {
                         rd32ex.setChecked(true);
                         rd32ey.setChecked(false);
                         Answers.setO32e("A");
                     } else if (Answers.getO32e().equals("B")) {
-                        adb = new AlertDialog.Builder(ctx);
-                        adb.setMessage("Are you sure you would like to change the answer ?");
-                        adb.setCancelable(true);
-                        adb.setTitle("Answer confirmation");
-                        adb.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                            }
-                        });
-                        adb.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                arg0.cancel();
-                                rd32ex.setChecked(true);
-                                rd32ey.setChecked(false);
-                                Answers.setO32e("A");
-                            }
-                        });
-                        adb.show();
+
+                        rd32ex.setChecked(true);
+                        rd32ey.setChecked(false);
+                        Answers.setO32e("A");
+
                     }
                     return;
                 case R.id.btnO32eb:

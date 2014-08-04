@@ -70,7 +70,7 @@ public class Dashboard extends ActionBarActivity {
 
             super.finish();
             System.exit(0);
-            //super.onDestroy();
+            android.os.Process.killProcess(android.os.Process.myPid());
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -90,9 +90,9 @@ public class Dashboard extends ActionBarActivity {
 
     }
 
-    @Override
-    protected void onDestroy() {
-        android.os.Process.killProcess(android.os.Process.myPid());
-        super.onDestroy();
-    }
+//    @Override
+//    protected void onDestroy() {
+//        android.os.Process.killProcess(android.os.Process.myPid());
+//        super.onDestroy();
+//    }
 }

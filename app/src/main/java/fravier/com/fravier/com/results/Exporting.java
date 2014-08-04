@@ -89,8 +89,8 @@ public class Exporting {
 
     public void toCSC() {
         try {
-            title = new String[]{"q0_1", "q0_2", "q0_3", "q0_4", "q0_5", "q0_6", "q0_7", "Interview date", "Start time", "q1_1", "q1_2", "q1_3", "q1_4", "q1_5", "q1_6", "q1_7", "q1_8", "q1_9", "q1_10", "q1_11", "q2_1", "q2_2", "q2_3", "q2_4", "q2_5", "q2_6", "q2_7", "q2_8", "q3_1a", "q3_1b", "q3_1c", "q3_1d", "q3_2a", "q3_2b", "q3_2c", "q3_2d", "q3_2e", "q4_0a", "q4_0b", "q4_0c", "q4_0d", "q4_0e", "q4_1", "q4_2", "q4_3", "q4_4a", "q4_4b", "q4_4c", "q4_5a", "q4_5b", "q4_6", "q4_7", "q4_8", "q4_9", "q4_10", "q4_11", "q4_12", "q4_13", "q4_14a", "q4_14b", "q4_14c", "q4_15a", "q4_15b", "q4_15c", "q5_1", "q5_2", "q5_3", "q5_4", "q6_1", "q6_2", "q6_3", "q6_4", "q6_5", "q6_6", "q6_7", "q6_8", "q6_9", "q12_1", "q12_2", "End time"};
-            String[] arrayOfString = new String[80];
+            title = new String[]{"q0_1", "q0_2", "q0_3", "q0_4", "q0_5", "q0_6", "q0_7", "Interview date", "Start time", "q1_1", "q1_2", "q1_3", "q1_4", "q1_5", "q1_6", "q1_7", "q1_8", "q1_9", "q1_10", "q1_11", "q2_1", "q2_2", "q2_3", "q2_4", "q2_5", "q2_6", "q2_7", "q2_8", "q3_1a", "q3_1b", "q3_1c", "q3_1d", "q3_2a", "q3_2b", "q3_2c", "q3_2d", "q3_2e", "q4_0a", "q4_0b", "q4_0c", "q4_0d", "q4_0e", "q4_1", "q4_2", "q4_3", "q4_4a", "q4_4b", "q4_4c", "q4_5a", "q4_5b", "q4_6", "q4_7", "q4_8", "q4_9", "q4_10", "q4_11", "q4_12", "q4_13", "q4_14a", "q4_14b", "q4_14c", "q4_15a", "q4_15b", "q4_15c", "q5_1", "q5_2", "q5_3", "q5_4", "q6_1", "q6_2", "q6_3", "q6_4", "q6_5", "q6_6", "q6_7", "q6_8", "q6_9", "q12_1", "q12_2", "End time", "Randomized"};
+            String[] arrayOfString = new String[81];
             arrayOfString[0] = StringUtils.replaceEach(Answers.getO01(), new String[]{"0", "1", "-1"}, new String[]{"1", "2", " "});
             arrayOfString[1] = Answers.getO02();
             arrayOfString[2] = Answers.getO03();
@@ -110,8 +110,8 @@ public class Exporting {
             arrayOfString[16] = Answers.getO18();
             arrayOfString[17] = StringUtils.replaceEach(Answers.getO19(), new String[]{"4", "-1"}, new String[]{"17", " "});
             arrayOfString[18] = Answers.getO110();
-            arrayOfString[19] = StringUtils.replaceEach(Answers.getO111(), new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "-1"},
-                    new String[]{"0", "1", "2", "3", "0", "4", "5", "0", "6", "7", "8", "0", "9", "10", "11", "12", "13", "14", " "});
+            arrayOfString[19] = StringUtils.replaceEach(Answers.getO111(), new String[]{"0", "1", "2", "3", "5", "6", "8", "9", "10", "12", "13", "14", "15", "16", "17", "-1"},
+                    new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", " "});
             arrayOfString[20] = StringUtils.replaceEach(Answers.getO21(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[21] = StringUtils.replaceEach(Answers.getO22(), new String[]{"0", "1", "2", "-1"}, new String[]{"1", "2", "99", " "});
             arrayOfString[22] = StringUtils.replaceEach(Answers.getO23(), new String[]{"0", "1", "2", "-1"}, new String[]{"1", "2", "99", " "});
@@ -172,6 +172,11 @@ public class Exporting {
             arrayOfString[77] = StringUtils.replaceEach(Answers.getO121(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[78] = StringUtils.replaceEach(Answers.getO122(), new String[]{"0", "1", "2", "3", "4", "-1"}, new String[]{"1", "2", "3", "4", "5", " "});
             arrayOfString[79] = Answers.getO12_time_end();
+
+            String randomized = Answers.getXx() + "";
+            arrayOfString[80] = StringUtils.replaceEach(randomized, new String[]{"0", "1"}, new String[]{"false", "true"});
+
+
             System.out.println(getCountofRows() + " rows found");
             writer = new CSVWriter(new FileWriter(folder + "BaselineQuestionnaire.csv", true), ',');
             writer.writeNext(arrayOfString);

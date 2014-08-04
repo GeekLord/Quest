@@ -114,19 +114,19 @@ public class O25 extends Fragment {
     public String getCheckedStuff() {
         String str = "";
         if (O66a.isChecked()) {
-            str = str + O66a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (O66b.isChecked()) {
-            str = str + O66b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (O66c.isChecked()) {
-            str = str + O66c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (O66d.isChecked()) {
-            str = str + O66d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (O66e.isChecked()) {
-            str = str + O66e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (O66f.isChecked()) {
 

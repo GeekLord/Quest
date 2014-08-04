@@ -39,7 +39,9 @@ public class Finish1 extends Fragment {
                 new Exporting().toCSC();
                 Toast.makeText(ctx, "Questionnaire saved.", Toast.LENGTH_LONG).show();
                 Intent localIntent = new Intent(ctx, Dashboard.class);
+                localIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(localIntent);
+                getActivity().finish();
             }
         });
     }

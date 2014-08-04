@@ -217,34 +217,34 @@ public class O23 extends Fragment {
     public String getCheckedStuff() {
         String str = "";
         if (O61a.isChecked()) {
-            str = str + O61a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (O61b.isChecked()) {
-            str = str + O61b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (O61c.isChecked()) {
-            str = str + O61c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (O61d.isChecked()) {
-            str = str + O61d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (O61e.isChecked()) {
-            str = str + O61e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (O61f.isChecked()) {
-            str = str + O61f.getText().toString().trim() + " ";
+            str = str + "6 ";
         }
         if (O61g.isChecked()) {
-            str = str + O61g.getText().toString().trim() + " ";
+            str = str + "7 ";
         }
         if (O61h.isChecked()) {
-            str = str + O61h.getText().toString().trim() + " ";
+            str = str + "8 ";
         }
         if (O61i.isChecked()) {
-            str = str + O61i.getText().toString().trim() + " ";
+            str = str + "77 ";
         }
         if (O61j.isChecked()) {
-            str = str + O61j.getText().toString().trim() + " ";
+            str = str + "99 ";
         }
         if (O61k.isChecked()) {
             txtO61l.setVisibility(View.VISIBLE);

@@ -1,6 +1,7 @@
 package fravier.com.quest.module1;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,6 +12,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTitleStrip;
 import android.support.v7.app.ActionBarActivity;
+import android.telephony.TelephonyManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -677,6 +679,12 @@ public class ParentOne extends ActionBarActivity {
             return;
         }
         super.onBackPressed();
+    }
+
+    public String getIMEI() {
+        TelephonyManager mngr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        String id = mngr.getDeviceId();
+        return id;
     }
 
     /**

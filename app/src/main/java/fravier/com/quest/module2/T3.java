@@ -27,18 +27,18 @@ public class T3 extends Fragment {
                 case R.id.sbT47:
                     progressChanged_47 = paramAnonymousInt;
                     sbvT47.setText(progressChanged_47 + "% likelihood");
-                    T47a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    T47a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    T47b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    T47b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    T47a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    T47a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    T47b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    T47b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
                 case R.id.sbT48:
                     sbvT48.setText(progressChanged_48 + "% likelihood");
                     progressChanged_48 = paramAnonymousInt;
-                    T48a.setScaleX(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    T48a.setScaleY(1.0F + (50 - paramAnonymousInt) / 100.0F);
-                    T48b.setScaleX(1.0F + (paramAnonymousInt - 50) / 100.0F);
-                    T48b.setScaleY(1.0F + (paramAnonymousInt - 50) / 100.0F);
+                    T48a.setScaleX(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    T48a.setScaleY(1.0F + (50 - paramAnonymousInt) / 70.0F);
+                    T48b.setScaleX(1.0F + (paramAnonymousInt - 50) / 70.0F);
+                    T48b.setScaleY(1.0F + (paramAnonymousInt - 50) / 70.0F);
                     return;
             }
 
@@ -73,15 +73,15 @@ public class T3 extends Fragment {
     TextView sbvT48;
 
     public void setToZero() {
-        T47a.setScaleX(1.0F + (50) / 100.0F);
-        T47a.setScaleY(1.0F + (50) / 100.0F);
-        T47b.setScaleX(1.0F + (-50) / 100.0F);
-        T47b.setScaleY(1.0F + (-50) / 100.0F);
+        T47a.setScaleX(1.0F + (50) / 70.0F);
+        T47a.setScaleY(1.0F + (50) / 70.0F);
+        T47b.setScaleX(1.0F + (-50) / 70.0F);
+        T47b.setScaleY(1.0F + (-50) / 70.0F);
 
-        T48a.setScaleX(1.0F + (50) / 100.0F);
-        T48a.setScaleY(1.0F + (50) / 100.0F);
-        T48b.setScaleX(1.0F + (-50) / 100.0F);
-        T48b.setScaleY(1.0F + (-50) / 100.0F);
+        T48a.setScaleX(1.0F + (50) / 70.0F);
+        T48a.setScaleY(1.0F + (50) / 70.0F);
+        T48b.setScaleX(1.0F + (-50) / 70.0F);
+        T48b.setScaleY(1.0F + (-50) / 70.0F);
     }
 
     private void fonting() {

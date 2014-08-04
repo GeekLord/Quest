@@ -257,31 +257,31 @@ public class O26 extends Fragment {
     public String getCheckedStuff67() {
         String str = "";
         if (O67a.isChecked()) {
-            str = str + O67a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (O67b.isChecked()) {
-            str = str + O67b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (O67c.isChecked()) {
-            str = str + O67c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (O67d.isChecked()) {
-            str = str + O67d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (O67e.isChecked()) {
-            str = str + O67e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (O67f.isChecked()) {
-            str = str + O67f.getText().toString().trim() + " ";
+            str = str + "6 ";
         }
         if (O67g.isChecked()) {
-            str = str + O67g.getText().toString().trim() + " ";
+            str = str + "7 ";
         }
         if (O67h.isChecked()) {
-            str = str + O67h.getText().toString().trim() + " ";
+            str = str + "8 ";
         }
         if (O67i.isChecked()) {
-            str = str + O67i.getText().toString().trim() + " ";
+            str = str + "99 ";
         }
         if (O67j.isChecked()) {
             str = str + txtO67k.getText().toString().trim() + " ";
@@ -297,19 +297,19 @@ public class O26 extends Fragment {
     public String getCheckedStuff68() {
         String str = "";
         if (O68a.isChecked()) {
-            str = str + O68a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (O68b.isChecked()) {
-            str = str + O68b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (O68c.isChecked()) {
-            str = str + O68c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (O68d.isChecked()) {
-            str = str + O68d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (O68e.isChecked()) {
-            str = str + O68d.getText().toString().trim() + " ";
+            str = str + "99 ";
         }
         if (O68f.isChecked()) {
 
@@ -327,31 +327,31 @@ public class O26 extends Fragment {
     public String getCheckedStuff69() {
         String str = "";
         if (O69a.isChecked()) {
-            str = str + O69a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (O69b.isChecked()) {
-            str = str + O69b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (O69c.isChecked()) {
-            str = str + O69c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (O69d.isChecked()) {
-            str = str + O69d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (O69e.isChecked()) {
-            str = str + O69e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (O69f.isChecked()) {
-            str = str + O69f.getText().toString().trim() + " ";
+            str = str + "6 ";
         }
         if (O69g.isChecked()) {
-            str = str + O69g.getText().toString().trim() + " ";
+            str = str + "7 ";
         }
         if (O69h.isChecked()) {
-            str = str + O69h.getText().toString().trim() + " ";
+            str = str + "99 ";
         }
         if (O69z.isChecked()) {
-            str = str + O69z.getText().toString().trim() + " ";
+            str = str + "8 ";
         }
         if (O69i.isChecked()) {
 

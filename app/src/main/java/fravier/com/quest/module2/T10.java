@@ -149,13 +149,13 @@ public class T10 extends Fragment {
     public String getCheckedStuff68() {
         String str = "";
         if (T52a.isChecked()) {
-            str = str + T52a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (T52b.isChecked()) {
-            str = str + T52b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (T52c.isChecked()) {
-            str = str + T52c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (T52d.isChecked()) {
 

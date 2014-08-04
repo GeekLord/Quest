@@ -201,22 +201,22 @@ public class T17 extends Fragment {
     public String getCheckedStuff97() {
         String str = "";
         if (T97a.isChecked()) {
-            str = str + T97a.getText().toString().trim() + " ";
+            str = str + "1 ";
         }
         if (T97b.isChecked()) {
-            str = str + T97b.getText().toString().trim() + " ";
+            str = str + "2 ";
         }
         if (T97c.isChecked()) {
-            str = str + T97c.getText().toString().trim() + " ";
+            str = str + "3 ";
         }
         if (T97d.isChecked()) {
-            str = str + T97d.getText().toString().trim() + " ";
+            str = str + "4 ";
         }
         if (T97e.isChecked()) {
-            str = str + T97e.getText().toString().trim() + " ";
+            str = str + "5 ";
         }
         if (T97f.isChecked()) {
-            str = str + T97f.getText().toString().trim() + " ";
+            str = str + "6 ";
         }
         if (T97g.isChecked()) {
 
